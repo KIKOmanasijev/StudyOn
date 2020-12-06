@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\StudyOn.Contract\StudyOn.Contract.csproj" />
+    <ProjectReference Include="..\StudyOn.Data\StudyOn.Data.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,9 @@
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.Contract\bin\Debug\netstandard2.0\StudyOn.Contract.deps.json
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.Contract\bin\Debug\netstandard2.0\StudyOn.Contract.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.Contract\bin\Debug\netstandard2.0\StudyOn.Contract.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.Contract\obj\Debug\netstandard2.0\StudyOn.Contract.csprojAssemblyReference.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.Contract\obj\Debug\netstandard2.0\StudyOn.Contract.AssemblyInfoInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.Contract\obj\Debug\netstandard2.0\StudyOn.Contract.AssemblyInfo.cs
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.Contract\obj\Debug\netstandard2.0\StudyOn.Contract.csproj.CoreCompileInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.Contract\obj\Debug\netstandard2.0\StudyOn.Contract.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.Contract\obj\Debug\netstandard2.0\StudyOn.Contract.pdb
