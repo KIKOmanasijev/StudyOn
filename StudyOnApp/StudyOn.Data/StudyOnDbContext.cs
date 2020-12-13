@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using StudyOn.Data.Models;
 
 namespace StudyOn.Data
 {
@@ -19,15 +20,13 @@ namespace StudyOn.Data
         public virtual DbSet<Images> Images { get; set; }
         public virtual DbSet<Matches> Matches { get; set; }
         public virtual DbSet<Ratings> Ratings { get; set; }
-        public virtual DbSet<Roles> Roles { get; set; }
-        public virtual DbSet<Userroles> Userroles { get; set; }
         public virtual DbSet<Users> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
-//#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
+#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 optionsBuilder.UseNpgsql("Host=localhost;Database=postgres;Username=postgres;Password=djuntafan%5");
             }
         }
@@ -78,7 +77,7 @@ namespace StudyOn.Data
                     .WithMany(p => p.Images)
                     .HasForeignKey(d => d.CourtId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("courtId");
+                    .HasConstraintName("images_courtId_fkey1");
             });
 
             modelBuilder.Entity<Matches>(entity =>
@@ -93,6 +92,10 @@ namespace StudyOn.Data
                     .HasColumnName("courtId")
                     .HasColumnType("numeric");
 
+                entity.Property(e => e.CurrentPlayers)
+                    .HasColumnName("currentPlayers")
+                    .HasColumnType("numeric");
+
                 entity.Property(e => e.Date)
                     .HasColumnName("date")
                     .HasColumnType("date");
@@ -101,13 +104,9 @@ namespace StudyOn.Data
                     .HasColumnName("maxPlayers")
                     .HasColumnType("numeric");
 
-                entity.Property(e => e.SpacesLeft)
-                    .HasColumnName("spacesLeft")
-                    .HasColumnType("numeric");
-
                 entity.Property(e => e.Time)
                     .HasColumnName("time")
-                    .HasColumnType("numeric");
+                    .HasColumnType("time without time zone");
 
                 entity.Property(e => e.UserId)
                     .HasColumnName("userId")
@@ -117,13 +116,13 @@ namespace StudyOn.Data
                     .WithMany(p => p.Matches)
                     .HasForeignKey(d => d.CourtId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("courtId");
+                    .HasConstraintName("matches_courtId_fkey");
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Matches)
                     .HasForeignKey(d => d.UserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("userId");
+                    .HasConstraintName("matches_userId_fkey");
             });
 
             modelBuilder.Entity<Ratings>(entity =>
@@ -136,7 +135,7 @@ namespace StudyOn.Data
 
                 entity.Property(e => e.Comment)
                     .HasColumnName("comment")
-                    .HasColumnType("character varying(150)[]");
+                    .HasColumnType("character varying");
 
                 entity.Property(e => e.CourtId)
                     .HasColumnName("courtId")
@@ -154,55 +153,13 @@ namespace StudyOn.Data
                     .WithMany(p => p.Ratings)
                     .HasForeignKey(d => d.CourtId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("courtId");
+                    .HasConstraintName("images_courtId_fkey");
 
                 entity.HasOne(d => d.User)
                     .WithMany(p => p.Ratings)
                     .HasForeignKey(d => d.UserId)
                     .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("userId");
-            });
-
-            modelBuilder.Entity<Roles>(entity =>
-            {
-                entity.ToTable("roles", "my_schema");
-
-                entity.Property(e => e.Id)
-                    .HasColumnName("id")
-                    .HasColumnType("numeric");
-
-                entity.Property(e => e.RoleName)
-                    .IsRequired()
-                    .HasColumnName("roleName")
-                    .HasColumnType("character varying(20)[]");
-            });
-
-            modelBuilder.Entity<Userroles>(entity =>
-            {
-                entity.HasKey(e => new { e.RoleId, e.UserId })
-                    .HasName("userroles_pkey");
-
-                entity.ToTable("userroles", "my_schema");
-
-                entity.Property(e => e.RoleId)
-                    .HasColumnName("roleId")
-                    .HasColumnType("numeric");
-
-                entity.Property(e => e.UserId)
-                    .HasColumnName("userId")
-                    .HasColumnType("numeric");
-
-                entity.HasOne(d => d.Role)
-                    .WithMany(p => p.Userroles)
-                    .HasForeignKey(d => d.RoleId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("roleId");
-
-                entity.HasOne(d => d.User)
-                    .WithMany(p => p.Userroles)
-                    .HasForeignKey(d => d.UserId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
-                    .HasConstraintName("userId");
+                    .HasConstraintName("images_userId_fkey");
             });
 
             modelBuilder.Entity<Users>(entity =>
@@ -216,23 +173,26 @@ namespace StudyOn.Data
                 entity.Property(e => e.Email)
                     .IsRequired()
                     .HasColumnName("email")
-                    .HasColumnType("character varying(60)[]");
-
-                entity.Property(e => e.EmailConfirmed).HasColumnName("emailConfirmed");
+                    .HasColumnType("character varying");
 
                 entity.Property(e => e.FirstName)
                     .IsRequired()
                     .HasColumnName("firstName")
-                    .HasColumnType("character varying(20)[]");
+                    .HasColumnType("character varying");
 
                 entity.Property(e => e.LastName)
                     .IsRequired()
                     .HasColumnName("lastName")
-                    .HasColumnType("character varying(20)[]");
+                    .HasColumnType("character varying");
 
                 entity.Property(e => e.Password)
                     .IsRequired()
                     .HasColumnName("password")
+                    .HasColumnType("character varying");
+
+                entity.Property(e => e.Role)
+                    .IsRequired()
+                    .HasColumnName("role")
                     .HasColumnType("character varying");
             });
 
