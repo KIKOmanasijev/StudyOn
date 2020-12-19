@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Web\\StudyOn.Web.csproj": {}
+    "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Web\\StudyOn.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj": {
+    "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj",
+        "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj",
         "projectName": "StudyOn.Business",
-        "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj",
+        "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj",
         "packagesPath": "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Business\\obj\\",
+        "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Business\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dimitar.anakiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,11 +28,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj": {
-                "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj"
+              "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj": {
+                "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj"
               },
-              "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {
-                "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj"
+              "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {
+                "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj"
               }
             }
           }
@@ -68,14 +68,14 @@
         }
       }
     },
-    "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj": {
+    "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj",
+        "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj",
         "projectName": "StudyOn.Contract",
-        "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj",
+        "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj",
         "packagesPath": "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\obj\\",
+        "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contract\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dimitar.anakiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -125,14 +125,14 @@
         }
       }
     },
-    "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {
+    "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj",
+        "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj",
         "projectName": "StudyOn.Data",
-        "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj",
+        "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj",
         "packagesPath": "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Data\\obj\\",
+        "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dimitar.anakiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -149,8 +149,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj": {
-                "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj"
+              "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj": {
+                "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj"
               }
             }
           }
@@ -196,14 +196,14 @@
         }
       }
     },
-    "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Web\\StudyOn.Web.csproj": {
+    "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Web\\StudyOn.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Web\\StudyOn.Web.csproj",
+        "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Web\\StudyOn.Web.csproj",
         "projectName": "StudyOn.Web",
-        "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Web\\StudyOn.Web.csproj",
+        "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Web\\StudyOn.Web.csproj",
         "packagesPath": "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Web\\obj\\",
+        "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dimitar.anakiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -220,11 +220,11 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj": {
-                "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj"
+              "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj": {
+                "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj"
               },
-              "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj": {
-                "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj"
+              "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj": {
+                "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj"
               }
             }
           }

@@ -320,7 +320,7 @@
           "lib/netstandard2.0/System.Collections.Immutable.dll": {}
         }
       },
-      "System.ComponentModel.Annotations/4.7.0": {
+      "System.ComponentModel.Annotations/5.0.0": {
         "type": "package",
         "compile": {
           "ref/netstandard2.0/System.ComponentModel.Annotations.dll": {}
@@ -424,14 +424,18 @@
           "lib/netstandard2.0/_._": {}
         }
       },
-      "StudyOn.Contract/1.0.0": {
+      "StudyOn.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "3.1.4",
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
-          "bin/placeholder/StudyOn.Contract.dll": {}
+          "bin/placeholder/StudyOn.Contracts.dll": {}
         },
         "runtime": {
-          "bin/placeholder/StudyOn.Contract.dll": {}
+          "bin/placeholder/StudyOn.Contracts.dll": {}
         }
       }
     }
@@ -1068,13 +1072,14 @@
         "version.txt"
       ]
     },
-    "System.ComponentModel.Annotations/4.7.0": {
-      "sha512": "0YFqjhp/mYkDGpU0Ye1GjE53HMp9UVfGN7seGpAMttAC0C40v5gw598jCgpbBLMmCo0E5YRLBv5Z2doypO49ZQ==",
+    "System.ComponentModel.Annotations/5.0.0": {
+      "sha512": "dMkqfy2el8A8/I76n2Hi1oBFEbG1SfxD2l5nhwXV3XjlnOmwxJlQbYpJH4W51odnU9sARCSAgv7S3CyAFMkpYg==",
       "type": "package",
-      "path": "system.componentmodel.annotations/4.7.0",
+      "path": "system.componentmodel.annotations/5.0.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
+        "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
         "lib/MonoAndroid10/_._",
@@ -1151,7 +1156,7 @@
         "ref/xamarinmac20/_._",
         "ref/xamarintvos10/_._",
         "ref/xamarinwatchos10/_._",
-        "system.componentmodel.annotations.4.7.0.nupkg.sha512",
+        "system.componentmodel.annotations.5.0.0.nupkg.sha512",
         "system.componentmodel.annotations.nuspec",
         "useSharedDesignerContext.txt",
         "version.txt"
@@ -1406,10 +1411,10 @@
         "version.txt"
       ]
     },
-    "StudyOn.Contract/1.0.0": {
+    "StudyOn.Contracts/1.0.0": {
       "type": "project",
-      "path": "../StudyOn.Contract/StudyOn.Contract.csproj",
-      "msbuildProject": "../StudyOn.Contract/StudyOn.Contract.csproj"
+      "path": "../StudyOn.Contracts/StudyOn.Contracts.csproj",
+      "msbuildProject": "../StudyOn.Contracts/StudyOn.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -1417,7 +1422,8 @@
       "Microsoft.EntityFrameworkCore.Tools >= 3.1.4",
       "NETStandard.Library >= 2.0.3",
       "Npgsql.EntityFrameworkCore.PostgreSQL >= 3.1.4",
-      "StudyOn.Contract >= 1.0.0"
+      "StudyOn.Contracts >= 1.0.0",
+      "System.ComponentModel.Annotations >= 5.0.0"
     ]
   },
   "packageFolders": {
@@ -1447,8 +1453,8 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj": {
-              "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj"
+            "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
+              "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
             }
           }
         }
@@ -1478,6 +1484,10 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[3.1.4, )"
+          },
+          "System.ComponentModel.Annotations": {
+            "target": "Package",
+            "version": "[5.0.0, )"
           }
         },
         "imports": [

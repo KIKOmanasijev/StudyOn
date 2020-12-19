@@ -4,14 +4,14 @@
     "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj": {
+    "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj",
-        "projectName": "StudyOn.Contract",
-        "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj",
+        "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj",
+        "projectName": "StudyOn.Contracts",
+        "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj",
         "packagesPath": "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\obj\\",
+        "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\dimitar.anakiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,11 +40,25 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [
@@ -85,8 +99,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj": {
-                "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj"
+              "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
+                "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
               }
             }
           }
@@ -116,6 +130,10 @@
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[3.1.4, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
             }
           },
           "imports": [

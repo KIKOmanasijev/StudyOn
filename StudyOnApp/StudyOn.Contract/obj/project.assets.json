@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj",
+      "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj",
       "projectName": "StudyOn.Contract",
-      "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj",
+      "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contract\\StudyOn.Contract.csproj",
       "packagesPath": "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Contract\\obj\\",
+      "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contract\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dimitar.anakiev\\AppData\\Roaming\\NuGet\\NuGet.Config",

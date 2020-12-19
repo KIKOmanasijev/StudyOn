@@ -5,10 +5,14 @@ using StudyOn.Web.Models.Account;
 using System.Net;
 using System.Threading.Tasks;
 using System.Web.Http;
+using HttpPost = System.Web.Http.HttpPostAttribute;
+using Route = System.Web.Http.RouteAttribute;
 
 namespace StudyOn.Web.Controllers
 {
-    public class UserController : ApiController
+    [ApiController]
+    [Route("api/[controller]")]
+    public class UserController : ControllerBase
     {
         private readonly UserManager<Users> _userManager;
 
@@ -17,10 +21,11 @@ namespace StudyOn.Web.Controllers
             _userManager = userManager;
         }
 
-        [System.Web.Http.HttpPost]
-        [System.Web.Http.Route("users/register")]
-        public IActionResult Register([System.Web.Http.FromBody] RegisterViewModel model)
+        [HttpPost]
+        [Route("users/register")]
+        public async Task<IActionResult> Register([System.Web.Http.FromBody] RegisterViewModel model)
         {
+            return (IActionResult)Ok("success!");
             if (ModelState.IsValid)
             {
                 var user = new Users
@@ -32,10 +37,10 @@ namespace StudyOn.Web.Controllers
                     Role = "User"
 
                 };
-                var result = _userManager.CreateAsync(user, model.Password);
-                if(result.Result.Succeeded)
+                var result = await _userManager.CreateAsync(user, model.Password);
+                if(result.Succeeded)
                 {
-                    return (IActionResult)Ok();
+                    return (IActionResult)Ok("success!");
                 }
                 else
                 {

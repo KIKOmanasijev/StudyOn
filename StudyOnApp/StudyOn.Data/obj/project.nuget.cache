@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8glJeqS7n1LdpxO9+t/1qOyc+T7X15o+cJbrKJiVhvkJpPi6m0p1sM6kXEBZ2sdeb1FBX5SUF2KxvzOtDAWHog==",
+  "dgSpecHash": "qChFWcU5jbuWwSQkGWvF+XOKpipH9szZBOaJTYVr3YLXAi1DZiYsG0INah7+e0Be86hHqXypId1J5jUa5BrHfQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj",
   "expectedPackageFiles": [
@@ -30,7 +30,7 @@
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\3.1.4\\npgsql.entityframeworkcore.postgresql.3.1.4.nupkg.sha512",
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",
-    "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
+    "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\system.diagnostics.diagnosticsource\\4.7.1\\system.diagnostics.diagnosticsource.4.7.1.nupkg.sha512",
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\system.memory\\4.5.4\\system.memory.4.5.4.nupkg.sha512",
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\system.numerics.vectors\\4.5.0\\system.numerics.vectors.4.5.0.nupkg.sha512",
