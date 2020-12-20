@@ -1,5 +1,5 @@
 ﻿using NLog;
-using StudyOn.Contracts;
+using StudyOn.Contracts.Managers;
 
 namespace StudyOn.LoggerService
 {

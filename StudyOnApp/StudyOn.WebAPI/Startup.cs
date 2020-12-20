@@ -30,6 +30,7 @@ namespace StudyOn.WebAPI
             services.ConfigureMySqlContext(Configuration);
             services.ConfigureRepository();
             services.ConfigureUserService();
+            services.ConfigureMatchService();
 
             services.AddControllers();
         }

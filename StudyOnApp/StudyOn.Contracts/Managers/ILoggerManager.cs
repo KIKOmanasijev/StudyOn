@@ -1,4 +1,4 @@
-﻿namespace StudyOn.Contracts
+﻿namespace StudyOn.Contracts.Managers
 {
     public interface ILoggerManager
     {

@@ -4,6 +4,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using StudyOn.Business.Managers;
 using StudyOn.Contracts;
+using StudyOn.Contracts.Managers;
 using StudyOn.Data;
 using StudyOn.LoggerService;
 
@@ -48,6 +49,10 @@ namespace StudyOn.WebAPI.Extensions
         public static void ConfigureUserService(this IServiceCollection services)
         {
             services.AddScoped<IUserManager, UserManager>();
+        }
+        public static void ConfigureMatchService(this IServiceCollection services)
+        {
+            services.AddScoped<IMatchManager, MatchManager>();
         }
     }
 }

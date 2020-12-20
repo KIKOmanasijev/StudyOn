@@ -86,19 +86,15 @@ namespace StudyOn.Data
 
                 entity.Property(e => e.CurrentPlayers).HasColumnName("currentPlayers");
 
-                entity.Property(e => e.Date)
-                    .HasColumnName("date")
+                entity.Property(e => e.EndTime)
+                    .HasColumnName("endTime")
                     .HasColumnType("date");
-
-                entity.Property(e => e.FinishTime)
-                    .HasColumnName("finishTime")
-                    .HasColumnType("time without time zone");
 
                 entity.Property(e => e.MaxPlayers).HasColumnName("maxPlayers");
 
                 entity.Property(e => e.StartTime)
                     .HasColumnName("startTime")
-                    .HasColumnType("time without time zone");
+                    .HasColumnType("date");
 
                 entity.Property(e => e.Type)
                     .IsRequired()
