@@ -55,7 +55,6 @@ export default {
             let str = "";
             for (let i = 0; i < rate; i++){
                 str += `<i class="fa fa-star"></i>`;
-                console.log("hi")
             }
 
             return str;

@@ -2,7 +2,7 @@
   <div class="home">
     <Sidemenu/>
     <ListMatches :matches="matches" :user="user"/>
-    <MapContainer/>
+    <MapContainer :markers="getAllMarkers()"/>
   </div>
 </template>
 
@@ -36,7 +36,7 @@ export default {
             id: 2,
             fieldName: "К-Спорт Сала",
             fieldImg: "https://ading.com.mk/CMS/Upload/Referenci/tenisko-igraliste-micei-international(1).jpg",
-            location: {lat:42.5012952, lng:21.484693}
+            location: {lat:42.0015952, lng:21.416393}
         },                    
         sport: "Football",
         date: new Date(2020, 12, 25, 16, 30),
@@ -50,6 +50,18 @@ export default {
     Sidemenu,
     ListMatches,
     MapContainer  
+  },
+  created(){
+    this.getAllMarkers()
+  },
+  methods: {
+    getAllMarkers(){
+      let markers = this.matches.map((match) => {
+        return match.field.location
+      });
+
+      return markers;
+    }
   }
 }
 </script>
