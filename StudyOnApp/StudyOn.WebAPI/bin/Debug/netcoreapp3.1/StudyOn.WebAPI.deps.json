@@ -26,8 +26,8 @@
         "dependencies": {
           "Microsoft.EntityFrameworkCore.Design": "3.1.4",
           "Microsoft.VisualStudio.Azure.Containers.Tools.Targets": "1.10.9",
+          "StudyOn.Business": "1.0.0",
           "StudyOn.Contracts": "1.0.0",
-          "StudyOn.Data": "1.0.0",
           "StudyOn.LoggerService": "1.0.0",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
@@ -633,6 +633,18 @@
         }
       },
       "System.Runtime.CompilerServices.Unsafe/4.6.0": {},
+      "StudyOn.Business/1.0.0": {
+        "dependencies": {
+          "StudyOn.Contracts": "1.0.0",
+          "StudyOn.Data": "1.0.0"
+        },
+        "runtime": {
+          "StudyOn.Business.dll": {}
+        },
+        "compile": {
+          "StudyOn.Business.dll": {}
+        }
+      },
       "StudyOn.Contracts/1.0.0": {
         "dependencies": {
           "Npgsql.EntityFrameworkCore.PostgreSQL": "3.1.4",
@@ -2481,6 +2493,11 @@
       "sha512": "sha512-HxozeSlipUK7dAroTYwIcGwKDeOVpQnJlpVaOkBz7CM4TsE5b/tKlQBZecTjh6FzcSbxndYaxxpsBMz+wMJeyw==",
       "path": "system.runtime.compilerservices.unsafe/4.6.0",
       "hashPath": "system.runtime.compilerservices.unsafe.4.6.0.nupkg.sha512"
+    },
+    "StudyOn.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "StudyOn.Contracts/1.0.0": {
       "type": "project",

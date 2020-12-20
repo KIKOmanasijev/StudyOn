@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using StudyOn.Business.Managers;
 using StudyOn.Contracts;
 using StudyOn.Data;
 using StudyOn.LoggerService;
@@ -42,6 +43,11 @@ namespace StudyOn.WebAPI.Extensions
         public static void ConfigureRepositoryWrapper(this IServiceCollection services)
         {
             services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
+        }
+
+        public static void ConfigureUserService(this IServiceCollection services)
+        {
+            services.AddScoped<IUserManager, UserManager>();
         }
     }
 }

@@ -102,3 +102,5 @@ C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.WebAPI\obj\Debug\net
 C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.WebAPI\obj\Debug\netcoreapp3.1\StudyOn.WebAPI.dll
 C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.WebAPI\obj\Debug\netcoreapp3.1\StudyOn.WebAPI.pdb
 C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.WebAPI\obj\Debug\netcoreapp3.1\StudyOn.WebAPI.genruntimeconfig.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\StudyOn.Business.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\StudyOn.Business.pdb

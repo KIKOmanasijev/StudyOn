@@ -318,6 +318,20 @@
           "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
         }
       },
+      "StudyOn.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "StudyOn.Contracts": "1.0.0",
+          "StudyOn.Data": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/StudyOn.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/StudyOn.Business.dll": {}
+        }
+      },
       "StudyOn.Contracts/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
@@ -1057,6 +1071,11 @@
         "version.txt"
       ]
     },
+    "StudyOn.Business/1.0.0": {
+      "type": "project",
+      "path": "../StudyOn.Business/StudyOn.Business.csproj",
+      "msbuildProject": "../StudyOn.Business/StudyOn.Business.csproj"
+    },
     "StudyOn.Contracts/1.0.0": {
       "type": "project",
       "path": "../StudyOn.Contracts/StudyOn.Contracts.csproj",
@@ -1077,8 +1096,8 @@
     ".NETCoreApp,Version=v3.1": [
       "Microsoft.EntityFrameworkCore.Design >= 3.1.4",
       "Microsoft.VisualStudio.Azure.Containers.Tools.Targets >= 1.10.9",
+      "StudyOn.Business >= 1.0.0",
       "StudyOn.Contracts >= 1.0.0",
-      "StudyOn.Data >= 1.0.0",
       "StudyOn.LoggerService >= 1.0.0"
     ]
   },
@@ -1109,11 +1128,11 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
+            "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj": {
+              "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj"
+            },
             "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
               "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
-            },
-            "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {
-              "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj"
             },
             "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj": {
               "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj"
