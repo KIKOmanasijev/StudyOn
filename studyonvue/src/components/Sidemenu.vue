@@ -6,9 +6,9 @@
 
         <div class="menu">
             <ul>
-                <li><i class="flaticon-map active"></i></li>
-                <li><i class="flaticon-football-game-field"></i></li>
-                <li><i class="flaticon-ask"></i></li>    
+                <li class="active"><a href="#"><i class="flaticon-map"></i></a></li>
+                <li><a href="#"><i class="flaticon-football-game-field"></i></a></li>
+                <li><a href="#"><i class="flaticon-ask"></i></a></li>    
             </ul>
         </div>
 
@@ -36,7 +36,8 @@ export default {
         height: 100%;
         padding: 50px 15px;
 
-        box-shadow: 2px 0 15px rgba(0,0,0, .1);
+        box-shadow: 2px 0 15px rgba(0,0,0, .07);
+        z-index: 100;
     }
 
     .sidemenu .logo span {
@@ -70,14 +71,19 @@ export default {
         padding-left: 0;
     }
 
-    .sidemenu .menu li i{
+    .sidemenu .menu li a i{
         font-size: 30px;
         font-weight: 500;
+        color: #999;
     }
 
-    .sidemenu .menu li i.active {
+    .sidemenu .menu .active i {
         color: #685EFF;
         font-weight: 600;
+    }
+
+    .sidemenu .menu li a {
+        text-decoration: none;
     }
 
     .sidemenu .menu li:not(:last-of-type){

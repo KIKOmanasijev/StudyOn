@@ -1,4 +1,4 @@
-# studyon
+# studyonvue
 
 ## Project setup
 ```

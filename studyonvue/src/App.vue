@@ -1,30 +1,23 @@
 <template>
   <div id="app">
     <Sidemenu/>
+    <ListMatches/>
+    <MapContainer/>
   </div>
 </template>
 
 <script>
 
 import Sidemenu from "./components/Sidemenu";
+import ListMatches from "./components/ListMatches";
+import MapContainer from "./components/MapContainer";
 
 export default {
   name: 'App',
-  components: { 
-    Sidemenu 
-  },
-  data(){
-    return {
-      courts: [
-        {
-          id: 1,
-          lat: 41.9990051,
-          lng: 21.2848064,
-          sport: "Football",
-          name: "Forza Karpos"
-        }
-      ]
-    }
+  components: {
+    Sidemenu,
+    ListMatches,
+    MapContainer
   }
 }
 </script>
@@ -45,5 +38,8 @@ body {
   text-align: center;
   color: #2c3e50;
   height: 100vh;
+
+  display: flex;
+
 }
 </style>
