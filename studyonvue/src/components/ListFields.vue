@@ -1,0 +1,195 @@
+<template>
+    <div class="list-panel">
+        <div class="search">
+           <div class="input-group">
+                <span class="input-group-prepend">
+                    <div class="input-group-text border-none"><i class="fa fa-search"></i></div>
+                </span>
+                <input class="form-control" type="search" placeholder="Пребарувај овде" id="example-search-input">               
+            </div>
+            <button v-if="user.loggedIn" class="add-match">+</button>
+        </div>       
+
+        <p class="search-result-info text-left my-5">
+            Пронајдовме <strong> 13 резултати </strong> од Вашето барање...
+        </p>
+
+        <div class="results">
+            <div class="match-wrapper row" v-for="field in fields" v-bind:key="field.fieldName">
+                <div class="col-md-3">
+                    <img v-bind:src="field.fieldImg">
+                </div>
+                <div class="col-md-9">
+                    <router-link :to="'/fields/' + field.id" class="match-meta">
+                        <div class="match-info">
+                            <span class="sport football">{{field.sport}}</span>
+                            <h2>{{field.fieldName}}</h2>
+                            <div class="field-rating" v-html="printRating(field.rating)"></div>
+                        </div>
+                    </router-link>
+                </div>
+            </div>
+    </div>
+    </div>
+</template>
+
+<script>
+import('../assets/css/all.css');
+export default {
+    name: "ListFields",
+    props: {
+        fields: {
+            type: Array
+        },
+        user: {
+            type: Object
+        }
+    },
+    computed: {
+        generateFieldUrl(id){
+            return `/fields/${id}`;
+        }
+    },
+    methods: {
+        printRating(rate){
+            let str = "";
+            for (let i = 0; i < rate; i++){
+                str += `<i class="fa fa-star"></i>`;
+                console.log("hi")
+            }
+
+            return str;
+        }
+    }
+}
+</script>
+
+<style>
+    .list-panel {
+        padding: 50px 30px;
+        flex: 0 0 35vw;
+        background-color: #FCFBFF;
+    }
+
+    .search {
+        display: flex;
+        align-content: center;
+    }
+
+    .search .add-match {
+        font-size: 32px;
+        height: 70px;
+        width: 70px;
+        background: #3FE18B;
+        color: #fff;
+        border-radius: 50%;
+        border: none;
+        margin-left: 20px;
+        box-sizing: initial;
+    }
+
+    .add-match:focus {
+        outline: none;
+    }
+
+    .input-group {        
+        font-size: 18px;
+        font-weight: lighter;
+        background: #ECEBF8;
+        width: 100%;
+        padding: 15px 25px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    input.form-control {
+        font-size: 18px;
+        font-weight: lighter;
+        border: none;
+        background: transparent;
+    }
+
+    input.form-control::placeholder{
+        font-size: 18px;
+        color: #333;
+    }
+
+    input.form-control:active, input.form-control:focus {
+        outline: none !important;
+        border: none !important;
+        background: transparent !important;
+        box-shadow: none !important;
+    }
+
+    .border-none {
+        border: none;
+        background: transparent;
+    }
+
+    .search-result-info {
+        color: #999;
+    }
+
+    .search-result-info strong {
+        color: #777;
+    }
+
+    .match-wrapper {
+        display: flex;
+    }
+
+    .match-wrapper:not(:last-of-type){
+        margin-bottom: 40px
+    }
+
+    .match-wrapper img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 15px;
+        margin-right: 20px;
+    }
+
+    .match-wrapper .col-md-9{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+    }
+
+    .match-info .sport {
+        font-size: 12px;
+        padding: 5px 30px;
+        color: white;
+        border-radius: 15px;
+    }
+
+    .match-info .sport.football {
+        background: #3FE18B;
+    }
+
+    .match-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .match-info h2 {
+        font-size: 22px;
+        font-weight: 500;
+        color: #444;
+        margin: 15px 0;
+    }    
+
+    .match-wrapper a {
+        text-decoration: none;
+    }
+
+    .field-rating {
+        margin-top: -5px;
+    }
+
+    .field-rating i {
+        color: gold;
+    }
+</style>

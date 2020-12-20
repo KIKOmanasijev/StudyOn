@@ -46,25 +46,12 @@
 import('../assets/css/all.css');
 export default {
     name: "ListMatches",
-    data(){
-        return {
-            matches: [
-                {
-                    field: {
-                        id: 1,
-                        fieldName: "Игралиште Форза Каропош",
-                        fieldImg: "https://ading.com.mk/CMS/Upload/Referenci/tenisko-igraliste-micei-international(1).jpg",
-                        location: {lat:42.0012952, lng:21.4434693}
-                    },                    
-                    sport: "Football",
-                    date: new Date(2020, 12, 25, 16, 30),
-                    maxPlayers: 10,
-                    currentPlayers: [1,2,3,4,5]
-                }
-            ],
-            user: {
-                loggedIn: false
-            }
+    props: {
+        matches: {
+            type: Array
+        },
+        user: {
+            type: Object
         }
     },
     methods: {
@@ -153,6 +140,10 @@ export default {
 
     .match-wrapper {
         display: flex;
+    }
+
+    .match-wrapper:not(:last-of-type){
+        margin-bottom: 40px
     }
 
     .match-wrapper img {

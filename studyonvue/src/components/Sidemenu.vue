@@ -1,14 +1,14 @@
 <template lang="">
     <div class="sidemenu">
         <div class="logo">
-            <span>S</span>
+            <router-link to="/"><span>S</span></router-link>
         </div>
 
         <div class="menu">
             <ul>
-                <li class="active"><a href="#"><i class="flaticon-map"></i></a></li>
-                <li><a href="#"><i class="flaticon-football-game-field"></i></a></li>
-                <li><a href="#"><i class="flaticon-ask"></i></a></li>    
+                <li class="active"><router-link to="/"><i class="flaticon-map"></i></router-link></li>
+                <li><router-link to="/fields"><i class="flaticon-football-game-field"></i></router-link></li>
+                <li><router-link to="/faq"><i class="flaticon-ask"></i></router-link></li>    
             </ul>
         </div>
 
@@ -53,6 +53,10 @@ export default {
         border-radius: 50%;
     }
 
+    .sidemenu a {
+        text-decoration: none;
+    }
+
     .sidemenu .user-profile span {
         font-size: 40px;
         font-weight: 700;
@@ -77,7 +81,7 @@ export default {
         color: #999;
     }
 
-    .sidemenu .menu .active i {
+    .sidemenu .menu .router-link-exact-active i {
         color: #685EFF;
         font-weight: 600;
     }
