@@ -1083,19 +1083,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\": {}
+    "C:\\Users\\Kiko\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
+      "projectUniqueName": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
       "projectName": "StudyOn.WebAPI",
-      "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
-      "packagesPath": "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.WebAPI\\obj\\",
+      "projectPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
+      "packagesPath": "C:\\Users\\Kiko\\.nuget\\packages\\",
+      "outputPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOnApp\\StudyOn.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\dimitar.anakiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kiko\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1109,14 +1113,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
-              "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
+            "D:\\Fakultet\\DIANS\\StudyOn\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
+              "projectPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
             },
-            "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {
-              "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj"
+            "D:\\Fakultet\\DIANS\\StudyOn\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {
+              "projectPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj"
             },
-            "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj": {
-              "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj"
+            "D:\\Fakultet\\DIANS\\StudyOn\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj": {
+              "projectPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj"
             }
           }
         }
@@ -1160,7 +1164,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }
