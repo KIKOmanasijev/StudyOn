@@ -1,37 +1,39 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using StudyOn.Contracts;
 using StudyOn.Contracts.Requests;
-using System;
+using StudyOn.Data.Responses;
 
 namespace StudyOn.WebAPI.Controllers
 {
-    [Route("users")]
     [ApiController]
+    [Route("[controller]")]
     public class UsersController : ControllerBase
     {
         private ILoggerManager _logger;
-        private IRepositoryWrapper _repository;
-        public UsersController(ILoggerManager logger, IRepositoryWrapper repository)
+        private IUserManager _userManager;
+
+        public UsersController(ILoggerManager logger, IUserManager userManager)
         {
             _logger = logger;
-            _repository = repository;
+            _userManager = userManager;
         }
 
         [HttpPost]
-        [Route("users")]
-        public IActionResult RegisterUser([FromBody] AddUserRequest request)
+        [Route("register")]
+        public Response<bool> RegisterUser([FromBody] AddUserRequest request)
         {
-            request.Role = "User";
-            try
-            {
-                _logger.LogInfo($"Returned all owners from database.");
-                return Ok();
-            }
-            catch (Exception ex)
-            {
-                _logger.LogError($"Something went wrong inside GetAllOwners action: {ex.Message}");
-                return StatusCode(500, "Internal server error");
-            }
+            request.Role = 0;
+            var result =_userManager.AddUser(request);
+            return result;
+
+        }
+
+        [HttpGet]
+        [Route("login")]
+        public Response<bool> Login([FromBody] LoginRequest request)
+        {
+            var result = _userManager.SignInUser(request);
+            return result;
         }
     }
 }

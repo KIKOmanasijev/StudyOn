@@ -15,8 +15,8 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\StudyOn.Business\StudyOn.Business.csproj" />
     <ProjectReference Include="..\StudyOn.Contracts\StudyOn.Contracts.csproj" />
-    <ProjectReference Include="..\StudyOn.Data\StudyOn.Data.csproj" />
     <ProjectReference Include="..\StudyOn.LoggerService\StudyOn.LoggerService.csproj" />
   </ItemGroup>
 

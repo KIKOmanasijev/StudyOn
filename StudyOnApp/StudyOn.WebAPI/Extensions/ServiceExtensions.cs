@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using StudyOn.Business.Managers;
 using StudyOn.Contracts;
 using StudyOn.Data;
 using StudyOn.LoggerService;
@@ -39,9 +40,14 @@ namespace StudyOn.WebAPI.Extensions
             services.AddDbContext<postgresContext>(o => o.UseNpgsql(connectionString));
         }
 
-        public static void ConfigureRepositoryWrapper(this IServiceCollection services)
+        public static void ConfigureRepository(this IServiceCollection services)
         {
-            services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
+            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
+        }
+
+        public static void ConfigureUserService(this IServiceCollection services)
+        {
+            services.AddScoped<IUserManager, UserManager>();
         }
     }
 }

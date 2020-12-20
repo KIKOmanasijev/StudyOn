@@ -28,7 +28,8 @@ namespace StudyOn.WebAPI
             services.ConfigureIISIntegration();
             services.ConfigureLoggerService();
             services.ConfigureMySqlContext(Configuration);
-            services.ConfigureRepositoryWrapper();
+            services.ConfigureRepository();
+            services.ConfigureUserService();
 
             services.AddControllers();
         }
