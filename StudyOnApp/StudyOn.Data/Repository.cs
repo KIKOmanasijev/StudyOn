@@ -72,8 +72,75 @@ namespace StudyOn.Data
                         query = query.Include(include);
                 });
             return query;
-        }       
+        }
 
+        protected virtual IQueryable<Entity> GetQueryable<Entity>(
+            Expression<Func<Entity, bool>> filter = null,
+            Func<IQueryable<Entity>, IOrderedQueryable<Entity>> orderBy = null,
+            string includeProperties = null,
+            int? skip = null,
+            int? take = null)
+        where Entity : class
+        {
+            includeProperties = includeProperties ?? string.Empty;
+            IQueryable<Entity> query = _context.Set<Entity>();
+
+            if (filter != null)
+            {
+                query = query.Where(filter);
+            }
+
+            foreach (var includeProperty in includeProperties.Split
+                (new char[] { ',' }, StringSplitOptions.RemoveEmptyEntries))
+            {
+                query = query.Include(includeProperty);
+            }
+
+            if (orderBy != null)
+            {
+                query = orderBy(query);
+            }
+
+            if (skip.HasValue)
+            {
+                query = query.Skip(skip.Value);
+            }
+
+            if (take.HasValue)
+            {
+                query = query.Take(take.Value);
+            }
+
+            return query;
+        }
+        public virtual IQueryable<Entity> GetAll<Entity>(
+        Func<IQueryable<Entity>, IOrderedQueryable<Entity>> orderBy = null,
+        string includeProperties = null,
+        int? skip = null,
+        int? take = null)
+        where Entity : class
+        {
+            return GetQueryable<Entity>(null, orderBy, includeProperties, skip, take);
+        }
+
+        public virtual IEnumerable<Entity> Get<Entity>(
+        Expression<Func<Entity, bool>> filter = null,
+        Func<IQueryable<Entity>, IOrderedQueryable<Entity>> orderBy = null,
+        string includeProperties = null,
+        int? skip = null,
+        int? take = null)
+        where Entity : class
+        {
+            return GetQueryable<Entity>(filter, orderBy, includeProperties, skip, take).ToList();
+        }
+
+        public virtual Entity GetOne<Entity>(
+        Expression<Func<Entity, bool>> filter = null,
+        string includeProperties = "")
+        where Entity : class
+        {
+            return GetQueryable<Entity>(filter, null, includeProperties).SingleOrDefault();
+        }
         public TEntity Update(TEntity entity)
         {
             _dbSet.Attach(entity);

@@ -5,6 +5,8 @@ using StudyOn.Contracts.Requests;
 using StudyOn.Contracts.Responses;
 using StudyOn.Data.Responses;
 using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace StudyOn.Business.Managers
 {
@@ -53,6 +55,15 @@ namespace StudyOn.Business.Managers
         public Response<bool> JoinMatch(JoinMatchRequest request)
         {
             return AddUserMatch(request.userId, request.matchId);
+        }
+
+        public Response<List<Matches>> GetMatch(GetMatchesRequest request)
+        {
+            var response = new Response<List<Matches>>();
+            var getMatches = _repository.GetAll<Matches>().ToList();
+            response.Payload = getMatches;
+            return response;
+
         }
         public Response<bool> AddUserMatch (string userId,string matchId)
         {
