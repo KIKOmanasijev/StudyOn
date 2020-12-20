@@ -19,13 +19,21 @@ namespace StudyOn.WebAPI.Controllers
         }
 
         [HttpPost]
-        [Route("qwe")]
+        [Route("register")]
         public Response<bool> RegisterUser([FromBody] AddUserRequest request)
         {
-            request.Role = "User";
+            request.Role = 0;
             var result =_userManager.AddUser(request);
             return result;
 
+        }
+
+        [HttpGet]
+        [Route("login")]
+        public Response<bool> Login([FromBody] LoginRequest request)
+        {
+            var result = _userManager.SignInUser(request);
+            return result;
         }
     }
 }

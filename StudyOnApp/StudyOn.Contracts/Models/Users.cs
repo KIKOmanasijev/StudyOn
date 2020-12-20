@@ -7,18 +7,19 @@ namespace StudyOn.Contracts.Models
     {
         public Users()
         {
-            Matches = new HashSet<Matches>();
             Ratings = new HashSet<Ratings>();
+            UserMatches = new HashSet<UserMatches>();
         }
 
-        public decimal Id { get; set; }
+        public string Id { get; set; }
+        public string UserName { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Email { get; set; }
         public string Password { get; set; }
-        public string Role { get; set; }
+        public int Role { get; set; }
 
-        public virtual ICollection<Matches> Matches { get; set; }
         public virtual ICollection<Ratings> Ratings { get; set; }
+        public virtual ICollection<UserMatches> UserMatches { get; set; }
     }
 }

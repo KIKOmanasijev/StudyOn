@@ -1,16 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
-namespace StudyOn.Contracts.Models
-{ 
-    public partial class Matches
+namespace StudyOn.Contracts.Requests
+{
+    public class AddMatchRequest
     {
-        public Matches()
-        {
-            UserMatches = new HashSet<UserMatches>();
-        }
-
-        public string Id { get; set; }
         public decimal CourtId { get; set; }
         public short MaxPlayers { get; set; }
         public DateTime Date { get; set; }
@@ -18,8 +13,5 @@ namespace StudyOn.Contracts.Models
         public TimeSpan FinishTime { get; set; }
         public short CurrentPlayers { get; set; }
         public string Type { get; set; }
-
-        public virtual Courts Court { get; set; }
-        public virtual ICollection<UserMatches> UserMatches { get; set; }
     }
 }

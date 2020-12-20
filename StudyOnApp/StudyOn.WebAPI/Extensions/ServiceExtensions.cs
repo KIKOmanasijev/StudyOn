@@ -40,9 +40,9 @@ namespace StudyOn.WebAPI.Extensions
             services.AddDbContext<postgresContext>(o => o.UseNpgsql(connectionString));
         }
 
-        public static void ConfigureRepositoryWrapper(this IServiceCollection services)
+        public static void ConfigureRepository(this IServiceCollection services)
         {
-            services.AddScoped<IRepositoryWrapper, RepositoryWrapper>();
+            services.AddTransient(typeof(IRepository<>), typeof(Repository<>));
         }
 
         public static void ConfigureUserService(this IServiceCollection services)

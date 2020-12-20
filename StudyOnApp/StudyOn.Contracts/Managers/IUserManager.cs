@@ -7,5 +7,6 @@ namespace StudyOn.Contracts
     public interface IUserManager
     {
         Response<bool> AddUser(AddUserRequest request);
+        Response<bool> SignInUser(LoginRequest request);
     }
 }
