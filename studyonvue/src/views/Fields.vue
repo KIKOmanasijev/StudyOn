@@ -2,7 +2,7 @@
   <div class="fields">
     <Sidemenu/>
     <ListFields :fields="fields" :user="user"/>
-    <MapContainer/>
+    <MapContainer :markers="getAllMarkers()"/>
   </div>
 </template>
 
@@ -23,7 +23,7 @@ export default {
         id: 1,
         fieldName: "Игралиште Форза Каропош",
         fieldImg: "https://ading.com.mk/CMS/Upload/Referenci/tenisko-igraliste-micei-international(1).jpg",
-        location: {lat:42.0012952, lng:21.4434693},
+        location: {lat:41.9912952, lng:21.4134693},
         sport: "Football",
         rating: 5
       }, 
@@ -31,7 +31,7 @@ export default {
         id: 2,
         fieldName: "Игралиште Кисела Вода",
         fieldImg: "https://a1on.mk/wp-content/uploads/2018/04/detski-igralista-kiselavoda-3.jpg",
-        location: {lat:42.0012952, lng:21.4434693},
+        location: {lat:42.0002952, lng:21.4034693},
         sport: "Football",
         rating: 5
       }
@@ -42,6 +42,15 @@ export default {
     Sidemenu,
     ListFields,
     MapContainer  
+  },
+  methods: {
+    getAllMarkers(){
+      let markers = this.fields.map((match) => {
+        return match.location
+      });
+
+      return markers;
+    }
   }
 }
 </script>
