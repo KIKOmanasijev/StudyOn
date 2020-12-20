@@ -7,28 +7,29 @@
                 </span>
                 <input class="form-control" type="search" placeholder="Пребарувај овде" id="example-search-input">               
             </div>
+            <button v-if="user.loggedIn" class="add-match">+</button>
+        </div>       
 
-            <p class="search-result-info text-left my-5">
-                Пронајдовме <strong> 13 резултати </strong> од Вашето барање...
-            </p>
-        </div>
+        <p class="search-result-info text-left my-5">
+            Пронајдовме <strong> 13 резултати </strong> од Вашето барање...
+        </p>
 
         <div class="results">
-            <div class="match-wrapper row">
+            <div class="match-wrapper row" v-for="match in matches" v-bind:key="match.fieldName">
                 <div class="col-md-3">
-                    <img src="https://ading.com.mk/CMS/Upload/Referenci/tenisko-igraliste-micei-international(1).jpg" alt="">
+                    <img v-bind:src="match.field.fieldImg">
                 </div>
                 <div class="col-md-9">
                     <a href="#" class="match-meta">
                         <div class="match-info">
-                            <span class="sport football">Football</span>
-                            <h2>Игралиште Форза Карпош</h2>
+                            <span class="sport football">{{match.sport}}</span>
+                            <h2>{{match.field.fieldName}}</h2>
 
                             <div class="players-meta">
-                                <i class="flaticon-user-profile"></i> Уште 5 играчи
+                                <i class="flaticon-user-profile"></i> {{playersMissing(match.currentPlayers, match.maxPlayers)}}
                             </div>
                             <div class="time-meta">
-                                <i class="flaticon-search"></i> <strong>18:30</strong> 21.12.2020
+                                <i class="flaticon-search"></i> <strong>{{formatHours(match.date)}}</strong> {{formatDate(match.date)}}
                             </div>
                         </div>
                         <div class="match-actions">
@@ -37,14 +38,46 @@
                     </a>
                 </div>
             </div>
-        </div>
+    </div>
     </div>
 </template>
 
 <script>
 import('../assets/css/all.css');
 export default {
-    name: "ListMatches"
+    name: "ListMatches",
+    data(){
+        return {
+            matches: [
+                {
+                    field: {
+                        id: 1,
+                        fieldName: "Игралиште Форза Каропош",
+                        fieldImg: "https://ading.com.mk/CMS/Upload/Referenci/tenisko-igraliste-micei-international(1).jpg",
+                        location: {lat:42.0012952, lng:21.4434693}
+                    },                    
+                    sport: "Football",
+                    date: new Date(2020, 12, 25, 16, 30),
+                    maxPlayers: 10,
+                    currentPlayers: [1,2,3,4,5]
+                }
+            ],
+            user: {
+                loggedIn: false
+            }
+        }
+    },
+    methods: {
+        playersMissing(curr, maxPlayers){
+            return `Уште ${(maxPlayers)-curr.length} играчи`;
+        },
+        formatHours(date){
+            return `${date.getHours()}:${date.getMinutes()}`;
+        },
+        formatDate(date){
+            return `${date.getDate()+1}.${date.getMonth()+1}.${date.getFullYear()+1}`;
+        }
+    }
 }
 </script>
 
@@ -53,6 +86,27 @@ export default {
         padding: 50px 30px;
         flex: 0 0 35vw;
         background-color: #FCFBFF;
+    }
+
+    .search {
+        display: flex;
+        align-content: center;
+    }
+
+    .search .add-match {
+        font-size: 32px;
+        height: 70px;
+        width: 70px;
+        background: #3FE18B;
+        color: #fff;
+        border-radius: 50%;
+        border: none;
+        margin-left: 20px;
+        box-sizing: initial;
+    }
+
+    .add-match:focus {
+        outline: none;
     }
 
     .input-group {        
@@ -77,7 +131,7 @@ export default {
         color: #333;
     }
 
-    input.form-control:active, :focus {
+    input.form-control:active, input.form-control:focus {
         outline: none !important;
         border: none !important;
         background: transparent !important;
@@ -117,8 +171,8 @@ export default {
     }
 
     .match-info .sport {
-        font-size: 14px;
-        padding: 8px 30px;
+        font-size: 12px;
+        padding: 5px 30px;
         color: white;
         border-radius: 15px;
     }
@@ -137,7 +191,7 @@ export default {
         font-size: 22px;
         font-weight: 500;
         color: #444;
-        margin-top: 20px;
+        margin: 15px 0;
     }
 
     .match-info .players-meta, .time-meta {
