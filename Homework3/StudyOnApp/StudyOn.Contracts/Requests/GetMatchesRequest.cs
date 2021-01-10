@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace StudyOn.Contracts.Requests
+﻿namespace StudyOn.Contracts.Requests
 {
-    public class GetMatchesRequest
+    public class GetMatchesRequest : SortablePageableRequest
     {
-
+        public string Type { get; set; }
     }
 }

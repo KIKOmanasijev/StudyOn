@@ -1,12 +1,11 @@
-﻿using StudyOn.Contracts.Models;
-using StudyOn.Contracts.Requests;
-using StudyOn.Data.Responses;
+﻿using StudyOn.Contracts.Requests;
+using StudyOn.Contracts.Responses;
 
 namespace StudyOn.Contracts
 {
     public interface IUserManager
     {
         Response<bool> AddUser(AddUserRequest request);
-        Response<bool> SignInUser(LoginRequest request);
+        Response<LoggedInUserResponse> SignInUser(LoginRequest request);
     }
 }

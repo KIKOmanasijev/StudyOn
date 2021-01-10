@@ -1,6 +1,6 @@
 ﻿using StudyOn.Contracts.Models;
 using StudyOn.Contracts.Requests;
-using StudyOn.Data.Responses;
+using StudyOn.Contracts.Responses;
 using System.Collections.Generic;
 
 namespace StudyOn.Contracts.Managers

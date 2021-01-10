@@ -3,7 +3,6 @@ using StudyOn.Contracts.Managers;
 using StudyOn.Contracts.Models;
 using StudyOn.Contracts.Requests;
 using StudyOn.Contracts.Responses;
-using StudyOn.Data.Responses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -60,8 +59,25 @@ namespace StudyOn.Business.Managers
         public Response<List<Matches>> GetMatch(GetMatchesRequest request)
         {
             var response = new Response<List<Matches>>();
-            var getMatches = _repository.GetAll<Matches>().ToList();
-            response.Payload = getMatches;
+            var pagedResponse = new List<Matches>();
+            if (!string.IsNullOrEmpty(request.Type))
+            {
+                var getMatches = _repository.GetAll<Matches>().Where(x=>x.Type.Equals(request.Type));
+                pagedResponse = getMatches.OrderByDescending(x => x.CurrentPlayers)
+                    .Skip((request.CurrentPage - 1) * request.PageSize)
+                    .Take(request.PageSize)
+                    .ToList();
+            }
+            else
+            {
+                var getMatches = _repository.GetAll<Matches>();
+                pagedResponse = getMatches.OrderByDescending(x => x.CurrentPlayers)
+                    .Skip((request.CurrentPage - 1) * request.PageSize)
+                    .Take(request.PageSize)
+                    .ToList();
+            }
+
+            response.Payload = pagedResponse;
             return response;
 
         }

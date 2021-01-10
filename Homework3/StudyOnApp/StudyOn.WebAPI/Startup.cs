@@ -31,6 +31,7 @@ namespace StudyOn.WebAPI
             services.ConfigureRepository();
             services.ConfigureUserService();
             services.ConfigureMatchService();
+            services.ConfigureJWTAuthentication(Configuration);
 
             services.AddControllers();
         }
@@ -54,7 +55,7 @@ namespace StudyOn.WebAPI
             });
 
             app.UseRouting();
-
+            app.UseAuthentication();
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

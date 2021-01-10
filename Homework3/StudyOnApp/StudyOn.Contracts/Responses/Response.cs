@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Net;
 
-namespace StudyOn.Data.Responses
+namespace StudyOn.Contracts.Responses
 {
     /// <summary>
     ///     Base definition of the Response

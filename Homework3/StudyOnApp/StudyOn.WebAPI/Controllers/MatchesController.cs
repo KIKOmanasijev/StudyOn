@@ -1,20 +1,16 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using StudyOn.Contracts;
 using StudyOn.Contracts.Managers;
 using StudyOn.Contracts.Models;
 using StudyOn.Contracts.Requests;
 using StudyOn.Contracts.Responses;
-using StudyOn.Data.Responses;
-using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace StudyOn.WebAPI.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+
     public class MatchesController : ControllerBase
     {
         private ILoggerManager _logger;
@@ -43,7 +39,7 @@ namespace StudyOn.WebAPI.Controllers
 
         [HttpGet]
         [Route("search")]
-        public Response<List<Matches>> Matches([FromBody] GetMatchesRequest request)
+        public Response<List<Matches>> GetMatches([FromQuery] GetMatchesRequest request)
         {
             var result = _matchManager.GetMatch(request);
             return result;

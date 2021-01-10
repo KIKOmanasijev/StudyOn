@@ -1,12 +1,15 @@
-﻿using Microsoft.AspNetCore.Builder;
+﻿using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.IdentityModel.Tokens;
 using StudyOn.Business.Managers;
 using StudyOn.Contracts;
 using StudyOn.Contracts.Managers;
 using StudyOn.Data;
 using StudyOn.LoggerService;
+using System.Text;
 
 namespace StudyOn.WebAPI.Extensions
 {
@@ -53,6 +56,24 @@ namespace StudyOn.WebAPI.Extensions
         public static void ConfigureMatchService(this IServiceCollection services)
         {
             services.AddScoped<IMatchManager, MatchManager>();
+        }
+
+        public static void ConfigureJWTAuthentication(this IServiceCollection services, IConfiguration config)
+        {
+            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                .AddJwtBearer(options =>
+            {
+                options.TokenValidationParameters = new TokenValidationParameters
+                {
+                    ValidateIssuer = true,
+                    ValidateAudience = true,
+                    ValidateLifetime = true,
+                    ValidateIssuerSigningKey = true,
+                    ValidIssuer = config["Jwt:Issuer"],
+                    ValidAudience = config["Jwt:Issuer"],
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(config["Jwt:Key"]))
+                };
+            });
         }
     }
 }

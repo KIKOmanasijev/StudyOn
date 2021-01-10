@@ -2,7 +2,7 @@
 using StudyOn.Contracts;
 using StudyOn.Contracts.Managers;
 using StudyOn.Contracts.Requests;
-using StudyOn.Data.Responses;
+using StudyOn.Contracts.Responses;
 
 namespace StudyOn.WebAPI.Controllers
 {
@@ -29,9 +29,9 @@ namespace StudyOn.WebAPI.Controllers
 
         }
 
-        [HttpGet]
+        [HttpPost]
         [Route("login")]
-        public Response<bool> Login([FromBody] LoginRequest request)
+        public Response<LoggedInUserResponse> Login([FromBody] LoginRequest request)
         {
             var result = _userManager.SignInUser(request);
             return result;
