@@ -26,3 +26,17 @@ C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\o
 C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CopyComplete
 C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.dll
 C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.deps.json
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.pdb
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csprojAssemblyReference.cache
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfoInputs.cache
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfo.cs
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CoreCompileInputs.cache
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CopyComplete
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.pdb

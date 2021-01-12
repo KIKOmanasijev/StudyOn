@@ -6,3 +6,15 @@ C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.LoggerServi
 C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.csproj.CoreCompileInputs.cache
 C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.dll
 C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.pdb
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\bin\Debug\netstandard2.0\Court.LoggerService.deps.json
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\bin\Debug\netstandard2.0\Court.LoggerService.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\bin\Debug\netstandard2.0\Court.LoggerService.pdb
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\bin\Debug\netstandard2.0\Court.Contracts.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\bin\Debug\netstandard2.0\Court.Contracts.pdb
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.csprojAssemblyReference.cache
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.AssemblyInfoInputs.cache
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.AssemblyInfo.cs
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.csproj.CoreCompileInputs.cache
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.csproj.CopyComplete
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.pdb

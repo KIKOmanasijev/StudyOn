@@ -25,6 +25,25 @@
         "build": {
           "build/netstandard2.0/NETStandard.Library.targets": {}
         }
+      },
+      "NLog/4.7.6": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/NLog.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/NLog.dll": {}
+        }
+      },
+      "Court.Contracts/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/Court.Contracts.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Court.Contracts.dll": {}
+        }
       }
     }
   },
@@ -172,11 +191,51 @@
         "netstandard.library.2.0.3.nupkg.sha512",
         "netstandard.library.nuspec"
       ]
+    },
+    "NLog/4.7.6": {
+      "sha512": "mVYfNsZk6HY26/S/T3vVd2RS/1GySaeNh6bjP8uE7mKAdTENlRycQr7S4FC+I//QflXl/D/HEEugE47BDxQ5wA==",
+      "type": "package",
+      "path": "nlog/4.7.6",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/monoandroid44/NLog.dll",
+        "lib/monoandroid44/NLog.xml",
+        "lib/net35/NLog.dll",
+        "lib/net35/NLog.xml",
+        "lib/net40-client/NLog.dll",
+        "lib/net40-client/NLog.xml",
+        "lib/net45/NLog.dll",
+        "lib/net45/NLog.xml",
+        "lib/netstandard1.3/NLog.dll",
+        "lib/netstandard1.3/NLog.xml",
+        "lib/netstandard1.5/NLog.dll",
+        "lib/netstandard1.5/NLog.xml",
+        "lib/netstandard2.0/NLog.dll",
+        "lib/netstandard2.0/NLog.xml",
+        "lib/sl4/NLog.dll",
+        "lib/sl4/NLog.xml",
+        "lib/sl5/NLog.dll",
+        "lib/sl5/NLog.xml",
+        "lib/wp8/NLog.dll",
+        "lib/wp8/NLog.xml",
+        "lib/xamarinios10/NLog.dll",
+        "lib/xamarinios10/NLog.xml",
+        "nlog.4.7.6.nupkg.sha512",
+        "nlog.nuspec"
+      ]
+    },
+    "Court.Contracts/1.0.0": {
+      "type": "project",
+      "path": "../Courts.Contracts/Court.Contracts.csproj",
+      "msbuildProject": "../Courts.Contracts/Court.Contracts.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETStandard,Version=v2.0": [
-      "NETStandard.Library >= 2.0.3"
+      "Court.Contracts >= 1.0.0",
+      "NETStandard.Library >= 2.0.3",
+      "NLog >= 4.7.6"
     ]
   },
   "packageFolders": {
@@ -185,11 +244,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj",
+      "projectUniqueName": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj",
       "projectName": "Court.LoggerService",
-      "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj",
+      "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj",
       "packagesPath": "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\obj\\",
+      "outputPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dimitar.anakiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -206,7 +265,11 @@
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj": {
+              "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -224,6 +287,10 @@
             "target": "Package",
             "version": "[2.0.3, )",
             "autoReferenced": true
+          },
+          "NLog": {
+            "target": "Package",
+            "version": "[4.7.6, )"
           }
         },
         "imports": [
@@ -236,7 +303,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

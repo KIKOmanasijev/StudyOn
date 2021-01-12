@@ -1365,11 +1365,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj",
+      "projectUniqueName": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj",
       "projectName": "StudyOn.LoggerService",
-      "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj",
+      "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj",
       "packagesPath": "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\obj\\",
+      "outputPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dimitar.anakiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1387,8 +1387,8 @@
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
-              "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
+            "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
+              "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
             }
           }
         }
@@ -1424,7 +1424,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -185,11 +185,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj",
+      "projectUniqueName": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj",
       "projectName": "Court.Contracts",
-      "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj",
+      "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj",
       "packagesPath": "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\obj\\",
+      "outputPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dimitar.anakiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -236,7 +236,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

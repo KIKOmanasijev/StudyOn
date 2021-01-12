@@ -6,3 +6,12 @@ C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Contracts\o
 C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.csproj.CoreCompileInputs.cache
 C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.dll
 C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.pdb
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.Contracts\bin\Debug\netstandard2.0\Court.Contracts.deps.json
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.Contracts\bin\Debug\netstandard2.0\Court.Contracts.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.Contracts\bin\Debug\netstandard2.0\Court.Contracts.pdb
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.csprojAssemblyReference.cache
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.AssemblyInfoInputs.cache
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.AssemblyInfo.cs
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.csproj.CoreCompileInputs.cache
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.pdb

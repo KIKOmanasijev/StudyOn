@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "runznW7fxxZMh7DgbG36RghKp5TRogHohHMpldZPnfR5Ara3F21EdXyjkr2b/yir1lN81KtbhhDsDSXv2Yw6UA==",
+  "dgSpecHash": "uauciiUTC5ByUqpmj/bxUYc4Bx0dDK1rxmK/+uaYzsyABOWmkbc3ujMmProTUKv1rXWyyUqoQ84wltAXkvW3RQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\Courts.WebAPI\\Court.WebAPI.csproj",
+  "projectFilePath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.WebAPI\\Court.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
@@ -24,6 +24,7 @@
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\microsoft.extensions.options\\3.1.4\\microsoft.extensions.options.3.1.4.nupkg.sha512",
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\microsoft.extensions.primitives\\3.1.4\\microsoft.extensions.primitives.3.1.4.nupkg.sha512",
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\microsoft.visualstudio.azure.containers.tools.targets\\1.10.9\\microsoft.visualstudio.azure.containers.tools.targets.1.10.9.nupkg.sha512",
+    "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\nlog\\4.7.6\\nlog.4.7.6.nupkg.sha512",
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\npgsql\\4.1.3.1\\npgsql.4.1.3.1.nupkg.sha512",
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\3.1.4\\npgsql.entityframeworkcore.postgresql.3.1.4.nupkg.sha512",
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\system.collections.immutable\\1.7.1\\system.collections.immutable.1.7.1.nupkg.sha512",

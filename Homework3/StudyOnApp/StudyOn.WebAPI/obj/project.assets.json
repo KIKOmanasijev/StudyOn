@@ -4574,11 +4574,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
+      "projectUniqueName": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
       "projectName": "StudyOn.WebAPI",
-      "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
+      "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
       "packagesPath": "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\obj\\",
+      "outputPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dimitar.anakiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4596,14 +4596,14 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj": {
-              "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj"
+            "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj": {
+              "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj"
             },
-            "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
-              "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
+            "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
+              "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
             },
-            "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj": {
-              "projectPath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj"
+            "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj": {
+              "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj"
             }
           }
         }
@@ -4651,7 +4651,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

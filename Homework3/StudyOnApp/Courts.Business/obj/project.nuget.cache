@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "vWkRbTBfPhaQ2k4o7GXcJ+KU2sY7zK6GLsDu19AB/mrIL0GLFSOFkL94YLWFtHm2+pC6qGBxHUqJgQh6c7xJ/g==",
+  "dgSpecHash": "/rB+VEzuFh1tFowqX05x3GMXSIttY0jwqwGcWfFQqNXumnNk/NjrY0OGlGy6b6zWNkaKXYPoLKt40t7p8ZcDxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj",
+  "projectFilePath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",
