@@ -9,9 +9,9 @@ namespace StudyOn.Data
 {
     public class Repository<TEntity> : IRepository<TEntity> where TEntity : class
     {
-        protected readonly postgresContext _context;
+        protected readonly UsersDbContext _context;
         protected readonly DbSet<TEntity> _dbSet;
-        public Repository(postgresContext context)
+        public Repository(UsersDbContext context)
         {
             _context = context;
             _dbSet = _context.Set<TEntity>();

@@ -51,11 +51,6 @@ namespace StudyOn.Business.Managers
             }
         }
 
-        public Response<bool> JoinMatch(JoinMatchRequest request)
-        {
-            return AddUserMatch(request.userId, request.matchId);
-        }
-
         public Response<List<Matches>> GetMatch(GetMatchesRequest request)
         {
             var response = new Response<List<Matches>>();
@@ -81,17 +76,27 @@ namespace StudyOn.Business.Managers
             return response;
 
         }
-        public Response<bool> AddUserMatch (string userId,string matchId)
+        public Response<bool> JoinMatch(JoinMatchRequest request)
+        {
+            return AddUserMatch(request.userId, request.matchId);
+        }
+        public Response<bool> AddUserMatch(string userId, string matchId)
         {
             var response = new Response<bool>();
+            Guid id = Guid.NewGuid();
+
             var userMatch = new UserMatches
             {
                 UserId = userId,
-                MatchId = matchId
+                MatchId = matchId,
+                Id = id.ToString()
             };
             try
             {
                 var result = _umRepository.Add(userMatch);
+                var updateMatch = _repository.Find(x => x.Id == matchId).FirstOrDefault();
+                updateMatch.CurrentPlayers++;
+                _repository.Update(updateMatch);
                 response.Payload = true;
                 response.Status = System.Net.HttpStatusCode.OK;
             }

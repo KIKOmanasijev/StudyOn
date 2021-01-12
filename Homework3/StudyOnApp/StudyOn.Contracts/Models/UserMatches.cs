@@ -1,10 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace StudyOn.Contracts.Models
+﻿namespace StudyOn.Contracts.Models
 {
     public partial class UserMatches
     {
+        public string Id { get; set; }
         public string UserId { get; set; }
         public string MatchId { get; set; }
 

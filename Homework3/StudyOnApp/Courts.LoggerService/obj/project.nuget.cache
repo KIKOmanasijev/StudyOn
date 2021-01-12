@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "VqQSCFzwN9lj6kn7klvk2pfSDEdeHJOjgZm6rhVtqq0iUO4PTFRB9czuHaI2V0nUnUn9jMXfK7WxqnYtSIjz2w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dimitar.anakiev\\Desktop\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

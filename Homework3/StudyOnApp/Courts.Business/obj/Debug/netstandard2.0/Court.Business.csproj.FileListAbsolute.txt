@@ -1,0 +1,14 @@
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Business\bin\Debug\netstandard2.0\Court.Business.deps.json
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Business\bin\Debug\netstandard2.0\Court.Business.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Business\bin\Debug\netstandard2.0\Court.Business.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Business\bin\Debug\netstandard2.0\Court.Contracts.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Business\bin\Debug\netstandard2.0\Court.Data.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Business\bin\Debug\netstandard2.0\Court.Contracts.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Business\bin\Debug\netstandard2.0\Court.Data.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.csprojAssemblyReference.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.AssemblyInfoInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.AssemblyInfo.cs
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.csproj.CoreCompileInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.csproj.CopyComplete
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.pdb

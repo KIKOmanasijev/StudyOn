@@ -41,7 +41,7 @@ namespace StudyOn.WebAPI.Extensions
         public static void ConfigureMySqlContext(this IServiceCollection services, IConfiguration config)
         {
             var connectionString = config["mysqlconnection:connectionString"];
-            services.AddDbContext<postgresContext>(o => o.UseNpgsql(connectionString));
+            services.AddDbContext<UsersDbContext>(o => o.UseNpgsql(connectionString));
         }
 
         public static void ConfigureRepository(this IServiceCollection services)

@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-
-namespace StudyOn.Contracts.Models
+﻿namespace StudyOn.Contracts.Models
 {
     public partial class Ratings
     {

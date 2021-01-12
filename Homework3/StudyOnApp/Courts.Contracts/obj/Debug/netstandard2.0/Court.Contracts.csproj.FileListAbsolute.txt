@@ -1,0 +1,8 @@
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Contracts\bin\Debug\netstandard2.0\Court.Contracts.deps.json
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Contracts\bin\Debug\netstandard2.0\Court.Contracts.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Contracts\bin\Debug\netstandard2.0\Court.Contracts.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.AssemblyInfoInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.AssemblyInfo.cs
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.pdb

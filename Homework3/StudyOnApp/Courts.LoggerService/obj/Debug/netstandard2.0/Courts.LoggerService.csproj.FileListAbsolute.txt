@@ -1,0 +1,9 @@
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\bin\Debug\netstandard2.0\Courts.LoggerService.deps.json
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\bin\Debug\netstandard2.0\Courts.LoggerService.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\bin\Debug\netstandard2.0\Courts.LoggerService.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Courts.LoggerService.csprojAssemblyReference.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Courts.LoggerService.AssemblyInfoInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Courts.LoggerService.AssemblyInfo.cs
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Courts.LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Courts.LoggerService.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Courts.LoggerService.pdb
