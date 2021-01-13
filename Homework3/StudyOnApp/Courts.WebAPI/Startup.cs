@@ -28,6 +28,9 @@ namespace Courts.WebAPI
             services.ConfigureIISIntegration();
             services.ConfigureLoggerService();
             services.ConfigureMySqlContext(Configuration);
+            services.ConfigureCourtsService();
+            services.ConfigureRepository();
+            services.ConfigureJWTAuthentication(Configuration);
 
             services.AddControllers();
         }

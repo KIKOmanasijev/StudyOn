@@ -10,7 +10,7 @@ namespace StudyOn.WebAPI.Controllers
 {
     [Route("[controller]")]
     [ApiController]
-
+    [Authorize]
     public class MatchesController : ControllerBase
     {
         private ILoggerManager _logger;

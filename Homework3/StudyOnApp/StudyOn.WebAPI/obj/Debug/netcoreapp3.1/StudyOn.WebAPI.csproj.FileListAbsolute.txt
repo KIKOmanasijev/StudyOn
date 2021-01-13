@@ -166,9 +166,9 @@ C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\obj
 C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\obj\Debug\netcoreapp3.1\StudyOn.WebAPI.dll
 C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\obj\Debug\netcoreapp3.1\StudyOn.WebAPI.pdb
 C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\obj\Debug\netcoreapp3.1\StudyOn.WebAPI.genruntimeconfig.cache
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\nlog.config
 C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\appsettings.Development.json
 C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\appsettings.json
-C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\nlog.config
 C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\libman.json
 C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\StudyOn.WebAPI.exe
 C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\StudyOn.WebAPI.deps.json

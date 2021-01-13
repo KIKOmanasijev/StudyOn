@@ -99,3 +99,12 @@ C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.WebAPI\obj\Debug\netcoreapp3.1\C
 C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.WebAPI\obj\Debug\netcoreapp3.1\Court.WebAPI.dll
 C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.WebAPI\obj\Debug\netcoreapp3.1\Court.WebAPI.pdb
 C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.WebAPI\obj\Debug\netcoreapp3.1\Court.WebAPI.genruntimeconfig.cache
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Logging.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.WebAPI\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.WebAPI\bin\Debug\netcoreapp3.1\nlog.config
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.WebAPI\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
