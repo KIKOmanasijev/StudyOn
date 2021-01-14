@@ -10,6 +10,7 @@ namespace StudyOn.WebAPI.Controllers
 {
     [Route("[controller]")]
     [ApiController]
+    [AllowAnonymous]
     [Authorize]
     public class MatchesController : ControllerBase
     {

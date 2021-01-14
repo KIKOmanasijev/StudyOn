@@ -4,16 +4,16 @@
         :center="{lat:42.0012952, lng:21.4434693}"
         :zoom="13"
         v-bind:options="mapStyles"
-        style="width: 100%; height: 100%"
+        style="width: 100%; height: 100%" :class="{zindex: zindex}"
         >
-        <GmapMarker
+        <!-- <GmapMarker
             :key="index"
             v-for="(m, index) in markers"
             :position="{lat: m.lat, lng: m.lng}"
             :clickable="true"
             :draggable="true"
             @click="center=m.position"
-        />
+        /> -->
         </GmapMap>
     </div>
 </template>
@@ -129,14 +129,17 @@ export default {
         }
     },
     props: {
-        markers: {
+        // markers: {
+        //     required: true
+        // }
+        zindex: {
             required: true
         }
     }
 }
 </script>
 <style>
-#map {
-    flex: 1;
-}
+    .zindex {
+        z-index: -1;
+    }
 </style>

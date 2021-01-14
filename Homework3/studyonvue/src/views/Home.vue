@@ -1,8 +1,14 @@
 <template>
   <div class="home">
     <Sidemenu/>
-    <ListMatches :matches="matches" :user="user"/>
-    <MapContainer :markers="getAllMarkers()"/>
+    <ListMatches :matches="getMatches" :user="user"/>
+
+    <BaseDialog v-if="modal">
+      <template #title><h2>Add new match</h2></template>
+      <template #content><MatchForm/></template>
+    </BaseDialog>
+    <MapContainer :zindex="zindex"/>
+    <!-- <MapContainer :markers="getAllMarkers()"/> -->
   </div>
 </template>
 
@@ -10,6 +16,8 @@
 import Sidemenu from "../components/Sidemenu";
 import ListMatches from "../components/ListMatches";
 import MapContainer from "../components/MapContainer";
+import MatchForm from "../components/MatchForm";
+import axios from "axios";
 
 export default {
   name: 'Home',
@@ -18,55 +26,89 @@ export default {
     user: {
       loggedIn: true
     },
-    matches: [
-      {
-        field: {
-            id: 1,
-            fieldName: "Игралиште Форза Каропош",
-            fieldImg: "https://ading.com.mk/CMS/Upload/Referenci/tenisko-igraliste-micei-international(1).jpg",
-            location: {lat:42.0012952, lng:21.4434693}
-        },                    
-        sport: "Football",
-        date: new Date(2020, 12, 25, 16, 30),
-        maxPlayers: 10,
-        currentPlayers: [1,2,3,4,5]
-      },
-      {
-        field: {
-            id: 2,
-            fieldName: "К-Спорт Сала",
-            fieldImg: "https://ading.com.mk/CMS/Upload/Referenci/tenisko-igraliste-micei-international(1).jpg",
-            location: {lat:42.0015952, lng:21.416393}
-        },                    
-        sport: "Football",
-        date: new Date(2020, 12, 25, 16, 30),
-        maxPlayers: 10,
-        currentPlayers: [1,2,3,4,5]
-      }
-    ],
+    matches: [],
+    modal: false
    }
+  },
+  mounted(){
+    this.getAllMatches();
   },
   components: {
     Sidemenu,
     ListMatches,
-    MapContainer  
+    MapContainer,
+    MatchForm  
   },
   created(){
-    this.getAllMarkers()
+    // this.getAllMarkers()
+  },
+  provide(){
+    return {      
+     getAllMatches: this.getAllMatchesBySport,
+     toggleModal: this.toggleModal,
+     addMatch: this.addMatch
+    }
+  },
+  computed: {
+    getMatches(){
+      return this.matches
+    },
+    zindex(){
+      return this.modal;
+    }
   },
   methods: {
-    getAllMarkers(){
-      let markers = this.matches.map((match) => {
-        return match.field.location
-      });
-
-      return markers;
+    addMatch(data){
+      let match = {
+        'UserId': data.userId,
+        'CourtId': data.courtId,
+        'MaxPlayers': data.maxPlayers,
+        'CurrentPlayers': 1,
+        'Type': data.type,
+        'StartTime': data.startTime,
+        'EndTime': data.endTime
+      }
+      // console.log(match);
+      axios.post('https://localhost:5001/matches/create', JSON.stringify(match), {
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        data: JSON.stringify(match)
+      }).then(res => console.log(res)).catch(err => console.log(err));
+      this.getAllMatches();
+      this.toggleModal();
+    },
+    getAllMatches(){
+      axios.get('https://localhost:5001/matches/search?CurrentPage=1&PageSize=20')
+      .then(res => {
+        this.matches = res.data.payload;
+      })
+    },
+    getAllMatchesBySport(sport){
+      if (sport.trim() == ""){
+        this.getAllMatches();
+        return;
+      }
+      axios.get('https://localhost:5001/matches/search?CurrentPage=1&PageSize=20&Type='+sport)
+      .then(res => {
+        this.matches = res.data.payload;
+      })
+    },
+    toggleModal(){
+      this.modal = !this.modal;
     }
+    // getAllMarkers(){
+    //   let markers = this.matches.map((match) => {
+    //     return match.field.location
+    //   });
+
+    //   return markers;
+    // }
   }
 }
 </script>
 
-<style scoped>
+<style >
   .home {
      font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -78,5 +120,13 @@ export default {
     height: 100vh;
 
     display: flex;
+  }
+
+  #map {
+    flex: 1;
+  }
+
+  .z-index-1 {
+    z-index: -1;
   }
 </style>

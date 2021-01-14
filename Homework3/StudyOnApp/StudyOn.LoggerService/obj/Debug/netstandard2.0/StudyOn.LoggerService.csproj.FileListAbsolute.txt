@@ -58,3 +58,15 @@ C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstan
 C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CopyComplete
 C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.dll
 C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.deps.json
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csprojAssemblyReference.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfoInputs.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfo.cs
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CoreCompileInputs.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CopyComplete
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.pdb

@@ -1,35 +1,48 @@
 <template>
     <div class="list-panel">
         <div class="search">
-           <div class="input-group">
-                <span class="input-group-prepend">
-                    <div class="input-group-text border-none"><i class="fa fa-search"></i></div>
-                </span>
-                <input class="form-control" type="search" placeholder="Пребарувај овде" id="example-search-input">               
+            <div class="wrapper">
+                <div class="input-group">
+                    <span class="input-group-prepend">
+                        <select class="form-control" name="searchSport" v-model="searchSport">
+                            <option value="">Сите</option>   
+                            <option value="Football">Футбал</option>   
+                            <option value="Footsal">Футсал</option>
+                            <option value="Basketball">Koшарка</option>
+                            <option value="Tennis">Тенис</option>
+                            <option value="Handball">Ракомет</option>
+                            <option value="Volleyball">Одбојка</option>
+                        </select>
+                        <!-- <div class="input-group-text border-none"><i class="fa fa-search"></i></div> -->
+                    </span>
+                
+                    <!-- <input class="form-control" type="search" placeholder="Пребарувај овде" id="example-search-input">                -->
+                </div>
+                <button class="search-button" type="button" @click="searchMatch">Пребарувај</button>
             </div>
-            <button v-if="user.loggedIn" class="add-match">+</button>
+            <button v-if="user.loggedIn" class="add-match" @click="toggleModal">+</button>
         </div>       
 
         <p class="search-result-info text-left my-5">
-            Пронајдовме <strong> 13 резултати </strong> од Вашето барање...
+            Пронајдовме <strong> {{matches.length}} </strong> од Вашето барање...
         </p>
 
         <div class="results">
-            <div class="match-wrapper row" v-for="match in matches" v-bind:key="match.fieldName">
+            <div class="match-wrapper row" v-for="match in matches" v-bind:key="match.id">
                 <div class="col-md-3">
-                    <img v-bind:src="match.field.fieldImg">
+                    <img v-bind:src="'https://via.placeholder.com/500x500'">
                 </div>
                 <div class="col-md-9">
                     <a href="#" class="match-meta">
                         <div class="match-info">
-                            <span class="sport football">{{match.sport}}</span>
-                            <h2>{{match.field.fieldName}}</h2>
+                            <span class="sport" :class="match.type">{{match.type}}</span>
+                            <h2>{{match.fieldName ? match.fieldName : 'Игралиште без име'}}</h2>
 
                             <div class="players-meta">
                                 <i class="flaticon-user-profile"></i> {{playersMissing(match.currentPlayers, match.maxPlayers)}}
                             </div>
                             <div class="time-meta">
-                                <i class="flaticon-search"></i> <strong>{{formatHours(match.date)}}</strong> {{formatDate(match.date)}}
+                                <i class="flaticon-search"></i> <strong>{{formatHours(match.startTime)}}</strong> {{formatDate(match.startTime)}}
                             </div>
                         </div>
                         <div class="match-actions">
@@ -46,6 +59,11 @@
 import('../assets/css/all.css');
 export default {
     name: "ListMatches",
+    data(){
+        return {
+            searchSport: ""
+        }        
+    },
     props: {
         matches: {
             type: Array
@@ -54,21 +72,32 @@ export default {
             type: Object
         }
     },
+    inject: ['getAllMatches', 'toggleModal'],
     methods: {
+        searchMatch(){
+            this.getAllMatches(this.searchSport)
+        },
         playersMissing(curr, maxPlayers){
-            return `Уште ${(maxPlayers)-curr.length} играчи`;
+            return `Уште ${(maxPlayers)-curr} играчи`;
         },
         formatHours(date){
-            return `${date.getHours()}:${date.getMinutes()}`;
+            let tmp = new Date(date+"Z");
+            return `${tmp.getHours()}:${tmp.getMinutes()}`;
         },
         formatDate(date){
-            return `${date.getDate()+1}.${date.getMonth()+1}.${date.getFullYear()+1}`;
+            let tmp = new Date(date+"Z");
+            return `${tmp.getDate()+1}.${tmp.getMonth()+1}.${tmp.getFullYear()+1}`;
         }
     }
 }
 </script>
 
-<style>
+<style scoped>
+    .form-control {
+        background: transparent;
+        border:none;
+    }
+    
     .list-panel {
         padding: 50px 30px;
         flex: 0 0 35vw;
@@ -77,6 +106,7 @@ export default {
 
     .search {
         display: flex;
+        justify-content: space-between;
         align-content: center;
     }
 
@@ -89,7 +119,6 @@ export default {
         border-radius: 50%;
         border: none;
         margin-left: 20px;
-        box-sizing: initial;
     }
 
     .add-match:focus {
@@ -100,10 +129,10 @@ export default {
         font-size: 18px;
         font-weight: lighter;
         background: #ECEBF8;
-        width: 100%;
         padding: 15px 25px;
         border-radius: 10px;
         border: none;
+        width: auto;
     }
 
     input.form-control {
@@ -168,8 +197,16 @@ export default {
         border-radius: 15px;
     }
 
-    .match-info .sport.football {
+    .match-info .sport.Football {
         background: #3FE18B;
+    }
+
+    .match-info .sport.Basketball {
+        background: orange;
+    }
+
+    .match-info .sport.Handball {
+        background: #1fa9ff;
     }
 
     .match-meta {
@@ -214,5 +251,20 @@ export default {
         align-items: center;
         justify-content: center;
         border-radius: 50%;
+    }
+
+    .form-control {
+        padding: .375rem 2rem
+    }
+    .wrapper {
+        display: flex;
+    }
+    .search-button {
+        border: none;
+        border-radius: 15px;
+        background: #999;
+        color: white;
+        margin-left: 5px;
+        padding: 0 15px;
     }
 </style>

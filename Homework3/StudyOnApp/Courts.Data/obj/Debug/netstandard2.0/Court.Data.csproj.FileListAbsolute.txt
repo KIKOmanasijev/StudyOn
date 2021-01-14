@@ -22,3 +22,15 @@ C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.Data\obj\Debug\netstandard2.0\Co
 C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.Data\obj\Debug\netstandard2.0\Court.Data.csproj.CopyComplete
 C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.Data\obj\Debug\netstandard2.0\Court.Data.dll
 C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.Data\obj\Debug\netstandard2.0\Court.Data.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.Data\bin\Debug\netstandard2.0\Court.Data.deps.json
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.Data\bin\Debug\netstandard2.0\Court.Data.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.Data\bin\Debug\netstandard2.0\Court.Data.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.Data\bin\Debug\netstandard2.0\Court.Contracts.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.Data\bin\Debug\netstandard2.0\Court.Contracts.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.Data\obj\Debug\netstandard2.0\Court.Data.csprojAssemblyReference.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.Data\obj\Debug\netstandard2.0\Court.Data.AssemblyInfoInputs.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.Data\obj\Debug\netstandard2.0\Court.Data.AssemblyInfo.cs
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.Data\obj\Debug\netstandard2.0\Court.Data.csproj.CoreCompileInputs.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.Data\obj\Debug\netstandard2.0\Court.Data.csproj.CopyComplete
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.Data\obj\Debug\netstandard2.0\Court.Data.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.Data\obj\Debug\netstandard2.0\Court.Data.pdb

@@ -9,6 +9,7 @@ using System.Security.Claims;
 namespace Court.WebAPI.Controllers
 {
     [Route("[controller]")]
+    [AllowAnonymous]
     [ApiController]
     public class CourtsController : ControllerBase
     {

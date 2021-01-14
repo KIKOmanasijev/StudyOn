@@ -18,3 +18,15 @@ C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstand
 C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.csproj.CopyComplete
 C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.dll
 C:\Projects\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\bin\Debug\netstandard2.0\Court.LoggerService.deps.json
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\bin\Debug\netstandard2.0\Court.LoggerService.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\bin\Debug\netstandard2.0\Court.LoggerService.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\bin\Debug\netstandard2.0\Court.Contracts.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\bin\Debug\netstandard2.0\Court.Contracts.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.csprojAssemblyReference.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.AssemblyInfoInputs.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.AssemblyInfo.cs
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.csproj.CoreCompileInputs.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.csproj.CopyComplete
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\Courts.LoggerService\obj\Debug\netstandard2.0\Court.LoggerService.pdb

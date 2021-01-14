@@ -8,7 +8,7 @@
 </template>
 
 <script>
-
+import axios from 'axios';
 
 export default {
   name: 'App',
@@ -22,33 +22,12 @@ export default {
       user: {
         loggedIn: true
       },
-      matches: [
-        {
-              field: {
-                  id: 1,
-                  fieldName: "Игралиште Форза Каропош",
-                  fieldImg: "https://ading.com.mk/CMS/Upload/Referenci/tenisko-igraliste-micei-international(1).jpg",
-                  location: {lat:42.0012952, lng:21.4434693}
-              },                    
-              sport: "Football",
-              date: new Date(2020, 12, 25, 16, 30),
-              maxPlayers: 10,
-              currentPlayers: [1,2,3,4,5]
-          },
-          {
-              field: {
-                  id: 2,
-                  fieldName: "К-Спорт Сала",
-                  fieldImg: "https://ading.com.mk/CMS/Upload/Referenci/tenisko-igraliste-micei-international(1).jpg",
-                  location: {lat:42.5012952, lng:21.484693}
-              },                    
-              sport: "Football",
-              date: new Date(2020, 12, 25, 16, 30),
-              maxPlayers: 10,
-              currentPlayers: [1,2,3,4,5]
-          }
-      ],
+      matches: []
     }
+  },
+  mounted(){
+     axios.get('https://localhost:5001/matches/search?CurrentPage=1&PageSize=20')
+      .then(res => this.matches = res.data.payload)
   }
 }
 </script>

@@ -63,7 +63,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .list-panel {
         padding: 50px 30px;
         flex: 0 0 35vw;
