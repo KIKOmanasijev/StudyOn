@@ -13,12 +13,18 @@ namespace StudyOn.Business.Managers
     {
         private readonly IRepository<Matches> _repository;
         private readonly IRepository<UserMatches> _umRepository;
+        private readonly IRepository<Courts> _courtsRepository;
+        private readonly IUserManager _userManager;
 
         public MatchManager(IRepository<Matches> repository,
-            IRepository<UserMatches> umRepository)
+            IRepository<UserMatches> umRepository,
+            IUserManager userManager,
+            IRepository<Courts> courtsRepository)
         {
             _repository = repository;
             _umRepository = umRepository;
+            _userManager = userManager;
+            _courtsRepository = courtsRepository;
         }
         public Response<bool> AddMatch(AddMatchRequest request)
         {
@@ -51,7 +57,7 @@ namespace StudyOn.Business.Managers
             }
         }
 
-        public Response<List<Matches>> GetMatch(GetMatchesRequest request)
+        public Response<List<Matches>> GetMatches(GetMatchesRequest request)
         {
             var response = new Response<List<Matches>>();
             var pagedResponse = new List<Matches>();
@@ -112,6 +118,31 @@ namespace StudyOn.Business.Managers
             return response;
         }
 
+        public Response<MatchDetails> GetMatch(GetMatchDetailsRequest request)
+        {
+            var response = new Response<MatchDetails>();
+            var getMatch = _repository.GetOne<Matches>(x=>x.Id==request.MatchId, includeProperties: $"{nameof(Matches.UserMatches)}");
+            var players = _userManager.ToUserInfo(getMatch.UserMatches);
+            var court = _courtsRepository.Find(x => x.Id == getMatch.CourtId).FirstOrDefault();
+            var matchDetails = new MatchDetails()
+            {
+                MatchId = getMatch.Id,
+                CourtName = court.Name,
+                Lat = court.Lat,
+                Lng = court.Lng,
+                MaxPlayers = getMatch.MaxPlayers,
+                CurrentPlayers =getMatch.CurrentPlayers,
+                Type = getMatch.Type,
+                StartTime = getMatch.StartTime,
+                EndTime = getMatch.EndTime,
+                Players = players
+            };
 
+            response.Payload = matchDetails;
+            response.Status = System.Net.HttpStatusCode.OK;
+
+            return response;
+
+        }
     }
 }
