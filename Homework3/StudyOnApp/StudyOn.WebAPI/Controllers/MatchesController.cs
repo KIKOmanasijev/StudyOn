@@ -39,7 +39,17 @@ namespace StudyOn.WebAPI.Controllers
 
         [HttpGet]
         [Route("search")]
+        [AllowAnonymous]
         public Response<List<Matches>> GetMatches([FromQuery] GetMatchesRequest request)
+        {
+            var result = _matchManager.GetMatches(request);
+            return result;
+        }
+
+        [HttpGet]
+        [Route("{matchId}")]
+        [AllowAnonymous]
+        public Response<MatchDetails> GetMatch([FromHeader] GetMatchDetailsRequest request)
         {
             var result = _matchManager.GetMatch(request);
             return result;

@@ -5,6 +5,7 @@ using StudyOn.Contracts.Models;
 using StudyOn.Contracts.Requests;
 using StudyOn.Contracts.Responses;
 using System;
+using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
 using System.Security.Claims;
@@ -114,6 +115,25 @@ namespace StudyOn.Business.Managers
             {
                 throw new Exception("Error in base64Encode" + ex.Message);
             }
+        }
+
+        public List<UserInfo> ToUserInfo(ICollection<UserMatches> userMatches)
+        {
+            var response = new List<UserInfo>();
+            var userMatchesIds = userMatches.Select(x => x.UserId).ToList();
+            userMatchesIds.ForEach(x =>
+            {
+                var user = _repository.Find(y => y.Id == x).FirstOrDefault();
+                var userInfo = new UserInfo
+                {
+                    UserName = user.UserName,
+                    FirstName = user.FirstName,
+                    LastName = user.LastName,
+                    Email = user.Email
+                };
+                response.Add(userInfo);
+            });
+            return response;
         }
     }
 }
