@@ -1575,23 +1575,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kiko\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj",
+      "projectUniqueName": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj",
       "projectName": "StudyOn.Business",
-      "projectPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj",
-      "packagesPath": "C:\\Users\\Kiko\\.nuget\\packages\\",
-      "outputPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\obj\\",
+      "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj",
+      "packagesPath": "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Kiko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dimitar.anakiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1599,17 +1595,18 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {},
+        "https://pkgs.dev.azure.com/ITLexternal/05272a44-ea8f-48b0-a185-4fc9992975b6/_packaging/Verona/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
-              "projectPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
+            "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
+              "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
             },
-            "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {
-              "projectPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj"
+            "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {
+              "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj"
             }
           }
         }
