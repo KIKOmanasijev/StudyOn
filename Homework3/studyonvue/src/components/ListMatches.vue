@@ -20,7 +20,7 @@
                 </div>
                 <button class="search-button" type="button" @click="searchMatch">Пребарувај</button>
             </div>
-            <button v-if="user.loggedIn" class="add-match" @click="toggleModal">+</button>
+            <button v-if="$store.state.loggedUser" class="add-match" @click="toggleModal">+</button>
         </div>       
 
         <p class="search-result-info text-left my-5">
@@ -57,6 +57,7 @@
 
 <script>
 import('../assets/css/all.css');
+import Swal from 'sweetalert2'
 export default {
     name: "ListMatches",
     data(){
@@ -72,7 +73,7 @@ export default {
             type: Object
         }
     },
-    inject: ['getAllMatches', 'toggleModal'],
+    inject: ['getAllMatches'],
     methods: {
         searchMatch(){
             this.getAllMatches(this.searchSport)
@@ -87,6 +88,32 @@ export default {
         formatDate(date){
             let tmp = new Date(date+"Z");
             return `${tmp.getDate()+1}.${tmp.getMonth()+1}.${tmp.getFullYear()+1}`;
+        },
+        toggleModal(){
+            Swal.fire({
+                title: 'Додај натпревар',
+                icon: 'warning',
+                confirmButtonText: 'Додај',
+                confirmButtonColor: '#3FE18B',
+                showCancelButton: true,
+                cancelButtonText: 'Откажи',
+                html: '<input id="swal-input1" type="text" class="swal2-input" placeholder="Име на натпревар">' +
+                      '<input id="swal-input2" type="number" class="swal2-input" placeholder="Потребни играчи" style="max-width: 100%">' +
+                      `<select id="swal-input3" class="swal2-input swal2-select" style="max-width: 100%; display: flex;">
+                        <option value="" disabled="">Избери Спорт</option>
+                        <option value="apples">Футбал</option>
+                        <option value="bananas">Кошарка</option>
+                        <option value="grapes">Ракомет</option>
+                        <option value="oranges">Футсал</option>
+                        <option value="potato">Одбојка</option>
+                        </select>
+                        <input id="swal-input4" type="datetime-local" class="swal2-input">
+                        `
+                      ,
+            }).then((res) => {
+                //TODO add match
+                console.log(res)
+            })
         }
     }
 }

@@ -2,7 +2,7 @@
   <div class="fields">
     <Sidemenu/>
     <ListFields :fields="fields" :user="user"/>
-    <MapContainer :zindex="true"/>
+    <MapContainer/>
   </div>
 </template>
 

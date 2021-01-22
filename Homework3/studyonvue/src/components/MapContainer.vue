@@ -4,7 +4,7 @@
         :center="{lat:42.0012952, lng:21.4434693}"
         :zoom="13"
         v-bind:options="mapStyles"
-        style="width: 100%; height: 100%" :class="{zindex: zindex}"
+        style="width: 100%; height: 100%"
         >
         <!-- <GmapMarker
             :key="index"
@@ -132,9 +132,6 @@ export default {
         // markers: {
         //     required: true
         // }
-        zindex: {
-            required: true
-        }
     }
 }
 </script>

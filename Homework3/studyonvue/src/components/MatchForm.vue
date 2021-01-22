@@ -31,7 +31,7 @@
         </div>
 
         <button class="btn btn-primary" @click="createMatch">Save</button>
-        <button class="btn btn-secondary" @click="toggleModal">Cancel</button>
+        <button class="btn btn-secondary">Cancel</button>
     </div>
 </template>
 
@@ -47,7 +47,7 @@ export default {
             endTime: null
         }
     },
-    inject: ['toggleModal', 'addMatch'],
+    inject: ['addMatch'],
     methods: {
         createMatch(){
             this.addMatch({

@@ -1,13 +1,13 @@
 <template>
   <div class="home">
     <Sidemenu/>
-    <ListMatches :matches="getMatches" :user="user"/>
+    <ListMatches :matches="$store.state.matches" :user="user"/>
 
-    <BaseDialog v-if="modal">
+    <!-- <BaseDialog v-if="modal">
       <template #title><h2>Add new match</h2></template>
       <template #content><MatchForm/></template>
-    </BaseDialog>
-    <MapContainer :zindex="zindex"/>
+    </BaseDialog> -->
+    <MapContainer/>
     <!-- <MapContainer :markers="getAllMarkers()"/> -->
   </div>
 </template>
@@ -16,7 +16,6 @@
 import Sidemenu from "../components/Sidemenu";
 import ListMatches from "../components/ListMatches";
 import MapContainer from "../components/MapContainer";
-import MatchForm from "../components/MatchForm";
 import axios from "axios";
 
 export default {
@@ -27,7 +26,7 @@ export default {
       loggedIn: true
     },
     matches: [],
-    modal: false
+    logged: true
    }
   },
   mounted(){
@@ -37,7 +36,6 @@ export default {
     Sidemenu,
     ListMatches,
     MapContainer,
-    MatchForm  
   },
   created(){
     // this.getAllMarkers()
@@ -45,16 +43,13 @@ export default {
   provide(){
     return {      
      getAllMatches: this.getAllMatchesBySport,
-     toggleModal: this.toggleModal,
-     addMatch: this.addMatch
+     addMatch: this.addMatch,
+     logged: this.logged
     }
   },
   computed: {
     getMatches(){
       return this.matches
-    },
-    zindex(){
-      return this.modal;
     }
   },
   methods: {
@@ -69,33 +64,36 @@ export default {
         'EndTime': data.endTime
       }
       // console.log(match);
+      // console.log(JSON.stringify(match));
       axios.post('https://localhost:5001/matches/create', JSON.stringify(match), {
         headers: {
           'Content-Type': 'application/json'
-        },
-        data: JSON.stringify(match)
+        }
       }).then(res => console.log(res)).catch(err => console.log(err));
       this.getAllMatches();
-      this.toggleModal();
     },
-    getAllMatches(){
-      axios.get('https://localhost:5001/matches/search?CurrentPage=1&PageSize=20')
-      .then(res => {
-        this.matches = res.data.payload;
-      })
+    async getAllMatches(){
+      // let matches = await axios.get('https://localhost:5001/matches/search?CurrentPage=1&PageSize=20')
+      let matches = [ {
+        type: 'Football',
+        fieldName: 'Forza',
+        currentPlayers: 4,
+        maxPlayers: 10,
+        startTime: new Date()
+      }]
+      this.$store.commit('setMatches', {
+        matches: matches
+      });
     },
-    getAllMatchesBySport(sport){
+    async getAllMatchesBySport(sport){
       if (sport.trim() == ""){
         this.getAllMatches();
         return;
       }
-      axios.get('https://localhost:5001/matches/search?CurrentPage=1&PageSize=20&Type='+sport)
-      .then(res => {
-        this.matches = res.data.payload;
-      })
-    },
-    toggleModal(){
-      this.modal = !this.modal;
+      let matches = axios.get('https://localhost:5001/matches/search?CurrentPage=1&PageSize=20&Type='+sport);
+      this.$store.commit('setMatches', {
+        matches: matches
+      });
     }
     // getAllMarkers(){
     //   let markers = this.matches.map((match) => {
