@@ -15,8 +15,8 @@
         <div class="user-profile">
             <!-- Default dropright button -->
             <div class="btn-group dropright">
-                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    H
+                <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-html="getFirstChar()">
+                   
                 </button>
                 <div class="dropdown-menu">
                    <button v-if="$store.state.loggedUser" @click="logOut">Log out <i class="fas fa-sign-out-alt"></i></button>
@@ -30,35 +30,60 @@
 <script>
 import('../assets/fonts/flaticon.css');
 import Swal from 'sweetalert2'
+import axios from 'axios';
 
 export default {
     name: "Sidemenu",
     data(){
         return {
             userInput: '',
-            passInput: ''
+            passInput: '',
+            user: ''
         }
     },
     methods: {
         logIn(){
             Swal.fire({
                 title: 'Најава',
-                html: '<input id="swal-input1" type="text" class="swal2-input" placeholder="Email">' +
+                html: '<input id="swal-input1" type="text" class="swal2-input" placeholder="Username">' +
                       '<input id="swal-input2" type="password" class="swal2-input" placeholder="Password" >',
                 confirmButtonText: 'Најави се',
                 showCancelButton: true,
                 cancelButtonText: 'Откажи',
             }).then((res) => {
                 if (res.isConfirmed){
-                    var email = document.getElementById('swal-input1').value;
+                    var username = document.getElementById('swal-input1').value;
                     var password = document.getElementById('swal-input2').value;
-                    //TODO LOGIN functionality
-                    this.$store.commit('logInUser', {
-                        user: {
-                            email,
-                            password
+                    axios.post('https://localhost:5001/users/login/', JSON.stringify({
+                        UserName: username,
+                        Password: password
+                    }), {
+                        headers: {         
+                         'Accept': 'application/json',
+                         'Content-Type': 'application/json',   
+                        } 
+                    }).then(res => {
+                        if (res.data.status == 500){
+                            Swal.fire({
+                                title: 'Погрешни податоци.',
+                                text: res.data.messages[0].message,
+                                icon: 'error'
+                            })
                         }
-                    })
+                        else {
+                            this.$store.commit('logInUser', {
+                                user: {
+                                    username,
+                                    jwt: res.data.payload.jwt
+                                }
+                           });
+
+                             Swal.fire({
+                                title: 'Најавувањето беше успешно',
+                                icon: 'success'
+                            })
+                        }                        
+                    });
                 }
             });
            
@@ -82,7 +107,19 @@ export default {
             })
 
             
+        },
+        getFirstChar(){
+            let user = localStorage.getItem('user')
+            if (user){
+                return user.charAt(0);
+            } 
+            else {
+                return '<i class="fa fa-user"></i>'
+            }
         }
+    },
+    mounted(){
+        this.user = localStorage.getItem('user') ? localStorage.getItem('user') : `<i class="fa fa-user"></i>`;
     }
 }
 </script>
@@ -175,5 +212,9 @@ export default {
 
     .sidemenu .menu li:not(:last-of-type){
         margin-bottom: 40px;
+    }
+
+    .fa-user {
+        font-size: 24px  !important;
     }
 </style>

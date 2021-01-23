@@ -63,34 +63,39 @@ export default {
         'StartTime': data.startTime,
         'EndTime': data.endTime
       }
-      // console.log(match);
-      // console.log(JSON.stringify(match));
       axios.post('https://localhost:5001/matches/create', JSON.stringify(match), {
         headers: {
+          'Authorization': `Bearar ${this.$store.state.jwt}`,
           'Content-Type': 'application/json'
         }
       }).then(res => console.log(res)).catch(err => console.log(err));
       this.getAllMatches();
     },
-    async getAllMatches(){
-      // let matches = await axios.get('https://localhost:5001/matches/search?CurrentPage=1&PageSize=20')
-      let matches = [ {
-        type: 'Football',
-        fieldName: 'Forza',
-        currentPlayers: 4,
-        maxPlayers: 10,
-        startTime: new Date()
-      }]
-      this.$store.commit('setMatches', {
-        matches: matches
-      });
+     getAllMatches(){
+      axios.get(`https://localhost:5001/matches/search?CurrentPage=${this.$store.state.currentPage}&PageSize=20`, 
+      {     
+        headers: {         
+          'Content-Type': 'application/json'     
+        } 
+      }).then((res) => {
+        this.$store.commit('setMatches', {
+          matches: res.data.payload
+        })
+      }).catch(e => {
+        console.log(e);
+      })     
     },
     async getAllMatchesBySport(sport){
       if (sport.trim() == ""){
         this.getAllMatches();
         return;
       }
-      let matches = axios.get('https://localhost:5001/matches/search?CurrentPage=1&PageSize=20&Type='+sport);
+
+      let matches; 
+      await axios.get(`https://localhost:5001/matches/search?${this.$store.state.currentPage}=1&PageSize=20&Type=${sport}`).then(res => {
+        matches = res.data.payload;
+      });
+
       this.$store.commit('setMatches', {
         matches: matches
       });

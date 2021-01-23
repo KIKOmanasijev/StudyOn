@@ -8,7 +8,6 @@
 </template>
 
 <script>
-import axios from 'axios';
 
 export default {
   name: 'App',
@@ -17,17 +16,8 @@ export default {
     // ListMatches,
     // MapContainer
   },
-  data(){
-    return {
-      user: {
-        loggedIn: true
-      },
-      matches: []
-    }
-  },
   mounted(){
-     axios.get('https://localhost:5001/matches/search?CurrentPage=1&PageSize=20')
-      .then(res => this.matches = res.data.payload)
+      this.$store.commit('checkLoggedUser');
   }
 }
 </script>

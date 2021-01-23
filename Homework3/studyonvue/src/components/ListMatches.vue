@@ -24,11 +24,11 @@
         </div>       
 
         <p class="search-result-info text-left my-5">
-            Пронајдовме <strong> {{matches.length}} </strong> од Вашето барање...
+            Пронајдовме <strong> {{$store.state.matches.length}} </strong> од Вашето барање...
         </p>
 
         <div class="results">
-            <div class="match-wrapper row" v-for="match in matches" v-bind:key="match.id">
+            <div class="match-wrapper row" v-for="match in $store.state.matches" v-bind:key="match.id">
                 <div class="col-md-3">
                     <img v-bind:src="'https://via.placeholder.com/500x500'">
                 </div>
@@ -66,12 +66,7 @@ export default {
         }        
     },
     props: {
-        matches: {
-            type: Array
-        },
-        user: {
-            type: Object
-        }
+        
     },
     inject: ['getAllMatches'],
     methods: {
@@ -97,8 +92,7 @@ export default {
                 confirmButtonColor: '#3FE18B',
                 showCancelButton: true,
                 cancelButtonText: 'Откажи',
-                html: '<input id="swal-input1" type="text" class="swal2-input" placeholder="Име на натпревар">' +
-                      '<input id="swal-input2" type="number" class="swal2-input" placeholder="Потребни играчи" style="max-width: 100%">' +
+                html: '<input id="swal-input2" type="number" class="swal2-input" placeholder="Потребни играчи" style="max-width: 100%">' +
                       `<select id="swal-input3" class="swal2-input swal2-select" style="max-width: 100%; display: flex;">
                         <option value="" disabled="">Избери Спорт</option>
                         <option value="apples">Футбал</option>
@@ -112,7 +106,11 @@ export default {
                       ,
             }).then((res) => {
                 //TODO add match
-                console.log(res)
+                if (res.isConfirmed){
+                    // let match = {
+                    //     "UserId"
+                    // } 
+                }
             })
         }
     }
