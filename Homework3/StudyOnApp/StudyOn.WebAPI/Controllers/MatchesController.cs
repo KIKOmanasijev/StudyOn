@@ -5,6 +5,7 @@ using StudyOn.Contracts.Models;
 using StudyOn.Contracts.Requests;
 using StudyOn.Contracts.Responses;
 using System.Collections.Generic;
+using System.Security.Claims;
 
 namespace StudyOn.WebAPI.Controllers
 {
@@ -27,6 +28,11 @@ namespace StudyOn.WebAPI.Controllers
         [Route("create")]
         public Response<bool> AddMatch([FromBody] AddMatchRequest request)
         {
+            var identity = HttpContext.User.Identity as ClaimsIdentity;
+            if (identity != null)
+            {
+                request.UserId = identity.FindFirst("jti").Value;
+            }
             var result = _matchManager.AddMatch(request);
             return result;
         }
