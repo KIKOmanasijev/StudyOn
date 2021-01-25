@@ -16,6 +16,7 @@ export default {
     // ListMatches,
     // MapContainer
   },
+  provide: ['getAllFields'],
   mounted(){
       this.$store.commit('checkLoggedUser');
   }

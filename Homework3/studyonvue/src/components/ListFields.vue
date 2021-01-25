@@ -7,7 +7,7 @@
                 </span>
                 <input class="form-control" type="search" placeholder="Пребарувај овде" id="example-search-input">               
             </div>
-            <button v-if="user.loggedIn" class="add-match">+</button>
+            <button v-if="$store.state.loggedUser" class="add-match">+</button>
         </div>       
 
         <p class="search-result-info text-left my-5">
@@ -15,7 +15,7 @@
         </p>
 
         <div class="results">
-            <div class="match-wrapper row" v-for="field in fields" v-bind:key="field.fieldName">
+            <div class="match-wrapper row" v-for="field in $store.state.fields" v-bind:key="field.id">
                 <div class="col-md-3">
                     <img v-bind:src="field.fieldImg">
                 </div>
@@ -37,18 +37,14 @@
 import('../assets/css/all.css');
 export default {
     name: "ListFields",
-    props: {
-        fields: {
-            type: Array
-        },
-        user: {
-            type: Object
-        }
-    },
     computed: {
         generateFieldUrl(id){
             return `/fields/${id}`;
         }
+    },
+    props: ['getAllFields'],
+    mounted(){
+        this.getAllFields();
     },
     methods: {
         printRating(rate){

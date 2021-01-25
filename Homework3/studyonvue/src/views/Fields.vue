@@ -1,7 +1,7 @@
 <template>
   <div class="fields">
     <Sidemenu/>
-    <ListFields :fields="fields" :user="user"/>
+    <ListFields :getAllFields="getAllFields"/>
     <MapContainer/>
   </div>
 </template>
@@ -11,6 +11,8 @@ import Sidemenu from "../components/Sidemenu";
 import ListFields from "../components/ListFields";
 import MapContainer from "../components/MapContainer";
 
+import axios from "axios";
+
 export default {
   name: 'Fields',
   data(){
@@ -19,25 +21,11 @@ export default {
       loggedIn: true
     },
     fields: [
-      {
-        id: 1,
-        fieldName: "Игралиште Форза Каропош",
-        fieldImg: "https://ading.com.mk/CMS/Upload/Referenci/tenisko-igraliste-micei-international(1).jpg",
-        location: {lat:41.9912952, lng:21.4134693},
-        sport: "Football",
-        rating: 5
-      }, 
-      {
-        id: 2,
-        fieldName: "Игралиште Кисела Вода",
-        fieldImg: "https://a1on.mk/wp-content/uploads/2018/04/detski-igralista-kiselavoda-3.jpg",
-        location: {lat:42.0002952, lng:21.4034693},
-        sport: "Football",
-        rating: 5
-      }
+     
     ],
    }
   },
+  provide: ['getAllFields'],
   components: {
     Sidemenu,
     ListFields,
@@ -50,6 +38,15 @@ export default {
       });
 
       return markers;
+    },
+    async getAllFields(){
+      let courts = await axios.get(`https://localhost:5000/courts/search?CurrentPage=${this.$store.state.currentPage}&PageSize=20`, {
+        headers: {
+          "Authorization": `bearer ${this.$store.state.jwt}`,
+          'Access-Control-Allow-Origin' : '*',
+        }
+      });
+      console.log(courts);
     }
   }
 }

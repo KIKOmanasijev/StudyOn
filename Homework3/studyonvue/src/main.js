@@ -17,33 +17,35 @@ const store = new Vuex.Store({
       fields: [],
       loggedUser: null,
       currentPage: 1,
-      pageSize: 20
-    }
+      pageSize: 20,
+    };
   },
   mutations: {
     logInUser(state, payload) {
       state.loggedUser = payload.user;
-      console.log(state.loggedUser);
 
-      localStorage.setItem('token', payload.user.jwt);
-      localStorage.setItem('user', payload.user.username);
+      localStorage.setItem("token", payload.user.jwt);
+      localStorage.setItem("user", payload.user.username);
     },
     logOutUser(state) {
       state.loggedUser = null;
-      localStorage.removeItem('token');
-      localStorage.removeItem('user');
+      localStorage.removeItem("token");
+      localStorage.removeItem("user");
     },
     checkLoggedUser(state) {
-      let user = localStorage.getItem('user');
-      if (user){
+      let user = localStorage.getItem("user");
+      if (user) {
         state.loggedUser = user;
         state.jwt = localStorage.getItem("token");
       }
     },
     setMatches(state, payload) {
       state.matches = payload.matches;
-    }
-  }
+    },
+    getAllFields() { 
+
+    },
+  },
 });
 
 Vue.component("BaseDialog", BaseDialog);

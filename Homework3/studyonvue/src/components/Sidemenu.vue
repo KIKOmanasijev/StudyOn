@@ -19,8 +19,9 @@
                    
                 </button>
                 <div class="dropdown-menu">
-                   <button v-if="$store.state.loggedUser" @click="logOut">Log out <i class="fas fa-sign-out-alt"></i></button>
-                   <button v-else @click="logIn">Log In <i class="fas fa-user"></i> </button>
+                   <button class="dropdown-item" v-if="$store.state.loggedUser" @click="logOut">Log out <i class="fas fa-sign-out-alt"></i></button>
+                   <button class="dropdown-item" v-if="!$store.state.loggedUser" @click="logIn">Log In <i class="fas fa-user"></i> </button>
+                   <button class="dropdown-item" v-if="!$store.state.loggedUser" @click="register">Register <i class="fas fa-user-plus"></i></button>
                 </div>
             </div>
         </div>
@@ -104,9 +105,56 @@ export default {
                     })
                     this.$store.commit('logOutUser');
                 }
-            })
-
-            
+            })            
+        },
+        register(){
+            Swal.fire({
+                title: 'Регистрација',
+                html: `<input id="swal-input1" type="text" class="swal2-input" placeholder="Корисничко име">
+                       <input id="swal-input3" type="text" class="swal2-input" placeholder="Име">
+                       <input id="swal-input4" type="text" class="swal2-input" placeholder="Презиме">
+                       <input id="swal-input5" type="email" class="swal2-input" placeholder="Емаил">
+                       <input id="swal-input2" type="password" class="swal2-input" placeholder="Password" >`,
+                confirmButtonText: 'Регистрирај се',
+                showCancelButton: true,
+                cancelButtonText: 'Откажи',
+            }).then((res) => {
+                if (res.isConfirmed){
+                    var username = document.getElementById('swal-input1').value;
+                    var password = document.getElementById('swal-input2').value;
+                    var firstName = document.getElementById('swal-input3').value;
+                    var lastName = document.getElementById('swal-input4').value;
+                    var email = document.getElementById('swal-input5').value;
+                    axios.post('https://localhost:5001/users/register/', JSON.stringify({
+                        UserName: username,
+                        Password: password,
+                        FirstName: firstName,
+                        LastName: lastName,
+                        Email: email
+                    }), {
+                        headers: {         
+                         'Accept': 'application/json',
+                         'Content-Type': 'application/json',   
+                        } 
+                    }).then(res => {
+                        console.log(res);
+                        if (res.data.status == 500){
+                            Swal.fire({
+                                title: 'Погрешни податоци.',
+                                text: res.data.messages[0].message,
+                                icon: 'error'
+                            })
+                        }
+                        else {                           
+                             Swal.fire({
+                                title: 'Регистрирањето беше успешно',
+                                icon: 'success'
+                            })
+                        }                        
+                    });
+                }
+            });
+           
         },
         getFirstChar(){
             let user = localStorage.getItem('user')

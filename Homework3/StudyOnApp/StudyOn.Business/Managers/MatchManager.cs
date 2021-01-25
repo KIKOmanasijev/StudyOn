@@ -6,6 +6,7 @@ using StudyOn.Contracts.Responses;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Web.Http;
 
 namespace StudyOn.Business.Managers
 {
@@ -26,7 +27,7 @@ namespace StudyOn.Business.Managers
             _userManager = userManager;
             _courtsRepository = courtsRepository;
         }
-        public Response<bool> AddMatch(AddMatchRequest request)
+        public Response<bool> AddMatch([FromBody] AddMatchRequest request)
         {
             var response = new Response<bool>();
 
@@ -63,7 +64,7 @@ namespace StudyOn.Business.Managers
             var pagedResponse = new List<Matches>();
             if (!string.IsNullOrEmpty(request.Type))
             {
-                var getMatches = _repository.GetAll<Matches>().Where(x=>x.Type.Equals(request.Type));
+                var getMatches = _repository.GetAll<Matches>().Where(x => x.Type.Equals(request.Type));
                 pagedResponse = getMatches.OrderByDescending(x => x.CurrentPlayers)
                     .Skip((request.CurrentPage - 1) * request.PageSize)
                     .Take(request.PageSize)
@@ -121,7 +122,7 @@ namespace StudyOn.Business.Managers
         public Response<MatchDetails> GetMatch(GetMatchDetailsRequest request)
         {
             var response = new Response<MatchDetails>();
-            var getMatch = _repository.GetOne<Matches>(x=>x.Id==request.MatchId, includeProperties: $"{nameof(Matches.UserMatches)}");
+            var getMatch = _repository.GetOne<Matches>(x => x.Id == request.MatchId, includeProperties: $"{nameof(Matches.UserMatches)}");
             var players = _userManager.ToUserInfo(getMatch.UserMatches);
             var court = _courtsRepository.Find(x => x.Id == getMatch.CourtId).FirstOrDefault();
             var matchDetails = new MatchDetails()
@@ -131,7 +132,7 @@ namespace StudyOn.Business.Managers
                 Lat = court.Lat,
                 Lng = court.Lng,
                 MaxPlayers = getMatch.MaxPlayers,
-                CurrentPlayers =getMatch.CurrentPlayers,
+                CurrentPlayers = getMatch.CurrentPlayers,
                 Type = getMatch.Type,
                 StartTime = getMatch.StartTime,
                 EndTime = getMatch.EndTime,

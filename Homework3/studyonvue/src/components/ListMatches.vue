@@ -68,7 +68,7 @@ export default {
     props: {
         
     },
-    inject: ['getAllMatches'],
+    inject: ['getAllMatches', 'addMatch'],
     methods: {
         searchMatch(){
             this.getAllMatches(this.searchSport)
@@ -95,21 +95,32 @@ export default {
                 html: '<input id="swal-input2" type="number" class="swal2-input" placeholder="Потребни играчи" style="max-width: 100%">' +
                       `<select id="swal-input3" class="swal2-input swal2-select" style="max-width: 100%; display: flex;">
                         <option value="" disabled="">Избери Спорт</option>
-                        <option value="apples">Футбал</option>
-                        <option value="bananas">Кошарка</option>
-                        <option value="grapes">Ракомет</option>
-                        <option value="oranges">Футсал</option>
-                        <option value="potato">Одбојка</option>
+                        <option value="Football">Футбал</option>
+                        <option value="Basketball">Кошарка</option>
+                        <option value="Handball">Ракомет</option>
+                        <option value="Footsal">Футсал</option>
+                        <option value="Volleyball">Одбојка</option>
+                        <option value="Tennis">Тенис</option>
                         </select>
                         <input id="swal-input4" type="datetime-local" class="swal2-input">
+                        <input id="swal-input5" type="number" class="swal2-input" placeholder="Времетраење на натпревар" style="max-width: 100%">
                         `
                       ,
             }).then((res) => {
                 //TODO add match
                 if (res.isConfirmed){
-                    // let match = {
-                    //     "UserId"
-                    // } 
+                    let startDate = new Date(document.getElementById("swal-input4").value);
+                    let endDate = new Date(document.getElementById("swal-input4").value)
+                    endDate.setHours(startDate.getHours() + parseInt(document.getElementById("swal-input5").value));
+                    let match = {
+                        CourtId: "364978134",
+                        Type: document.getElementById("swal-input3").value,
+                        MaxPlayers: document.getElementById("swal-input2").value,
+                        StartTime: startDate.toISOString(),
+                        EndTime: endDate.toISOString()
+                    } 
+
+                    this.addMatch(match);
                 }
             })
         }
@@ -127,6 +138,8 @@ export default {
         padding: 50px 30px;
         flex: 0 0 35vw;
         background-color: #FCFBFF;
+
+        overflow: scroll;
     }
 
     .search {
@@ -226,12 +239,24 @@ export default {
         background: #3FE18B;
     }
 
+     .match-info .sport.Tennis {
+        background: #52e13f;
+    }
+
     .match-info .sport.Basketball {
         background: orange;
     }
 
     .match-info .sport.Handball {
         background: #1fa9ff;
+    }
+
+    .match-info .sport.Volleyball {
+        background: #008080;
+    }
+
+    .match-info .sport.Footsal {
+        background: #dd2d2d;
     }
 
     .match-meta {

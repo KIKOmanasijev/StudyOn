@@ -44,7 +44,7 @@ export default {
     return {      
      getAllMatches: this.getAllMatchesBySport,
      addMatch: this.addMatch,
-     logged: this.logged
+     logged: this.logged,
     }
   },
   computed: {
@@ -55,20 +55,24 @@ export default {
   methods: {
     addMatch(data){
       let match = {
-        'UserId': data.userId,
-        'CourtId': data.courtId,
-        'MaxPlayers': data.maxPlayers,
+        'CourtId': data.CourtId,
+        'MaxPlayers': parseInt(data.MaxPlayers),
         'CurrentPlayers': 1,
-        'Type': data.type,
-        'StartTime': data.startTime,
-        'EndTime': data.endTime
+        'Type': data.Type,
+        'StartTime': data.StartTime,
+        'EndTime': data.EndTime
       }
-      axios.post('https://localhost:5001/matches/create', JSON.stringify(match), {
-        headers: {
-          'Authorization': `Bearar ${this.$store.state.jwt}`,
-          'Content-Type': 'application/json'
-        }
-      }).then(res => console.log(res)).catch(err => console.log(err));
+
+      const instance = axios.create({
+        baseURL: 'https://localhost:5001/matches'
+      });
+
+      instance.defaults.headers.common['Authorization'] = `bearer ${this.$store.state.jwt}`
+      instance.defaults.headers.post['Content-Type'] = "application/json";
+      console.log(instance);
+      instance.post('/create', JSON.stringify(match));
+      // axios.post('https://localhost:5001/matches/create');          
+ 
       this.getAllMatches();
     },
      getAllMatches(){
@@ -92,7 +96,7 @@ export default {
       }
 
       let matches; 
-      await axios.get(`https://localhost:5001/matches/search?${this.$store.state.currentPage}=1&PageSize=20&Type=${sport}`).then(res => {
+      await axios.get(`https://localhost:5001/matches/search?CurrentPage=${this.$store.state.currentPage}&PageSize=20&Type=${sport}`).then(res => {
         matches = res.data.payload;
       });
 
@@ -123,6 +127,7 @@ export default {
     height: 100vh;
 
     display: flex;
+    max-height: 100vh;
   }
 
   #map {
