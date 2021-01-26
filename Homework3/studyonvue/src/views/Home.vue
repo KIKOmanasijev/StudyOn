@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <Sidemenu/>
-    <ListMatches :matches="$store.state.matches" :user="user"/>
+    <ListMatches :matches="$store.state.matches"/>
 
     <!-- <BaseDialog v-if="modal">
       <template #title><h2>Add new match</h2></template>
@@ -20,15 +20,6 @@ import axios from "axios";
 
 export default {
   name: 'Home',
-  data(){
-   return {
-    user: {
-      loggedIn: true
-    },
-    matches: [],
-    logged: true
-   }
-  },
   mounted(){
     this.getAllMatches();
   },

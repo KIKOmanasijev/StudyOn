@@ -1,14 +1,5 @@
 <template>
     <div class="list-panel">
-        <div class="search">
-           <div class="input-group">
-                <span class="input-group-prepend">
-                    <div class="input-group-text border-none"><i class="fa fa-search"></i></div>
-                </span>
-                <input class="form-control" type="search" placeholder="Пребарувај овде" id="example-search-input">               
-            </div>
-            <button v-if="$store.state.loggedUser" class="add-match">+</button>
-        </div>     
 
         <div class="results">
             <div class="match-wrapper row" v-for="field in $store.state.fields" v-bind:key="field.id">
@@ -29,6 +20,10 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
+                            </div>
+                            <div class="field-location">
+                              <p class="mb-0">  <b> Lat:</b> {{field.lat}}</p>
+                              <p>  <b> Lng:</b> {{field.lng}}</p>
                             </div>
                         </div>
                     </router-link>
@@ -201,5 +196,10 @@ export default {
 
     .field-unrated i {
         color: rgb(192, 192, 192);
+    }
+
+    .field-location p {
+        font-size: 13px;
+        color: #999;
     }
 </style>

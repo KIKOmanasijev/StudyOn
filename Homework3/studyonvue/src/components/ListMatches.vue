@@ -33,7 +33,7 @@
                     <img v-bind:src="'https://via.placeholder.com/500x500'">
                 </div>
                 <div class="col-md-9">
-                    <a href="#" class="match-meta">
+                    <router-link :to="'/match/' + match.id" class="match-meta">
                         <div class="match-info">
                             <span class="sport" :class="match.type">{{match.type}}</span>
                             <h2>{{match.fieldName ? match.fieldName : 'Игралиште без име'}}</h2>
@@ -48,7 +48,7 @@
                         <div class="match-actions">
                             <div class="accept"><i class="flaticon-verification-checkmark-symbol"></i></div>
                         </div>
-                    </a>
+                    </router-link>
                 </div>
             </div>
     </div>
@@ -214,8 +214,8 @@ export default {
     }
 
     .match-wrapper img {
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-radius: 15px;
         margin-right: 20px;

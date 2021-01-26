@@ -127,21 +127,9 @@ import Sidemenu from "../components/Sidemenu";
 
 export default {
   name: 'Faq',
-  data(){
-   return {
-    user: {
-      loggedIn: true
-    },
-    matches: [],
-   }
-  },
   components: {
     Sidemenu
   },
-  mounted() {
-    this.matches = this.$store.state.matches;
-    console.log(this.matches);
-  }
 }
 </script>
 

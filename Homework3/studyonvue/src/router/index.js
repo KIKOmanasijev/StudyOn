@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import Home from '../views/Home.vue'
 import Fields from '../views/Fields.vue'
 import Faq from '../views/Faq.vue'
+import SingleMatch from "../views/SingleMatch.vue";
 
 Vue.use(VueRouter)
 
@@ -23,6 +24,11 @@ const routes = [
     name: 'Faq',
     component: Faq
   },
+  {
+    path: '/match/:matchId',
+    name: 'Single Match',
+    component: SingleMatch
+  }
   // {
   //   path: '/field/:id',
   //   name: "Single Field",
