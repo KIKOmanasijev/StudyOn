@@ -40,19 +40,19 @@ export default {
       return markers;
     },
     async getAllFields(){
-      let courts = await axios.get(`https://localhost:5000/courts/search?CurrentPage=${this.$store.state.currentPage}&PageSize=20`, {
+      let courts = await axios.get(`http://localhost:5000/courts/search?CurrentPage=${this.$store.state.currentPage}&PageSize=20`, {
         headers: {
           "Authorization": `bearer ${this.$store.state.jwt}`,
           'Access-Control-Allow-Origin' : '*',
         }
       });
-      console.log(courts);
+      this.$store.commit('getAllFields', courts.data.payload);
     }
   }
 }
 </script>
 
-<style>
+<style scoped>
   .fields {
      font-family: Avenir, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
@@ -64,5 +64,9 @@ export default {
     height: 100vh;
 
     display: flex;
+  }
+
+  .list-panel {
+    overflow: scroll;
   }
 </style>

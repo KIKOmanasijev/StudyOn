@@ -8,23 +8,28 @@
                 <input class="form-control" type="search" placeholder="Пребарувај овде" id="example-search-input">               
             </div>
             <button v-if="$store.state.loggedUser" class="add-match">+</button>
-        </div>       
-
-        <p class="search-result-info text-left my-5">
-            Пронајдовме <strong> 13 резултати </strong> од Вашето барање...
-        </p>
+        </div>     
 
         <div class="results">
             <div class="match-wrapper row" v-for="field in $store.state.fields" v-bind:key="field.id">
                 <div class="col-md-3">
-                    <img v-bind:src="field.fieldImg">
+                    <img v-bind:src="field.images.length ? field.images[0] : 'https://via.placeholder.com/500x500'">
                 </div>
                 <div class="col-md-9">
                     <router-link :to="'/fields/' + field.id" class="match-meta">
                         <div class="match-info">
-                            <span class="sport football">{{field.sport}}</span>
+                            <span class="sport football">{{field.sport ? field.sport : 'All Sports'}}</span>
                             <h2>{{field.fieldName}}</h2>
-                            <div class="field-rating" v-html="printRating(field.rating)"></div>
+                            <div v-if="field.rating" class="field-rating">
+                                <i v-for="star in field.rating" :key="star" class="fa fa-star"></i>
+                            </div>
+                            <div v-else class="field-rating field-unrated">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                            </div>
                         </div>
                     </router-link>
                 </div>
@@ -40,6 +45,10 @@ export default {
     computed: {
         generateFieldUrl(id){
             return `/fields/${id}`;
+        },
+        getFieldImage(field){
+            console.log(field);
+            return field.images.length > 0 ? field.images[0] : 'https://via.placeholder.com/500x500'; 
         }
     },
     props: ['getAllFields'],
@@ -48,6 +57,7 @@ export default {
     },
     methods: {
         printRating(rate){
+            console.log(rate);
             let str = "";
             for (let i = 0; i < rate; i++){
                 str += `<i class="fa fa-star"></i>`;
@@ -69,6 +79,7 @@ export default {
     .search {
         display: flex;
         align-content: center;
+        margin-bottom: 20px;
     }
 
     .search .add-match {
@@ -138,8 +149,8 @@ export default {
     }
 
     .match-wrapper img {
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
         border-radius: 15px;
         margin-right: 20px;
@@ -186,5 +197,9 @@ export default {
 
     .field-rating i {
         color: gold;
+    }
+
+    .field-unrated i {
+        color: rgb(192, 192, 192);
     }
 </style>

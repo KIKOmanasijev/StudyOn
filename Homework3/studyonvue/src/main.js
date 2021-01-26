@@ -42,8 +42,9 @@ const store = new Vuex.Store({
     setMatches(state, payload) {
       state.matches = payload.matches;
     },
-    getAllFields() { 
-
+    getAllFields(state, payload) { 
+      console.log(payload);
+      state.fields = payload;
     },
   },
 });
