@@ -16,16 +16,19 @@ namespace StudyOn.Business.Managers
         private readonly IRepository<UserMatches> _umRepository;
         private readonly IRepository<Courts> _courtsRepository;
         private readonly IUserManager _userManager;
+        private readonly ILoggerManager _logger;
 
         public MatchManager(IRepository<Matches> repository,
             IRepository<UserMatches> umRepository,
             IUserManager userManager,
-            IRepository<Courts> courtsRepository)
+            IRepository<Courts> courtsRepository,
+            ILoggerManager logger)
         {
             _repository = repository;
             _umRepository = umRepository;
             _userManager = userManager;
             _courtsRepository = courtsRepository;
+            _logger = logger;
         }
         public Response<bool> AddMatch([FromBody] AddMatchRequest request)
         {
@@ -44,10 +47,12 @@ namespace StudyOn.Business.Managers
             try
             {
                 var result = _repository.Add(match);
+                _logger.LogInfo("new match created");
                 return AddUserMatch(request.UserId, result.Id);
             }
             catch (Exception ex)
             {
+                _logger.LogError("match creation failed");
                 response.Messages.Add(new ResponseMessage
                 {
                     Type = Contracts.Enums.ResponseMessageEnum.Exception,
@@ -78,14 +83,24 @@ namespace StudyOn.Business.Managers
                     .Take(request.PageSize)
                     .ToList();
             }
-
+            if (pagedResponse == null)
+            {
+                _logger.LogInfo("there are no matches with this search criteria");
+                response.Messages.Add(new ResponseMessage
+                {
+                    Type = Contracts.Enums.ResponseMessageEnum.Info,
+                    Message = "There are no matches with this search criteria",
+                });
+                response.Status = System.Net.HttpStatusCode.NotFound;
+            }
+            _logger.LogInfo("list of matches returned");
             response.Payload = pagedResponse;
             return response;
 
         }
         public Response<bool> JoinMatch(JoinMatchRequest request)
         {
-            return AddUserMatch(request.userId, request.matchId);
+            return AddUserMatch(request.UserId, request.MatchId);
         }
         public Response<bool> AddUserMatch(string userId, string matchId)
         {
@@ -104,11 +119,13 @@ namespace StudyOn.Business.Managers
                 var updateMatch = _repository.Find(x => x.Id == matchId).FirstOrDefault();
                 updateMatch.CurrentPlayers++;
                 _repository.Update(updateMatch);
+                _logger.LogInfo("new player added to match");
                 response.Payload = true;
                 response.Status = System.Net.HttpStatusCode.OK;
             }
             catch (Exception ex)
             {
+                _logger.LogError("join player to match failed");
                 response.Messages.Add(new ResponseMessage
                 {
                     Type = Contracts.Enums.ResponseMessageEnum.Exception,
@@ -119,12 +136,36 @@ namespace StudyOn.Business.Managers
             return response;
         }
 
-        public Response<MatchDetails> GetMatch(GetMatchDetailsRequest request)
+        public Response<MatchDetails> GetMatch(GeMatchByIdRequest request)
         {
             var response = new Response<MatchDetails>();
             var getMatch = _repository.GetOne<Matches>(x => x.Id == request.MatchId, includeProperties: $"{nameof(Matches.UserMatches)}");
-            var players = _userManager.ToUserInfo(getMatch.UserMatches);
+            if (getMatch == null)
+            {
+                _logger.LogError("no match found");
+                response.Messages.Add(new ResponseMessage
+                {
+                    Type = Contracts.Enums.ResponseMessageEnum.Exception,
+                    Message = "the match does not exist",
+                });
+                response.Status = System.Net.HttpStatusCode.NotFound;
+            }
+
+            var userIds = getMatch.UserMatches.Select(x => x.UserId).ToList();
+            var players = _userManager.ToUserInfo(userIds);
+
             var court = _courtsRepository.Find(x => x.Id == getMatch.CourtId).FirstOrDefault();
+            if (court == null)
+            {
+                _logger.LogError("no court found");
+                response.Messages.Add(new ResponseMessage
+                {
+                    Type = Contracts.Enums.ResponseMessageEnum.Exception,
+                    Message = "the match does has no court",
+                });
+                response.Status = System.Net.HttpStatusCode.NotFound;
+            }
+
             var matchDetails = new MatchDetails()
             {
                 MatchId = getMatch.Id,
@@ -138,6 +179,7 @@ namespace StudyOn.Business.Managers
                 EndTime = getMatch.EndTime,
                 Players = players
             };
+            _logger.LogInfo("match details returned");
 
             response.Payload = matchDetails;
             response.Status = System.Net.HttpStatusCode.OK;

@@ -295,3 +295,6 @@ C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\obj\Debug\netcoreapp3.1\
 D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
 D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\System.Web.Http.dll
 D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\System.Net.Http.Formatting.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\System.Web.Http.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.WebAPI\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

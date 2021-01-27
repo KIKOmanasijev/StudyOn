@@ -1,6 +1,7 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using StudyOn.Contracts;
+using StudyOn.Contracts.Managers;
 using StudyOn.Contracts.Models;
 using StudyOn.Contracts.Requests;
 using StudyOn.Contracts.Responses;
@@ -17,12 +18,15 @@ namespace StudyOn.Business.Managers
     {
         private readonly IRepository<Users> _repository;
         private readonly IConfiguration _config;
+        private readonly ILoggerManager _logger;
 
         public UserManager(IRepository<Users> repository,
-            IConfiguration config)
+            IConfiguration config,
+            ILoggerManager logger)
         {
             _repository = repository;
             _config = config;
+            _logger = logger;
         }
         public Response<bool> AddUser(AddUserRequest request)
         {
@@ -41,12 +45,14 @@ namespace StudyOn.Business.Managers
             try
             {
                 _repository.Add(newUser);
+                _logger.LogInfo("new user registered");
                 response.Status = System.Net.HttpStatusCode.OK;
                 response.Payload = true;
                 return response;
             }
             catch (Exception ex)
             {
+                _logger.LogError("user registration failed");
                 response.Messages.Add(new ResponseMessage
                 {
                     Type = Contracts.Enums.ResponseMessageEnum.Exception,
@@ -65,6 +71,7 @@ namespace StudyOn.Business.Managers
             if(user!=null)
             {
                 var tokenString = GenerateJSONWebToken(user);
+                _logger.LogInfo("user singed in");
                 response.Status = System.Net.HttpStatusCode.OK;
                 var loggedInUser = new LoggedInUserResponse() { 
                     JWT = tokenString
@@ -74,6 +81,7 @@ namespace StudyOn.Business.Managers
             }
             else
             {
+                _logger.LogError("user sign in failed");
                 response.Messages.Add(new ResponseMessage
                 {
                     Type = Contracts.Enums.ResponseMessageEnum.Exception,
@@ -117,15 +125,15 @@ namespace StudyOn.Business.Managers
             }
         }
 
-        public List<UserInfo> ToUserInfo(ICollection<UserMatches> userMatches)
+        public List<UserInfo> ToUserInfo(List<string> userMatchesIds)
         {
             var response = new List<UserInfo>();
-            var userMatchesIds = userMatches.Select(x => x.UserId).ToList();
             userMatchesIds.ForEach(x =>
             {
                 var user = _repository.Find(y => y.Id == x).FirstOrDefault();
                 var userInfo = new UserInfo
                 {
+                    Id = user.Id,
                     UserName = user.UserName,
                     FirstName = user.FirstName,
                     LastName = user.LastName,

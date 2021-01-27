@@ -23,6 +23,7 @@ namespace StudyOn.WebAPI.Controllers
         [Route("register")]
         public Response<bool> RegisterUser([FromBody] AddUserRequest request)
         {
+            _logger.LogInfo("request for register arrived");
             request.Role = 0;
             var result =_userManager.AddUser(request);
             return result;
@@ -33,6 +34,7 @@ namespace StudyOn.WebAPI.Controllers
         [Route("login")]
         public Response<LoggedInUserResponse> Login([FromBody] LoginRequest request)
         {
+            _logger.LogInfo("request for login arrived");
             var result = _userManager.SignInUser(request);
             return result;
         }

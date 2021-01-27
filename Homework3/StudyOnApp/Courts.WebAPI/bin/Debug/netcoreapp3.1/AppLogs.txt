@@ -1,0 +1,7 @@
+2021-01-26 23:52:20.8873 INFO request for review of court arrived
+2021-01-27 00:57:13.9885 INFO request for court details arrived
+2021-01-27 00:59:20.4135 INFO request for court details arrived
+2021-01-27 01:01:23.1828 INFO request for court details arrived
+2021-01-27 01:07:26.6718 INFO request for court details arrived
+2021-01-27 01:08:31.1040 INFO request for court details arrived
+2021-01-27 01:12:04.7796 INFO request for court details arrived

@@ -25,13 +25,15 @@ namespace Court.WebAPI.Controllers
         [Route("search")]
         public Response<List<Contracts.Models.Courts>> GetCourts([FromQuery] GetCourtsRequest request)
         {
-            var result = _courtsManager.GetCourt(request);
+            _logger.LogInfo("request for search courts arrived");
+            var result = _courtsManager.GetCourts(request);
             return result;
         }
         [HttpPost]
         [Route("review/{CourtId}")]
         public Response<bool> ReviewCourt(decimal CourtId ,[FromBody]ReviewCourtRequest request)
         {
+            _logger.LogInfo("request for review of court arrived");
             request.CourtId = CourtId;
             var identity = HttpContext.User.Identity as ClaimsIdentity;
             if(identity!=null)
@@ -39,6 +41,15 @@ namespace Court.WebAPI.Controllers
                 request.UserId = identity.FindFirst("jti").Value;
             }
             var result = _courtsManager.ReviewCourt(request);
+            return result;
+        }
+
+        [HttpGet]
+        [Route("{courtId}")]
+        public Response<CourtDetails> GetCourt([FromHeader] GetCourtByIdRequest request)
+        {
+            _logger.LogInfo("request for court details arrived");
+            var result = _courtsManager.GetCourt(request);
             return result;
         }
     }

@@ -1,5 +1,4 @@
-﻿using StudyOn.Contracts.Models;
-using StudyOn.Contracts.Requests;
+﻿using StudyOn.Contracts.Requests;
 using StudyOn.Contracts.Responses;
 using System.Collections.Generic;
 
@@ -9,6 +8,6 @@ namespace StudyOn.Contracts
     {
         Response<bool> AddUser(AddUserRequest request);
         Response<LoggedInUserResponse> SignInUser(LoginRequest request);
-        List<UserInfo> ToUserInfo(ICollection<UserMatches> userMatches);
+        List<UserInfo> ToUserInfo(List<string> userMatchesIdsuserIds);
     }
 }

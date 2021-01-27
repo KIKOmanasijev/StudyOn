@@ -5,9 +5,7 @@ using Court.Contracts.Requests;
 using Court.Contracts.Responses;
 using System;
 using System.Collections.Generic;
-using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
-using System.Security.Claims;
 
 namespace Court.Business.Managers
 {
@@ -15,14 +13,55 @@ namespace Court.Business.Managers
     {
         private readonly IRepository<Courts> _repository;
         private readonly IRepository<Ratings> _ratingRepository;
+        private readonly ILoggerManager _logger;
 
         public CourtsManager(IRepository<Courts> repository,
-            IRepository<Ratings> ratingRepository)
+            IRepository<Ratings> ratingRepository,
+            ILoggerManager logger)
         {
             _repository = repository;
             _ratingRepository = ratingRepository;
+            _logger = logger;
         }
-        public Response<List<Courts>> GetCourt(GetCourtsRequest request)
+
+        public Response<CourtDetails> GetCourt(GetCourtByIdRequest request)
+        {
+            var response = new Response<CourtDetails>();
+
+            var sumRates = 0;
+            var getCourt = _repository.Get<Courts>(includeProperties: $"{nameof(Ratings)}").Where(x => x.Id == request.CourtId).SingleOrDefault();
+            var courtDetails = new CourtDetails()
+            {
+                Id = getCourt.Id,
+                Lat = getCourt.Lat,
+                Lng = getCourt.Lng,
+                Name = getCourt.Name,
+                Sport = getCourt.Sport
+            };
+            getCourt.Ratings.ToList().ForEach(x =>
+            {
+                var rating = _ratingRepository.GetAll(i => i.User).Where(i => i.Id == x.Id).FirstOrDefault();
+                var userRating = new UserRatings()
+                {
+                    Id = x.UserId,
+                    Comment = x.Comment,
+                    Email = rating.User.Email,
+                    FirstName = rating.User.FirstName,
+                    LastName = rating.User.LastName,
+                    Rate = x.Rate,
+                    UserName = rating.User.UserName
+                };
+                courtDetails.userRatings.Add(userRating);
+                sumRates += x.Rate;
+            });
+            courtDetails.AverageRating = sumRates / getCourt.Ratings.Count();
+
+            response.Payload = courtDetails;
+            return response;
+
+        }
+
+        public Response<List<Courts>> GetCourts(GetCourtsRequest request)
         {
             var response = new Response<List<Courts>>();
             var pagedResponse = new List<Courts>();
@@ -58,7 +97,17 @@ namespace Court.Business.Managers
                     .Take(request.PageSize)
                     .ToList();
             }
-
+            if (pagedResponse == null)
+            {
+                _logger.LogInfo("there are no courts with this search criteria");
+                response.Messages.Add(new ResponseMessage
+                {
+                    Type = Contracts.Enums.ResponseMessageEnum.Info,
+                    Message = "There are no courts with this search criteria",
+                });
+                response.Status = System.Net.HttpStatusCode.NotFound;
+            }
+            _logger.LogInfo("list of courts returned");
             response.Payload = pagedResponse;
             return response;
         }
@@ -78,12 +127,14 @@ namespace Court.Business.Managers
             try
             {
                 _ratingRepository.Add(newRate);
+                _logger.LogInfo("user rated a court");
                 response.Status = System.Net.HttpStatusCode.OK;
                 response.Payload = true;
                 return response;
             }
             catch (Exception ex)
             {
+                _logger.LogError("rating of court failed");
                 response.Messages.Add(new ResponseMessage
                 {
                     Type = Contracts.Enums.ResponseMessageEnum.Exception,

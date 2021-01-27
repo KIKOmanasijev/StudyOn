@@ -7,7 +7,9 @@ namespace Court.Contracts.Managers
 {
     public interface ICourtsManager
     {
-        Response<List<Courts>> GetCourt(GetCourtsRequest request);
+        Response<List<Courts>> GetCourts(GetCourtsRequest request);
         Response<bool> ReviewCourt(ReviewCourtRequest request);
+        Response<CourtDetails> GetCourt(GetCourtByIdRequest request);
+
     }
 }

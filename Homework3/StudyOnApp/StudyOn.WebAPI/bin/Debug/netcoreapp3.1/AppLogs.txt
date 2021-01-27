@@ -1,0 +1,6 @@
+2021-01-26 23:44:13.6229 INFO request for login arrived
+2021-01-26 23:44:14.8537 INFO user singed in
+2021-01-26 23:44:18.1689 INFO request for login arrived
+2021-01-26 23:44:18.1874 INFO user singed in
+2021-01-26 23:44:30.4662 INFO request for join match arrived
+2021-01-26 23:44:30.7438 INFO new player added to match
