@@ -11,5 +11,6 @@ namespace StudyOn.Contracts.Managers
         Response<bool> JoinMatch(JoinMatchRequest request);
         Response<List<Matches>> GetMatches(GetMatchesRequest request);
         Response<MatchDetails> GetMatch(GeMatchByIdRequest request);
+        Response<List<UserInfo>> GetMatchPlayers(GeMatchByIdRequest request);
     }
 }

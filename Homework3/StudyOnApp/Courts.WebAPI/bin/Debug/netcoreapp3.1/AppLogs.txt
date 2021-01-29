@@ -57,3 +57,7 @@
 2021-01-29 16:54:55.2517 INFO list of courts returned
 2021-01-29 16:55:42.5421 INFO request for search courts arrived
 2021-01-29 16:55:42.5814 INFO list of courts returned
+2021-01-29 18:21:46.8237 INFO request for court details arrived
+2021-01-29 18:27:26.5800 INFO request for court ratings arrived
+2021-01-29 18:27:27.5978 INFO player details returned
+2021-01-29 18:28:48.0558 INFO request for court details arrived

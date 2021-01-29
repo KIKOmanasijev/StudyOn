@@ -14,8 +14,6 @@ namespace StudyOn.Business.Managers
     {
         private readonly IRepository<Matches> _repository;
         private readonly IRepository<UserMatches> _umRepository;
-        private readonly IRepository<Courts> _courtsRepository;
-        private readonly IUserManager _userManager;
         private readonly ILoggerManager _logger;
 
         public MatchManager(IRepository<Matches> repository,
@@ -26,8 +24,6 @@ namespace StudyOn.Business.Managers
         {
             _repository = repository;
             _umRepository = umRepository;
-            _userManager = userManager;
-            _courtsRepository = courtsRepository;
             _logger = logger;
         }
         public Response<bool> AddMatch([FromBody] AddMatchRequest request)
@@ -139,7 +135,7 @@ namespace StudyOn.Business.Managers
         public Response<MatchDetails> GetMatch(GeMatchByIdRequest request)
         {
             var response = new Response<MatchDetails>();
-            var getMatch = _repository.GetOne<Matches>(x => x.Id == request.MatchId, includeProperties: $"{nameof(Matches.UserMatches)}");
+            var getMatch = _repository.GetOne<Matches>(x => x.Id == request.MatchId, includeProperties: $"{nameof(Matches.UserMatches)},{nameof(Matches.Court)}");
             if (getMatch == null)
             {
                 _logger.LogError("no match found");
@@ -151,33 +147,18 @@ namespace StudyOn.Business.Managers
                 response.Status = System.Net.HttpStatusCode.NotFound;
             }
 
-            var userIds = getMatch.UserMatches.Select(x => x.UserId).ToList();
-            var players = _userManager.ToUserInfo(userIds);
-
-            var court = _courtsRepository.Find(x => x.Id == getMatch.CourtId).FirstOrDefault();
-            if (court == null)
-            {
-                _logger.LogError("no court found");
-                response.Messages.Add(new ResponseMessage
-                {
-                    Type = Contracts.Enums.ResponseMessageEnum.Exception,
-                    Message = "the match does has no court",
-                });
-                response.Status = System.Net.HttpStatusCode.NotFound;
-            }
-
             var matchDetails = new MatchDetails()
             {
                 MatchId = getMatch.Id,
-                CourtName = court.Name,
-                Lat = court.Lat,
-                Lng = court.Lng,
+                CourtName = getMatch.Court.Name,
+                Lat = getMatch.Court.Lat,
+                Lng = getMatch.Court.Lng,
                 MaxPlayers = getMatch.MaxPlayers,
                 CurrentPlayers = getMatch.CurrentPlayers,
                 Type = getMatch.Type,
                 StartTime = getMatch.StartTime,
                 EndTime = getMatch.EndTime,
-                Players = players
+
             };
             _logger.LogInfo("match details returned");
 
@@ -185,7 +166,40 @@ namespace StudyOn.Business.Managers
             response.Status = System.Net.HttpStatusCode.OK;
 
             return response;
+        }
 
+        public Response<List<UserInfo>> GetMatchPlayers(GeMatchByIdRequest request)
+        {
+            var response = new Response<List<UserInfo>>();
+            var pagedResponse = new List<UserInfo>();
+            var getPlayers = _umRepository.GetAll<UserMatches>(includeProperties: $"{nameof(UserMatches.User)}").Where(x => x.MatchId == request.MatchId).ToList();
+            if (getPlayers == null)
+            {
+                _logger.LogError("no players found");
+                response.Messages.Add(new ResponseMessage
+                {
+                    Type = Contracts.Enums.ResponseMessageEnum.Exception,
+                    Message = "the match does not exist",
+                });
+                response.Status = System.Net.HttpStatusCode.NotFound;
+            }
+            getPlayers.ForEach(x =>
+            {
+               var playerInfo = new UserInfo()
+               {
+                   Email = x.User.Email,
+                   UserName = x.User.UserName,
+                   FirstName = x.User.FirstName,
+                   LastName = x.User.LastName,
+                   Id = x.User.Id
+               };
+                pagedResponse.Add(playerInfo);
+            });
+
+            _logger.LogInfo("player details returned");
+            response.Payload = pagedResponse;
+            response.Status = System.Net.HttpStatusCode.OK;
+            return response;
         }
     }
 }

@@ -124,24 +124,5 @@ namespace StudyOn.Business.Managers
                 throw new Exception("Error in base64Encode" + ex.Message);
             }
         }
-
-        public List<UserInfo> ToUserInfo(List<string> userMatchesIds)
-        {
-            var response = new List<UserInfo>();
-            userMatchesIds.ForEach(x =>
-            {
-                var user = _repository.Find(y => y.Id == x).FirstOrDefault();
-                var userInfo = new UserInfo
-                {
-                    Id = user.Id,
-                    UserName = user.UserName,
-                    FirstName = user.FirstName,
-                    LastName = user.LastName,
-                    Email = user.Email
-                };
-                response.Add(userInfo);
-            });
-            return response;
-        }
     }
 }

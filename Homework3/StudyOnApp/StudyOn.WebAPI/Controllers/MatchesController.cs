@@ -69,5 +69,15 @@ namespace StudyOn.WebAPI.Controllers
             var result = _matchManager.GetMatch(request);
             return result;
         }
+
+        [HttpGet]
+        [Route("{matchId}/players")]
+        [AllowAnonymous]
+        public Response<List<UserInfo>> GetMatchPlayers([FromHeader] GeMatchByIdRequest request)
+        {
+            _logger.LogInfo("request for match players arrived");
+            var result = _matchManager.GetMatchPlayers(request);
+            return result;
+        }
     }
 }

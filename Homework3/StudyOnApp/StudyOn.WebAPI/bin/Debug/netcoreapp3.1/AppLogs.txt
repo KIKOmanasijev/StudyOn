@@ -126,3 +126,19 @@
 2021-01-29 16:54:55.2651 INFO list of matches returned
 2021-01-29 16:55:42.5415 INFO request for search matches arrived
 2021-01-29 16:55:42.6081 INFO list of matches returned
+2021-01-29 17:34:51.4739 INFO request for login arrived
+2021-01-29 17:47:54.7391 INFO request for login arrived
+2021-01-29 17:47:55.8216 INFO user singed in
+2021-01-29 17:48:14.6142 INFO request for match details arrived
+2021-01-29 17:48:14.8206 INFO match details returned
+2021-01-29 18:00:14.7119 INFO request for match players arrived
+2021-01-29 18:01:15.3003 INFO request for match players arrived
+2021-01-29 18:04:05.3277 INFO request for match players arrived
+2021-01-29 18:06:57.8673 INFO request for match players arrived
+2021-01-29 18:06:58.8794 INFO player details returned
+2021-01-29 18:07:10.4814 INFO request for match players arrived
+2021-01-29 18:07:33.9225 INFO player details returned
+2021-01-29 18:07:37.8651 INFO request for match players arrived
+2021-01-29 18:08:10.3936 INFO player details returned
+2021-01-29 18:13:32.5551 INFO request for match players arrived
+2021-01-29 18:13:38.4978 INFO player details returned

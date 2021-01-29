@@ -10,6 +10,7 @@ namespace Court.Contracts.Managers
         Response<List<Courts>> GetCourts(GetCourtsRequest request);
         Response<bool> ReviewCourt(ReviewCourtRequest request);
         Response<CourtDetails> GetCourt(GetCourtByIdRequest request);
+        Response<List<UserRatings>> GetCourtRatings(GetCourtByIdRequest request);
 
     }
 }

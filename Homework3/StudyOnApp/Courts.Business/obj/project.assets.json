@@ -1569,23 +1569,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kate\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj",
+      "projectUniqueName": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj",
       "projectName": "Court.Business",
-      "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj",
-      "packagesPath": "C:\\Users\\Kate\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\obj\\",
+      "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj",
+      "packagesPath": "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Kate\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dimitar.anakiev\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1594,17 +1590,17 @@
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {},
-        "https://tfs.mca.mk/DefaultCollection/_packaging/MCA/nuget/v3/index.json": {}
+        "https://pkgs.dev.azure.com/ITLexternal/05272a44-ea8f-48b0-a185-4fc9992975b6/_packaging/Verona/nuget/v3/index.json": {}
       },
       "frameworks": {
         "netstandard2.0": {
           "targetAlias": "netstandard2.0",
           "projectReferences": {
-            "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj": {
-              "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj"
+            "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj": {
+              "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj"
             },
-            "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\Court.Data.csproj": {
-              "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\Court.Data.csproj"
+            "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\Court.Data.csproj": {
+              "projectPath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\Court.Data.csproj"
             }
           }
         }
@@ -1640,7 +1636,7 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

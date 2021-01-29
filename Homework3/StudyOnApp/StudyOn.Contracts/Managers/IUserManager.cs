@@ -8,6 +8,5 @@ namespace StudyOn.Contracts
     {
         Response<bool> AddUser(AddUserRequest request);
         Response<LoggedInUserResponse> SignInUser(LoginRequest request);
-        List<UserInfo> ToUserInfo(List<string> userMatchesIdsuserIds);
     }
 }

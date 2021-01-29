@@ -40,25 +40,49 @@ namespace Court.Business.Managers
             };
             getCourt.Ratings.ToList().ForEach(x =>
             {
-                var rating = _ratingRepository.GetAll(i => i.User).Where(i => i.Id == x.Id).FirstOrDefault();
-                var userRating = new UserRatings()
-                {
-                    Id = x.UserId,
-                    Comment = x.Comment,
-                    Email = rating.User.Email,
-                    FirstName = rating.User.FirstName,
-                    LastName = rating.User.LastName,
-                    Rate = x.Rate,
-                    UserName = rating.User.UserName
-                };
-                courtDetails.userRatings.Add(userRating);
                 sumRates += x.Rate;
             });
             courtDetails.AverageRating = sumRates / getCourt.Ratings.Count();
-
+            _logger.LogInfo("court details returned");
             response.Payload = courtDetails;
             return response;
 
+        }
+
+        public Response<List<UserRatings>> GetCourtRatings(GetCourtByIdRequest request)
+        {
+            var response = new Response<List<UserRatings>>();
+            var pagedResponse = new List<UserRatings>();
+            var getRatings = _ratingRepository.GetAll<Ratings>(includeProperties: $"{nameof(Ratings.User)}").Where(x => x.CourtId == request.CourtId).ToList();
+            if (getRatings == null)
+            {
+                _logger.LogError("no ratings found");
+                response.Messages.Add(new ResponseMessage
+                {
+                    Type = Contracts.Enums.ResponseMessageEnum.Exception,
+                    Message = "the court does not exist",
+                });
+                response.Status = System.Net.HttpStatusCode.NotFound;
+            }
+            getRatings.ForEach(x =>
+            {
+                var userRating = new UserRatings()
+                {
+                    Email = x.User.Email,
+                    UserName = x.User.UserName,
+                    FirstName = x.User.FirstName,
+                    LastName = x.User.LastName,
+                    Id = x.User.Id,
+                    Comment = x.Comment,
+                    Rate = x.Rate
+                };
+                pagedResponse.Add(userRating);
+            });
+
+            _logger.LogInfo("user ratings returned");
+            response.Payload = pagedResponse;
+            response.Status = System.Net.HttpStatusCode.OK;
+            return response;
         }
 
         public Response<List<Courts>> GetCourts(GetCourtsRequest request)

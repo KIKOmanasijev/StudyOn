@@ -52,5 +52,14 @@ namespace Court.WebAPI.Controllers
             var result = _courtsManager.GetCourt(request);
             return result;
         }
+
+        [HttpGet]
+        [Route("{courtId}/ratings")]
+        public Response<List<UserRatings>> GetCourtRatings([FromHeader] GetCourtByIdRequest request)
+        {
+            _logger.LogInfo("request for court ratings arrived");
+            var result = _courtsManager.GetCourtRatings(request);
+            return result;
+        }
     }
 }

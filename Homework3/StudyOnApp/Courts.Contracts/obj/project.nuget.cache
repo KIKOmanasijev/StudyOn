@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "ssBWm6Pf/kYuXbz6EzKdl1gCNzgc5kFViIY0LgSXDbldlYEiRs0PtrRPRrR5DJmxawIulb+r/+UCZgwxcqONsQ==",
+  "dgSpecHash": "ed0P7JMFJsnrZY91a/WKzKc9WEtJ+UhEMvONUVeH0mxyPakp7P6t/tSSPlywMZzfqO38y0Zu/LTLGmQFMF0Uaw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj",
+  "projectFilePath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Kate\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Kate\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

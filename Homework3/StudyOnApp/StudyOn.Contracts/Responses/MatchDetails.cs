@@ -1,5 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
 
 namespace StudyOn.Contracts.Responses
 {
@@ -14,6 +13,5 @@ namespace StudyOn.Contracts.Responses
         public string Type { get; set; }
         public DateTime StartTime { get; set; }
         public DateTime EndTime { get; set; }
-        public List<UserInfo> Players = new List<UserInfo>();
     }
 }
