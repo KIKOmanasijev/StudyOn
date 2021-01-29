@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bSWtI5U9j4/hnIQbc26M7ky6s8CBWMSUXqpVPY7KHRTrOWZ++Y3w+aGKECsRPGgnGO15uWIK6bJiZQZymSre3g==",
+  "dgSpecHash": "7LzOguPKUK90+/0HRLWx3WI4NAVEMmsoNteyX0ShJAEmC95SUhf2A4lJ9/zelL6PEnqufcu8V8IRQxT64UqnIA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj",
+  "projectFilePath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kate\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Kate\\.nuget\\packages\\microsoft.bcl.hashcode\\1.1.0\\microsoft.bcl.hashcode.1.1.0.nupkg.sha512",

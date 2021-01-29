@@ -1,6 +1,7 @@
 <template>
   <div class="faq">
     <Sidemenu/>
+    <!-- This is FAQ - frequently asked questions -->
         <div class="faq-wrapper">
             <h2>Често поставувани прашања</h2>
 

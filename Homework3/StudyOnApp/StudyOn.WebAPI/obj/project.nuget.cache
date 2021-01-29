@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LiIx0AcjnHP09keQuB+UW/MzFjFXQjBClju5jGHf9EViqsHrmKI7DE0Rs/6srtI1EJSLKtQ8Z9lDcopxWl+wkg==",
+  "dgSpecHash": "V5rm6xbT2Hx71C2NnccOEax8HZtg6fEnatFequQn3SyonmEMTO18Tkqb9ZyIhqdBBP+LDxDwYD/w64zzqNciWg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kate\\.nuget\\packages\\microsoft.aspnet.webapi.client\\5.2.7\\microsoft.aspnet.webapi.client.5.2.7.nupkg.sha512",
     "C:\\Users\\Kate\\.nuget\\packages\\microsoft.aspnet.webapi.core\\5.2.7\\microsoft.aspnet.webapi.core.5.2.7.nupkg.sha512",

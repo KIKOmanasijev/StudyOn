@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.WebAPI\\Court.WebAPI.csproj": {}
+    "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.WebAPI\\Court.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj": {
+    "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj",
+        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj",
         "projectName": "Court.Business",
-        "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj",
+        "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj",
         "packagesPath": "C:\\Users\\Kate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\obj\\",
+        "outputPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -32,11 +32,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj"
+              "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj"
               },
-              "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\Court.Data.csproj": {
-                "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\Court.Data.csproj"
+              "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\Court.Data.csproj": {
+                "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\Court.Data.csproj"
               }
             }
           }
@@ -76,14 +76,14 @@
         }
       }
     },
-    "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj": {
+    "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj",
         "projectName": "Court.Contracts",
-        "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj",
+        "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj",
         "packagesPath": "C:\\Users\\Kate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -137,14 +137,14 @@
         }
       }
     },
-    "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\Court.Data.csproj": {
+    "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\Court.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\Court.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\Court.Data.csproj",
         "projectName": "Court.Data",
-        "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\Court.Data.csproj",
+        "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\Court.Data.csproj",
         "packagesPath": "C:\\Users\\Kate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\obj\\",
+        "outputPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -165,8 +165,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj"
+              "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj"
               }
             }
           }
@@ -210,14 +210,14 @@
         }
       }
     },
-    "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj": {
+    "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj",
+        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj",
         "projectName": "Court.LoggerService",
-        "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj",
+        "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj",
         "packagesPath": "C:\\Users\\Kate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\obj\\",
+        "outputPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -238,8 +238,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj"
+              "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj"
               }
             }
           }
@@ -279,14 +279,14 @@
         }
       }
     },
-    "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.WebAPI\\Court.WebAPI.csproj": {
+    "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.WebAPI\\Court.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.WebAPI\\Court.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.WebAPI\\Court.WebAPI.csproj",
         "projectName": "Court.WebAPI",
-        "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.WebAPI\\Court.WebAPI.csproj",
+        "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.WebAPI\\Court.WebAPI.csproj",
         "packagesPath": "C:\\Users\\Kate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -307,14 +307,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj": {
-                "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj"
+              "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj": {
+                "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Business\\Court.Business.csproj"
               },
-              "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj"
+              "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj"
               },
-              "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj": {
-                "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj"
+              "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj": {
+                "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj"
               }
             }
           }

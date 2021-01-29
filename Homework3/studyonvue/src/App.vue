@@ -8,6 +8,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 
 export default {
   name: 'App',
@@ -19,6 +20,17 @@ export default {
   provide: ['getAllFields'],
   mounted(){
       this.$store.commit('checkLoggedUser');
+  },
+  methods: {
+    async getAllFields(){
+      let courts = await axios.get(`http://localhost:5000/courts/search?CurrentPage=${this.$store.state.currentPage}&PageSize=20`, {
+        headers: {
+          "Authorization": `bearer ${this.$store.state.jwt}`,
+          'Access-Control-Allow-Origin' : '*',
+        }
+      });
+      this.$store.commit('getAllFields', courts.data.payload);      
+    }
   }
 }
 </script>

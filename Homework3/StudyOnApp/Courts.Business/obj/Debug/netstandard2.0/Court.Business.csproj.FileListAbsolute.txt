@@ -54,3 +54,17 @@ C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debu
 C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.csproj.CopyComplete
 C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.dll
 C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.pdb
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\Courts.Business\bin\Debug\netstandard2.0\Court.Business.deps.json
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\Courts.Business\bin\Debug\netstandard2.0\Court.Business.dll
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\Courts.Business\bin\Debug\netstandard2.0\Court.Business.pdb
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\Courts.Business\bin\Debug\netstandard2.0\Court.Contracts.dll
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\Courts.Business\bin\Debug\netstandard2.0\Court.Data.dll
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\Courts.Business\bin\Debug\netstandard2.0\Court.Contracts.pdb
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\Courts.Business\bin\Debug\netstandard2.0\Court.Data.pdb
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.csprojAssemblyReference.cache
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.AssemblyInfoInputs.cache
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.AssemblyInfo.cs
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.csproj.CoreCompileInputs.cache
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.csproj.CopyComplete
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.dll
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\Courts.Business\obj\Debug\netstandard2.0\Court.Business.pdb

@@ -15,3 +15,45 @@
 2021-01-27 21:40:58.9612 INFO list of courts returned
 2021-01-27 21:58:33.0327 INFO request for search courts arrived
 2021-01-27 21:58:33.1370 INFO list of courts returned
+2021-01-29 16:43:23.0238 INFO request for search courts arrived
+2021-01-29 16:43:24.7649 INFO list of courts returned
+2021-01-29 16:49:43.5965 INFO request for search courts arrived
+2021-01-29 16:49:43.7789 INFO list of courts returned
+2021-01-29 16:50:04.5303 INFO request for search courts arrived
+2021-01-29 16:50:04.5555 INFO list of courts returned
+2021-01-29 16:50:04.7271 INFO request for search courts arrived
+2021-01-29 16:50:04.7465 INFO list of courts returned
+2021-01-29 16:50:18.9115 INFO request for search courts arrived
+2021-01-29 16:50:18.9760 INFO list of courts returned
+2021-01-29 16:51:16.7760 INFO request for search courts arrived
+2021-01-29 16:51:16.7819 INFO request for search courts arrived
+2021-01-29 16:51:16.7954 INFO list of courts returned
+2021-01-29 16:51:16.8124 INFO list of courts returned
+2021-01-29 16:51:18.6288 INFO request for search courts arrived
+2021-01-29 16:51:18.6717 INFO list of courts returned
+2021-01-29 16:51:31.9197 INFO request for search courts arrived
+2021-01-29 16:51:31.9425 INFO list of courts returned
+2021-01-29 16:52:19.3412 INFO request for search courts arrived
+2021-01-29 16:52:19.3689 INFO list of courts returned
+2021-01-29 16:53:09.7329 INFO request for search courts arrived
+2021-01-29 16:53:11.2607 INFO list of courts returned
+2021-01-29 16:53:42.5729 INFO request for search courts arrived
+2021-01-29 16:53:42.5943 INFO list of courts returned
+2021-01-29 16:53:50.8581 INFO request for search courts arrived
+2021-01-29 16:53:50.8866 INFO list of courts returned
+2021-01-29 16:53:51.6631 INFO request for search courts arrived
+2021-01-29 16:53:51.6861 INFO list of courts returned
+2021-01-29 16:53:51.7104 INFO request for search courts arrived
+2021-01-29 16:53:51.7230 INFO list of courts returned
+2021-01-29 16:53:56.4170 INFO request for search courts arrived
+2021-01-29 16:53:56.4616 INFO list of courts returned
+2021-01-29 16:54:25.2083 INFO request for search courts arrived
+2021-01-29 16:54:25.2230 INFO list of courts returned
+2021-01-29 16:54:54.3990 INFO request for search courts arrived
+2021-01-29 16:54:54.4289 INFO list of courts returned
+2021-01-29 16:54:54.4513 INFO request for search courts arrived
+2021-01-29 16:54:54.4718 INFO list of courts returned
+2021-01-29 16:54:55.2311 INFO request for search courts arrived
+2021-01-29 16:54:55.2517 INFO list of courts returned
+2021-01-29 16:55:42.5421 INFO request for search courts arrived
+2021-01-29 16:55:42.5814 INFO list of courts returned

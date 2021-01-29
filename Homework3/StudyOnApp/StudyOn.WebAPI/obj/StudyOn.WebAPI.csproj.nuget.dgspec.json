@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj": {}
+    "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj": {
+    "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj",
+        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj",
         "projectName": "StudyOn.Business",
-        "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj",
+        "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj",
         "packagesPath": "C:\\Users\\Kate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\obj\\",
+        "outputPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -32,11 +32,11 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
+              "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
               },
-              "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {
-                "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj"
+              "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {
+                "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
+    "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj",
+        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj",
         "projectName": "StudyOn.Contracts",
-        "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj",
+        "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj",
         "packagesPath": "C:\\Users\\Kate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\obj\\",
+        "outputPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -159,14 +159,14 @@
         }
       }
     },
-    "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {
+    "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj",
         "projectName": "StudyOn.Data",
-        "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj",
+        "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj",
         "packagesPath": "C:\\Users\\Kate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\obj\\",
+        "outputPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Data\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -187,8 +187,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
+              "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
               }
             }
           }
@@ -238,14 +238,14 @@
         }
       }
     },
-    "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj": {
+    "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj",
+        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj",
         "projectName": "StudyOn.LoggerService",
-        "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj",
+        "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj",
         "packagesPath": "C:\\Users\\Kate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\obj\\",
+        "outputPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -266,8 +266,8 @@
           "netstandard2.0": {
             "targetAlias": "netstandard2.0",
             "projectReferences": {
-              "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
+              "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
               }
             }
           }
@@ -307,14 +307,14 @@
         }
       }
     },
-    "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj": {
+    "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
+        "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
         "projectName": "StudyOn.WebAPI",
-        "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
+        "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
         "packagesPath": "C:\\Users\\Kate\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\obj\\",
+        "outputPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -335,14 +335,14 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj": {
-                "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj"
+              "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj": {
+                "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj"
               },
-              "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
-                "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
+              "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
+                "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
               },
-              "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj": {
-                "projectPath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj"
+              "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj": {
+                "projectPath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj"
               }
             }
           }

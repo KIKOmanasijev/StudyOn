@@ -68,3 +68,17 @@ C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Deb
 C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CopyComplete
 C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.dll
 C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.deps.json
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.dll
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.pdb
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csprojAssemblyReference.cache
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfoInputs.cache
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfo.cs
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CoreCompileInputs.cache
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CopyComplete
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.pdb

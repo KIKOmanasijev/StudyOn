@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "tyBwEl/EWkFvBzBRzcLdOqCyvTNdbRdErt4nf+JV3m/KUgALDSUj3HKLQAZ6yfMxPT9h2r0+sroYs+/sxQj/jQ==",
+  "dgSpecHash": "bwU5SZYlQX7yuCTY/zY+6U453n6kKq01vs8+VuXbtQmWdgaSFERO0gv4cM31pDUrFLCrPXRqGVxLoO4P2BRYaA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kate\\Desktop\\dian\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj",
+  "projectFilePath": "C:\\Users\\Kate\\Desktop\\dia\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Kate\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\Kate\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",

@@ -6,14 +6,14 @@
         v-bind:options="mapStyles"
         style="width: 100%; height: 100%"
         >
-        <!-- <GmapMarker
+        <GmapMarker
             :key="index"
             v-for="(m, index) in markers"
             :position="{lat: m.lat, lng: m.lng}"
             :clickable="true"
             :draggable="true"
             @click="center=m.position"
-        /> -->
+        />
         </GmapMap>
     </div>
 </template>
@@ -128,11 +128,10 @@ export default {
             }
         }
     },
-    props: {
-        // markers: {
-        //     required: true
-        // }
-    }
+    created(){
+        console.log(this.markers);
+    },
+    props: ['markers'],
 }
 </script>
 <style>

@@ -7,7 +7,7 @@ Vue.config.productionTip = false
 import BaseDialog from "./views/UI/BaseDialog"
 import * as VueGoogleMaps from 'vue2-google-maps'
 import router from './router'
-
+import axios from "axios";
 
 Vue.use(Vuex);
 const store = new Vuex.Store({
@@ -43,10 +43,27 @@ const store = new Vuex.Store({
       state.matches = payload.matches;
     },
     getAllFields(state, payload) { 
-      console.log(payload);
       state.fields = payload;
     },
   },
+  actions: {
+    searchMatches({commit, state}) {
+      axios
+        .get(
+          `https://localhost:5001/matches/search?CurrentPage=${state.currentPage}&PageSize=20`,
+          {
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        )
+        .then((res) => {
+          commit("setMatches", {
+            matches: res.data.payload,
+          });
+        });
+    }
+  }
 });
 
 Vue.component("BaseDialog", BaseDialog);

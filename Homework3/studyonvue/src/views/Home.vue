@@ -2,13 +2,7 @@
   <div class="home">
     <Sidemenu/>
     <ListMatches :matches="$store.state.matches"/>
-
-    <!-- <BaseDialog v-if="modal">
-      <template #title><h2>Add new match</h2></template>
-      <template #content><MatchForm/></template>
-    </BaseDialog> -->
-    <MapContainer/>
-    <!-- <MapContainer :markers="getAllMarkers()"/> -->
+    <MapContainer :markers="markers"/>
   </div>
 </template>
 
@@ -23,13 +17,19 @@ export default {
   mounted(){
     this.getAllMatches();
   },
+  data(){
+    return {
+      markers: []
+    }
+  },
   components: {
     Sidemenu,
     ListMatches,
     MapContainer,
   },
-  created(){
-    // this.getAllMarkers()
+  async created(){
+      await this.getAllFields();
+      this.markers = this.getAllMarkers();
   },
   provide(){
     return {      
@@ -60,11 +60,12 @@ export default {
 
       instance.defaults.headers.common['Authorization'] = `bearer ${this.$store.state.jwt}`
       instance.defaults.headers.post['Content-Type'] = "application/json";
-      console.log(instance);
-      instance.post('/create', JSON.stringify(match));
-      // axios.post('https://localhost:5001/matches/create');          
- 
-      this.getAllMatches();
+      instance.post('/create', JSON.stringify(match)).then(
+        () => {
+          this.getAllMatches();
+        }
+      );
+      
     },
      getAllMatches(){
       axios.get(`https://localhost:5001/matches/search?CurrentPage=${this.$store.state.currentPage}&PageSize=20`, 
@@ -94,14 +95,26 @@ export default {
       this.$store.commit('setMatches', {
         matches: matches
       });
-    }
-    // getAllMarkers(){
-    //   let markers = this.matches.map((match) => {
-    //     return match.field.location
-    //   });
+    },
+    async getAllFields(){
+      let courts = await axios.get(`http://localhost:5000/courts/search?CurrentPage=${this.$store.state.currentPage}&PageSize=20`, {
+        headers: {
+          "Authorization": `bearer ${this.$store.state.jwt}`,
+          'Access-Control-Allow-Origin' : '*',
+        }
+      });
+      this.$store.commit('getAllFields', courts.data.payload);      
+    },
+    getAllMarkers(){
+      let markers = this.$store.state.fields.map((field) => {
+        return {
+          lat: field.lat,
+          lng: field.lng
+        }
+      });
 
-    //   return markers;
-    // }
+      return markers;
+    },
   }
 }
 </script>

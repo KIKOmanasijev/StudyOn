@@ -2,7 +2,7 @@
   <div class="fields">
     <Sidemenu/>
     <ListFields :getAllFields="getAllFields"/>
-    <MapContainer/>
+    <MapContainer :markers="markers"/>
   </div>
 </template>
 
@@ -17,12 +17,8 @@ export default {
   name: 'Fields',
   data(){
    return {
-    user: {
-      loggedIn: true
-    },
-    fields: [
-     
-    ],
+     markers: [],
+      fields: [],
    }
   },
   provide: ['getAllFields'],
@@ -31,14 +27,11 @@ export default {
     ListFields,
     MapContainer  
   },
-  methods: {
-    getAllMarkers(){
-      let markers = this.fields.map((match) => {
-        return match.location
-      });
-
-      return markers;
-    },
+  async mounted(){
+    await this.getAllFields();
+    this.markers = this.getAllMarkers();
+  },
+  methods: {    
     async getAllFields(){
       let courts = await axios.get(`http://localhost:5000/courts/search?CurrentPage=${this.$store.state.currentPage}&PageSize=20`, {
         headers: {
@@ -46,8 +39,18 @@ export default {
           'Access-Control-Allow-Origin' : '*',
         }
       });
-      this.$store.commit('getAllFields', courts.data.payload);
-    }
+      this.$store.commit('getAllFields', courts.data.payload);      
+    },
+    getAllMarkers(){
+      let markers = this.$store.state.fields.map((field) => {
+        return {
+          lat: field.lat,
+          lng: field.lng
+        }
+      });
+
+      return markers;
+    },
   }
 }
 </script>

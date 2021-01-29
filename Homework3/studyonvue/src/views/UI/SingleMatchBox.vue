@@ -1,13 +1,19 @@
 <template>
-    <div class="single-match-wrapper">
+    <div class="single-match-wrapper" v-if="dataFetched">
        <div class="single-match-header">
             <div class="single-match-image">
                 <img src="https://via.placeholder.com/700x300"/>         
                                 <!-- <h2>{{this.match.fieldName}}</h2> -->
             </div>
             <div class="match-info">
-                <span class="sport Football">{{match ? match.type : 'All Sports'}}</span>
+                <div class="match-info-header">
+                    <span class="sport" :class="getClass(match.type)">{{match ? match.type : 'All Sports'}}</span>
+                    <button class="accept-match" @click="acceptMatch(match)"><i class="fa fa-check"></i></button>
+                </div>
+                
                 <h3>Игралиште без име</h3>
+                <i class="fa fa-user mr-2"></i> уште {{match.maxPlayers - match.currentPlayers}} играчи <br/>
+                <i class="fa fa-clock mr-2"></i> {{formatTime(match.startTime)}}
             </div>
         </div>
     </div>
@@ -19,19 +25,59 @@ import axios from "axios";
 export default {
     data(){
         return {
+            dataFetched: false,
             match: null
         }
     },
     created(){
        axios.get(`https://localhost:5001/matches/${this.$route.params.matchId}`).then(res => {
-            console.log(res.data.payload);
+        //    console.log(res.data.payload.Players);
+            this.dataFetched = true;
             this.match = res.data.payload;
-        }).catch(e => console.log(e));
+        }).catch(e => console.log(e));    
+    },
+    methods: {
+        getClass(type){
+            return `${type}`
+        },
+        formatTime(time){
+            return new Date(time).toLocaleString();
+        },
+        async acceptMatch(match){    
+            let data =  { matchId: match.matchId };      
+            const instance = axios.create({
+                baseURL: 'https://localhost:5001/matches'
+            });
+
+            instance.defaults.headers.common['Authorization'] = `bearer ${this.$store.state.jwt}`
+            instance.defaults.headers.post['Content-Type'] = "application/json";
+            // console.log(instance);
+            await instance.post('/join', JSON.stringify(data), {
+                headers: {
+                    'Authorization': `bearer ${this.$store.state.jwt}`
+                }
+            }).then(res => console.log(res));
+            this.$store.dispatch('searchMatches');
+        }
     }
 }
 </script>
 
 <style scoped>
+    .match-info-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .match-info-header .accept-match {
+        height: 45px;
+        width: 45px;
+        border-radius: 50%;
+        color: white;
+        border: none;
+        background: #3FE18B;
+    }
     .single-match-wrapper {
         flex: 0 0 35vw;
         max-width: 35vw;

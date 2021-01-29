@@ -59,3 +59,12 @@ C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Contracts\obj\De
 C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Contracts\obj\Debug\netstandard2.0\StudyOn.Contracts.csproj.CoreCompileInputs.cache
 C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Contracts\obj\Debug\netstandard2.0\StudyOn.Contracts.dll
 C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Contracts\obj\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Contracts\bin\Debug\netstandard2.0\StudyOn.Contracts.deps.json
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Contracts\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Contracts\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Contracts\obj\Debug\netstandard2.0\StudyOn.Contracts.csprojAssemblyReference.cache
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Contracts\obj\Debug\netstandard2.0\StudyOn.Contracts.AssemblyInfoInputs.cache
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Contracts\obj\Debug\netstandard2.0\StudyOn.Contracts.AssemblyInfo.cs
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Contracts\obj\Debug\netstandard2.0\StudyOn.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Contracts\obj\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Contracts\obj\Debug\netstandard2.0\StudyOn.Contracts.pdb

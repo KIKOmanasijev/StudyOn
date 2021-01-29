@@ -72,3 +72,57 @@
 2021-01-27 22:06:56.2256 INFO list of matches returned
 2021-01-27 22:22:05.6175 INFO request for search matches arrived
 2021-01-27 22:22:05.7397 INFO list of matches returned
+2021-01-29 16:43:18.0058 INFO request for search matches arrived
+2021-01-29 16:43:19.9261 INFO list of matches returned
+2021-01-29 16:43:27.6211 INFO request for search matches arrived
+2021-01-29 16:43:27.6534 INFO list of matches returned
+2021-01-29 16:43:30.5090 INFO request for search matches arrived
+2021-01-29 16:43:30.5277 INFO list of matches returned
+2021-01-29 16:49:43.2902 INFO request for search matches arrived
+2021-01-29 16:49:43.5029 INFO list of matches returned
+2021-01-29 16:50:19.0722 INFO request for search matches arrived
+2021-01-29 16:50:19.1016 INFO list of matches returned
+2021-01-29 16:50:29.0482 INFO request for login arrived
+2021-01-29 16:50:29.4499 INFO user singed in
+2021-01-29 16:51:18.6524 INFO request for search matches arrived
+2021-01-29 16:51:18.7293 INFO list of matches returned
+2021-01-29 16:51:31.9233 INFO request for search matches arrived
+2021-01-29 16:51:31.9508 INFO list of matches returned
+2021-01-29 16:51:58.6666 INFO request for register arrived
+2021-01-29 16:51:58.9191 INFO new user registered
+2021-01-29 16:52:04.5449 INFO request for login arrived
+2021-01-29 16:52:04.5642 INFO user singed in
+2021-01-29 16:52:19.3289 INFO request for search matches arrived
+2021-01-29 16:52:19.3653 INFO list of matches returned
+2021-01-29 16:53:10.1258 INFO request for search matches arrived
+2021-01-29 16:53:11.6353 INFO list of matches returned
+2021-01-29 16:53:28.6971 INFO request for new match arrived
+2021-01-29 16:53:29.0021 INFO new match created
+2021-01-29 16:53:29.1792 INFO new player added to match
+2021-01-29 16:53:29.3048 INFO request for search matches arrived
+2021-01-29 16:53:29.3282 INFO list of matches returned
+2021-01-29 16:53:37.1438 INFO request for match details arrived
+2021-01-29 16:53:37.3967 INFO match details returned
+2021-01-29 16:53:42.0491 INFO request for search matches arrived
+2021-01-29 16:53:42.0760 INFO list of matches returned
+2021-01-29 16:53:48.8214 INFO request for match details arrived
+2021-01-29 16:53:48.8559 INFO match details returned
+2021-01-29 16:53:50.8427 INFO request for search matches arrived
+2021-01-29 16:53:50.8838 INFO list of matches returned
+2021-01-29 16:53:56.5251 INFO request for search matches arrived
+2021-01-29 16:53:56.5447 INFO list of matches returned
+2021-01-29 16:54:13.7867 INFO request for new match arrived
+2021-01-29 16:54:13.8172 INFO new match created
+2021-01-29 16:54:13.8409 INFO new player added to match
+2021-01-29 16:54:13.8741 INFO request for search matches arrived
+2021-01-29 16:54:13.8901 INFO list of matches returned
+2021-01-29 16:54:23.0859 INFO request for match details arrived
+2021-01-29 16:54:23.1276 INFO match details returned
+2021-01-29 16:54:25.1447 INFO request for search matches arrived
+2021-01-29 16:54:25.1704 INFO list of matches returned
+2021-01-29 16:54:51.9252 INFO request for match details arrived
+2021-01-29 16:54:51.9640 INFO match details returned
+2021-01-29 16:54:55.2388 INFO request for search matches arrived
+2021-01-29 16:54:55.2651 INFO list of matches returned
+2021-01-29 16:55:42.5415 INFO request for search matches arrived
+2021-01-29 16:55:42.6081 INFO list of matches returned
