@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Fields from '../views/Fields.vue'
 import Faq from '../views/Faq.vue'
 import SingleMatch from "../views/SingleMatch.vue";
+import SingleField from "../views/SingleField.vue";
 
 Vue.use(VueRouter)
 
@@ -28,12 +29,12 @@ const routes = [
     path: '/match/:matchId',
     name: 'Single Match',
     component: SingleMatch
-  }
-  // {
-  //   path: '/field/:id',
-  //   name: "Single Field",
-  //   component: Field
-  // },
+  },
+  {
+    path: '/fields/:matchId',
+    name: "Single Field",
+    component: SingleField
+  },
   // {
   //   path: '/match/:id',
   //   name: 'Single Match',

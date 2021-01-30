@@ -61,3 +61,177 @@
 2021-01-29 18:27:26.5800 INFO request for court ratings arrived
 2021-01-29 18:27:27.5978 INFO player details returned
 2021-01-29 18:28:48.0558 INFO request for court details arrived
+2021-01-30 17:36:39.3299 INFO request for search courts arrived
+2021-01-30 17:36:40.0803 INFO request for search courts arrived
+2021-01-30 17:36:41.7696 INFO list of courts returned
+2021-01-30 17:36:41.7696 INFO list of courts returned
+2021-01-30 17:43:09.9831 INFO request for search courts arrived
+2021-01-30 17:43:10.3042 INFO list of courts returned
+2021-01-30 17:43:10.3673 INFO request for search courts arrived
+2021-01-30 17:43:10.3857 INFO list of courts returned
+2021-01-30 18:04:28.5839 INFO request for court details arrived
+2021-01-30 18:04:51.7690 INFO request for court details arrived
+2021-01-30 18:06:32.6827 INFO request for court details arrived
+2021-01-30 18:06:33.9935 INFO court details returned
+2021-01-30 18:08:47.7872 INFO request for court details arrived
+2021-01-30 18:08:47.8661 INFO court details returned
+2021-01-30 18:09:22.3524 INFO request for court details arrived
+2021-01-30 18:09:22.4139 INFO court details returned
+2021-01-30 18:09:33.2223 INFO request for court details arrived
+2021-01-30 18:09:33.2965 INFO court details returned
+2021-01-30 18:10:23.7008 INFO request for court details arrived
+2021-01-30 18:10:23.7639 INFO court details returned
+2021-01-30 18:10:35.6268 INFO request for court details arrived
+2021-01-30 18:10:35.6764 INFO court details returned
+2021-01-30 18:10:49.3517 INFO request for court details arrived
+2021-01-30 18:10:49.3939 INFO court details returned
+2021-01-30 18:11:19.1732 INFO request for court details arrived
+2021-01-30 18:11:19.2474 INFO court details returned
+2021-01-30 18:12:38.2534 INFO request for court details arrived
+2021-01-30 18:12:38.5037 INFO court details returned
+2021-01-30 18:13:01.2938 INFO request for court details arrived
+2021-01-30 18:13:01.3247 INFO court details returned
+2021-01-30 18:13:07.2499 INFO request for court details arrived
+2021-01-30 18:13:07.2858 INFO court details returned
+2021-01-30 18:13:30.6925 INFO request for court details arrived
+2021-01-30 18:13:30.6925 INFO request for court ratings arrived
+2021-01-30 18:13:30.7473 INFO court details returned
+2021-01-30 18:13:30.8428 INFO user ratings returned
+2021-01-30 18:15:14.7178 INFO request for court details arrived
+2021-01-30 18:15:14.7764 INFO request for court ratings arrived
+2021-01-30 18:15:14.7764 INFO court details returned
+2021-01-30 18:15:14.7967 INFO user ratings returned
+2021-01-30 18:15:23.4991 INFO request for court details arrived
+2021-01-30 18:15:23.5027 INFO request for court ratings arrived
+2021-01-30 18:15:23.5294 INFO court details returned
+2021-01-30 18:15:23.5427 INFO user ratings returned
+2021-01-30 18:19:12.9918 INFO request for court details arrived
+2021-01-30 18:19:12.9918 INFO request for court ratings arrived
+2021-01-30 18:19:13.3371 INFO user ratings returned
+2021-01-30 18:19:13.3568 INFO court details returned
+2021-01-30 18:21:04.4398 INFO request for court details arrived
+2021-01-30 18:21:04.4398 INFO request for court ratings arrived
+2021-01-30 18:21:04.5017 INFO court details returned
+2021-01-30 18:21:04.6265 INFO user ratings returned
+2021-01-30 18:21:48.2279 INFO request for court details arrived
+2021-01-30 18:21:48.2279 INFO request for court ratings arrived
+2021-01-30 18:21:48.2701 INFO user ratings returned
+2021-01-30 18:21:48.2701 INFO court details returned
+2021-01-30 18:22:00.1044 INFO request for court details arrived
+2021-01-30 18:22:00.1044 INFO request for court ratings arrived
+2021-01-30 18:22:00.1350 INFO user ratings returned
+2021-01-30 18:22:00.1481 INFO court details returned
+2021-01-30 18:22:08.2930 INFO request for court details arrived
+2021-01-30 18:22:08.2930 INFO request for court ratings arrived
+2021-01-30 18:22:08.3406 INFO user ratings returned
+2021-01-30 18:22:08.3688 INFO court details returned
+2021-01-30 18:22:15.6371 INFO request for court details arrived
+2021-01-30 18:22:15.6493 INFO request for court ratings arrived
+2021-01-30 18:22:15.6833 INFO user ratings returned
+2021-01-30 18:22:15.6833 INFO court details returned
+2021-01-30 18:22:45.9981 INFO request for court details arrived
+2021-01-30 18:22:45.9981 INFO request for court ratings arrived
+2021-01-30 18:22:46.0448 INFO user ratings returned
+2021-01-30 18:22:46.0557 INFO court details returned
+2021-01-30 18:25:23.7349 INFO request for court details arrived
+2021-01-30 18:25:23.8051 INFO request for court ratings arrived
+2021-01-30 18:25:24.0286 INFO court details returned
+2021-01-30 18:25:24.0421 INFO user ratings returned
+2021-01-30 18:25:39.6696 INFO request for court details arrived
+2021-01-30 18:25:39.6696 INFO request for court ratings arrived
+2021-01-30 18:25:39.7346 INFO user ratings returned
+2021-01-30 18:25:39.8447 INFO court details returned
+2021-01-30 18:26:11.3382 INFO request for court details arrived
+2021-01-30 18:26:11.3703 INFO court details returned
+2021-01-30 18:26:11.3703 INFO request for court ratings arrived
+2021-01-30 18:26:11.3991 INFO user ratings returned
+2021-01-30 18:26:13.1218 INFO request for review of court arrived
+2021-01-30 18:26:13.3198 INFO user rated a court
+2021-01-30 18:26:55.0127 INFO request for court ratings arrived
+2021-01-30 18:26:55.0127 INFO request for court details arrived
+2021-01-30 18:26:55.1283 INFO user ratings returned
+2021-01-30 18:26:55.1283 INFO court details returned
+2021-01-30 18:26:57.0672 INFO request for review of court arrived
+2021-01-30 18:26:57.0869 INFO user rated a court
+2021-01-30 18:29:26.8421 INFO request for court details arrived
+2021-01-30 18:29:26.8421 INFO request for court ratings arrived
+2021-01-30 18:29:26.8804 INFO court details returned
+2021-01-30 18:29:26.8804 INFO user ratings returned
+2021-01-30 18:29:46.1093 INFO request for court details arrived
+2021-01-30 18:29:46.1093 INFO request for court ratings arrived
+2021-01-30 18:29:46.1626 INFO court details returned
+2021-01-30 18:29:46.1626 INFO user ratings returned
+2021-01-30 18:30:20.0518 INFO request for court details arrived
+2021-01-30 18:30:20.0518 INFO request for court ratings arrived
+2021-01-30 18:30:20.1386 INFO user ratings returned
+2021-01-30 18:30:20.1423 INFO court details returned
+2021-01-30 18:30:45.5724 INFO request for court details arrived
+2021-01-30 18:30:45.5724 INFO request for court ratings arrived
+2021-01-30 18:30:45.8069 INFO court details returned
+2021-01-30 18:30:45.8384 INFO user ratings returned
+2021-01-30 18:31:38.6648 INFO request for court details arrived
+2021-01-30 18:31:38.6648 INFO request for court ratings arrived
+2021-01-30 18:31:38.7094 INFO user ratings returned
+2021-01-30 18:31:38.7094 INFO court details returned
+2021-01-30 18:32:07.1583 INFO request for court details arrived
+2021-01-30 18:32:07.1583 INFO request for court ratings arrived
+2021-01-30 18:32:07.2042 INFO court details returned
+2021-01-30 18:32:07.2042 INFO user ratings returned
+2021-01-30 18:32:34.7989 INFO request for court details arrived
+2021-01-30 18:32:34.8481 INFO request for court ratings arrived
+2021-01-30 18:32:34.8885 INFO user ratings returned
+2021-01-30 18:32:34.9297 INFO court details returned
+2021-01-30 18:32:53.9738 INFO request for court details arrived
+2021-01-30 18:32:53.9882 INFO request for court ratings arrived
+2021-01-30 18:32:54.0534 INFO court details returned
+2021-01-30 18:32:54.2089 INFO user ratings returned
+2021-01-30 18:33:11.7222 INFO request for court details arrived
+2021-01-30 18:33:11.7222 INFO request for court ratings arrived
+2021-01-30 18:33:11.7551 INFO user ratings returned
+2021-01-30 18:33:11.7551 INFO court details returned
+2021-01-30 18:34:00.2166 INFO request for court details arrived
+2021-01-30 18:34:00.2166 INFO request for court ratings arrived
+2021-01-30 18:34:00.3398 INFO user ratings returned
+2021-01-30 18:34:00.3398 INFO court details returned
+2021-01-30 18:34:17.0713 INFO request for court details arrived
+2021-01-30 18:34:17.0833 INFO request for court ratings arrived
+2021-01-30 18:34:17.1321 INFO user ratings returned
+2021-01-30 18:34:17.1321 INFO court details returned
+2021-01-30 18:34:41.9979 INFO request for court details arrived
+2021-01-30 18:34:41.9979 INFO request for court ratings arrived
+2021-01-30 18:34:42.0374 INFO user ratings returned
+2021-01-30 18:34:42.0476 INFO court details returned
+2021-01-30 18:34:47.2108 INFO request for review of court arrived
+2021-01-30 18:34:47.2290 INFO user rated a court
+2021-01-30 18:34:49.9360 INFO request for court details arrived
+2021-01-30 18:34:49.9495 INFO request for court ratings arrived
+2021-01-30 18:34:50.0042 INFO user ratings returned
+2021-01-30 18:34:50.0042 INFO court details returned
+2021-01-30 18:35:01.2724 INFO request for court details arrived
+2021-01-30 18:35:01.2724 INFO request for court ratings arrived
+2021-01-30 18:35:01.3173 INFO court details returned
+2021-01-30 18:35:01.3173 INFO user ratings returned
+2021-01-30 18:35:21.9228 INFO request for court details arrived
+2021-01-30 18:35:21.9228 INFO request for court ratings arrived
+2021-01-30 18:35:21.9722 INFO user ratings returned
+2021-01-30 18:35:21.9722 INFO court details returned
+2021-01-30 18:35:46.0836 INFO request for court details arrived
+2021-01-30 18:35:46.0836 INFO request for court ratings arrived
+2021-01-30 18:35:46.2866 INFO court details returned
+2021-01-30 18:35:46.2866 INFO user ratings returned
+2021-01-30 18:36:12.3294 INFO request for court details arrived
+2021-01-30 18:36:12.3294 INFO request for court ratings arrived
+2021-01-30 18:36:12.3878 INFO court details returned
+2021-01-30 18:36:12.4021 INFO user ratings returned
+2021-01-30 18:36:22.7140 INFO request for court ratings arrived
+2021-01-30 18:36:22.7140 INFO request for court details arrived
+2021-01-30 18:36:22.7287 INFO user ratings returned
+2021-01-30 18:36:22.7559 INFO court details returned
+2021-01-30 18:36:31.7255 INFO request for court details arrived
+2021-01-30 18:36:31.7255 INFO request for court ratings arrived
+2021-01-30 18:36:31.7607 INFO user ratings returned
+2021-01-30 18:36:31.7790 INFO court details returned
+2021-01-30 18:36:43.5852 INFO request for court details arrived
+2021-01-30 18:36:43.5852 INFO request for court ratings arrived
+2021-01-30 18:36:43.6156 INFO court details returned
+2021-01-30 18:36:43.6156 INFO user ratings returned

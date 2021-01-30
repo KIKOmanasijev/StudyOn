@@ -42,7 +42,14 @@ namespace Court.Business.Managers
             {
                 sumRates += x.Rate;
             });
-            courtDetails.AverageRating = sumRates / getCourt.Ratings.Count();
+
+            if (sumRates == 0)
+            {
+                courtDetails.AverageRating = 0;
+            } else
+            {
+                courtDetails.AverageRating = sumRates / getCourt.Ratings.Count();
+            }           
             _logger.LogInfo("court details returned");
             response.Payload = courtDetails;
             return response;
