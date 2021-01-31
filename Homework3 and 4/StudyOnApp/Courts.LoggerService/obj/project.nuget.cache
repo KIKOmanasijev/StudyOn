@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "gXdhLre+VrAXRTnSle19N9If2DwOCxlsGpq31/l1rGcgdWhqrL42Br3LTgMQ7veDiawzq86wicQzvtQwOwVSdw==",
+  "success": true,
+  "projectFilePath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3 and 4\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj",
+  "expectedPackageFiles": [
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Kiko\\.nuget\\packages\\nlog\\4.7.6\\nlog.4.7.6.nupkg.sha512"
+  ],
+  "logs": []
+}

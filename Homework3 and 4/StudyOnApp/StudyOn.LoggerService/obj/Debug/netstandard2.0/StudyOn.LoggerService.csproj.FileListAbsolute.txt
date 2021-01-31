@@ -1,0 +1,84 @@
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfoInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfo.cs
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.deps.json
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csprojAssemblyReference.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CopyComplete
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.deps.json
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csprojAssemblyReference.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfoInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfo.cs
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CopyComplete
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.deps.json
+D:\Fakultet\DIANS\StudyOn\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.dll
+D:\Fakultet\DIANS\StudyOn\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+D:\Fakultet\DIANS\StudyOn\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csprojAssemblyReference.cache
+D:\Fakultet\DIANS\StudyOn\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CoreCompileInputs.cache
+D:\Fakultet\DIANS\StudyOn\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfoInputs.cache
+D:\Fakultet\DIANS\StudyOn\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfo.cs
+D:\Fakultet\DIANS\StudyOn\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CopyComplete
+D:\Fakultet\DIANS\StudyOn\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.dll
+D:\Fakultet\DIANS\StudyOn\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.deps.json
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csprojAssemblyReference.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfoInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfo.cs
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CopyComplete
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.deps.json
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csprojAssemblyReference.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfoInputs.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfo.cs
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CoreCompileInputs.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CopyComplete
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.deps.json
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.dll
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csprojAssemblyReference.cache
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfoInputs.cache
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfo.cs
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CopyComplete
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.dll
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.deps.json
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.dll
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.LoggerService.pdb
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.LoggerService\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csprojAssemblyReference.cache
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfoInputs.cache
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.AssemblyInfo.cs
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.csproj.CopyComplete
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.dll
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.LoggerService\obj\Debug\netstandard2.0\StudyOn.LoggerService.pdb

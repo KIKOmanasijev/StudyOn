@@ -1,0 +1,160 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3 and 4\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {}
+  },
+  "projects": {
+    "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3 and 4\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3 and 4\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj",
+        "projectName": "StudyOn.Contracts",
+        "projectPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3 and 4\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj",
+        "packagesPath": "C:\\Users\\Kiko\\.nuget\\packages\\",
+        "outputPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3 and 4\\StudyOnApp\\StudyOn.Contracts\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Kiko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3 and 4\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3 and 4\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj",
+        "projectName": "StudyOn.Data",
+        "projectPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3 and 4\\StudyOnApp\\StudyOn.Data\\StudyOn.Data.csproj",
+        "packagesPath": "C:\\Users\\Kiko\\.nuget\\packages\\",
+        "outputPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3 and 4\\StudyOnApp\\StudyOn.Data\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\Kiko\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3 and 4\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
+                "projectPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3 and 4\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            },
+            "System.ComponentModel.Annotations": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,98 @@
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.deps.json
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csprojAssemblyReference.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfoInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfo.cs
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CoreCompileInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CopyComplete
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.deps.json
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.pdb
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csprojAssemblyReference.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfoInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfo.cs
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CoreCompileInputs.cache
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CopyComplete
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Users\dimitar.anakiev\Desktop\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.deps.json
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.pdb
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csprojAssemblyReference.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfoInputs.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfo.cs
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CoreCompileInputs.cache
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CopyComplete
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.dll
+D:\Fakultet\DIANS\StudyOn\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.deps.json
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.dll
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.pdb
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csprojAssemblyReference.cache
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfoInputs.cache
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfo.cs
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CoreCompileInputs.cache
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CopyComplete
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.deps.json
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.dll
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.pdb
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csprojAssemblyReference.cache
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfoInputs.cache
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfo.cs
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CoreCompileInputs.cache
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CopyComplete
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Users\Kate\Desktop\dia\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.deps.json
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.pdb
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csprojAssemblyReference.cache
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfoInputs.cache
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfo.cs
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CoreCompileInputs.cache
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CopyComplete
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Projects\StudyOn\Homework3\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.deps.json
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Business.pdb
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.dll
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.dll
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Contracts.pdb
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.Business\bin\Debug\netstandard2.0\StudyOn.Data.pdb
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csprojAssemblyReference.cache
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfoInputs.cache
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.AssemblyInfo.cs
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CoreCompileInputs.cache
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.csproj.CopyComplete
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.dll
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\StudyOn.Business\obj\Debug\netstandard2.0\StudyOn.Business.pdb
