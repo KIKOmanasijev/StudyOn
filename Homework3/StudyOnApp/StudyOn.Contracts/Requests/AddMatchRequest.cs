@@ -4,6 +4,9 @@ namespace StudyOn.Contracts.Requests
 {
     public class AddMatchRequest
     {
+        /// <summary>
+        ///     Contains all the parametars needed for creating a new match
+        /// </summary>
         public string UserId { get; set; }
         public string CourtId { get; set; }
         public short MaxPlayers { get; set; }

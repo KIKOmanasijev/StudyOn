@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace StudyOn.Contracts.Requests
+﻿namespace StudyOn.Contracts.Requests
 {
     /// <summary>
     ///     Definitino for grid paging
@@ -15,7 +11,7 @@ namespace StudyOn.Contracts.Requests
         int CurrentPage { get; set; }
 
         /// <summary>
-        ///     Gts or sets page size
+        ///     Gets or sets page size
         /// </summary>
         int PageSize { get; set; }
     }

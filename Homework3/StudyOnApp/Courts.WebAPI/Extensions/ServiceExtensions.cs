@@ -13,6 +13,9 @@ using System.Text;
 
 namespace Court.WebAPI.Extensions
 {
+    /// <summary>
+    /// Extension method for all the services that will be configured during app startup
+    /// </summary>
     public static class ServiceExtensions
     {
         public static void ConfigureCors(this IServiceCollection services)

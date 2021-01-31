@@ -2,6 +2,9 @@
 {
     public class AddUserRequest : IRequest
     {
+        /// <summary>
+        ///     Contains all the parametars needed for creating a new user
+        /// </summary>
         public string UserName { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }

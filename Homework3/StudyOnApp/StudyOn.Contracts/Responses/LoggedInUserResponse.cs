@@ -2,6 +2,9 @@
 {
     public class LoggedInUserResponse
     {
+        /// <summary>
+        ///     Json Web Token
+        /// </summary>
         public string JWT { get; set; }
     }
 }

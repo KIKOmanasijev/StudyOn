@@ -28,6 +28,10 @@ namespace StudyOn.Business.Managers
             _config = config;
             _logger = logger;
         }
+
+        /// <summary>
+        /// Method that creates the new user propagated from the RegisterUser endpoint
+        /// </summary>
         public Response<bool> AddUser(AddUserRequest request)
         {
             var response = new Response<bool>();
@@ -63,6 +67,9 @@ namespace StudyOn.Business.Managers
             }         
         }
 
+        /// <summary>
+        /// Method that signs in the user propagated from the Login endpoint
+        /// </summary>
         public Response<LoggedInUserResponse> SignInUser(LoginRequest request)
         {
             var response = new Response<LoggedInUserResponse>();

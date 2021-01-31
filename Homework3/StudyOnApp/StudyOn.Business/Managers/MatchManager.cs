@@ -26,6 +26,10 @@ namespace StudyOn.Business.Managers
             _umRepository = umRepository;
             _logger = logger;
         }
+
+        /// <summary>
+        /// Method that does the creation of the match propagated from the AddMatch endpoint
+        /// </summary>
         public Response<bool> AddMatch([FromBody] AddMatchRequest request)
         {
             var response = new Response<bool>();
@@ -58,7 +62,9 @@ namespace StudyOn.Business.Managers
                 return response;
             }
         }
-
+        /// <summary>
+        /// Method that does the searching for matches from the GetMatches endpoint
+        /// </summary>
         public Response<List<Matches>> GetMatches(GetMatchesRequest request)
         {
             var response = new Response<List<Matches>>();
@@ -94,6 +100,10 @@ namespace StudyOn.Business.Managers
             return response;
 
         }
+
+        /// <summary>
+        /// Method that does the joining of match propagated from the JoinMatch endpoint
+        /// </summary>
         public Response<bool> JoinMatch(JoinMatchRequest request)
         {
             return AddUserMatch(request.UserId, request.MatchId);
@@ -132,6 +142,9 @@ namespace StudyOn.Business.Managers
             return response;
         }
 
+        /// <summary>
+        /// Method that returns the match details propagated from the GetMatch endpoint
+        /// </summary>
         public Response<MatchDetails> GetMatch(GeMatchByIdRequest request)
         {
             var response = new Response<MatchDetails>();
@@ -168,6 +181,9 @@ namespace StudyOn.Business.Managers
             return response;
         }
 
+        /// <summary>
+        /// Method that returns the players for the match propagated from the GetMatchPlayers endpoint
+        /// </summary>
         public Response<List<UserInfo>> GetMatchPlayers(GeMatchByIdRequest request)
         {
             var response = new Response<List<UserInfo>>();

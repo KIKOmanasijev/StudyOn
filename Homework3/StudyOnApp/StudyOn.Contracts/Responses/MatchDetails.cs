@@ -4,6 +4,9 @@ namespace StudyOn.Contracts.Responses
 {
     public class MatchDetails
     {
+        /// <summary>
+        ///     Contains all the parametars returned for match details
+        /// </summary>
         public string MatchId { get; set; }
         public string CourtName { get; set; }
         public float Lat { get; set; }
