@@ -58,6 +58,8 @@
 <script>
 import('../assets/css/all.css');
 import Swal from 'sweetalert2'
+import repo from '../repository/repo';
+
 export default {
     name: "ListMatches",
     data(){
@@ -68,10 +70,9 @@ export default {
     props: {
         
     },
-    inject: ['getAllMatches', 'addMatch'],
     methods: {
         searchMatch(){
-            this.getAllMatches(this.searchSport)
+            repo.fetchMatchesBySport(this.searchSport);
         },
         playersMissing(curr, maxPlayers){
             return `Уште ${(maxPlayers)-curr} играчи`;
@@ -107,7 +108,6 @@ export default {
                         `
                       ,
             }).then((res) => {
-                //TODO add match
                 if (res.isConfirmed){
                     let startDate = new Date(document.getElementById("swal-input4").value);
                     let endDate = new Date(document.getElementById("swal-input4").value)
@@ -120,7 +120,7 @@ export default {
                         EndTime: endDate.toISOString()
                     } 
 
-                    this.addMatch(match);
+                    repo.addMatch(match);
                 }
             })
         }

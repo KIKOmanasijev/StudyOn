@@ -1,7 +1,7 @@
 <template>
   <div class="fields">
     <Sidemenu/>
-    <ListFields :getAllFields="getAllFields"/>
+    <ListFields/>
     <MapContainer :markers="markers"/>
   </div>
 </template>
@@ -11,7 +11,7 @@ import Sidemenu from "../components/Sidemenu";
 import ListFields from "../components/ListFields";
 import MapContainer from "../components/MapContainer";
 
-import axios from "axios";
+import repo from "../repository/repo";
 
 export default {
   name: 'Fields',
@@ -21,37 +21,15 @@ export default {
       fields: [],
    }
   },
-  provide: ['getAllFields'],
   components: {
     Sidemenu,
     ListFields,
     MapContainer  
   },
   async mounted(){
-    await this.getAllFields();
-    this.markers = this.getAllMarkers();
-  },
-  methods: {    
-    async getAllFields(){
-      let courts = await axios.get(`http://localhost:5000/courts/search?CurrentPage=${this.$store.state.currentPage}&PageSize=20`, {
-        headers: {
-          "Authorization": `bearer ${this.$store.state.jwt}`,
-          'Access-Control-Allow-Origin' : '*',
-        }
-      });
-      this.$store.commit('getAllFields', courts.data.payload);      
-    },
-    getAllMarkers(){
-      let markers = this.$store.state.fields.map((field) => {
-        return {
-          lat: field.lat,
-          lng: field.lng
-        }
-      });
-
-      return markers;
-    },
-  }
+    await repo.fetchAllFields();
+    this.markers = repo.fetchAllMarkers();
+  } 
 }
 </script>
 

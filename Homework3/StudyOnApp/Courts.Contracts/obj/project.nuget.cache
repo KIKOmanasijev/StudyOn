@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "zAp8zfbItv/iScd3y+wf0GhO/L+DJWHdmAewBffEjvBZuD26t2+fWmGcTtu8zJvdyMRHsKu9KrPFu0C1GIAuCA==",
+  "dgSpecHash": "AEb4x+CtJhIHzpLZD7fJWspI9aTXBRaqgyi755nc7TsTXm4tPh3V05CLPvw1kfiD9WvERok/+nwimHNqKEAU1Q==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Kate\\Desktop\\dians\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj",
+  "projectFilePath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\Courts.Contracts\\Court.Contracts.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Kate\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\Kate\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

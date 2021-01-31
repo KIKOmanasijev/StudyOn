@@ -20,6 +20,7 @@
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
                                 <i class="fa fa-star"></i>
+                                <span> (0.0)</span>
                             </div>
                             <div class="field-location">
                               <p class="mb-0">  <b> Lat:</b> {{field.lat}}</p>
@@ -35,22 +36,25 @@
 
 <script>
 import('../assets/css/all.css');
+import repo from "../repository/repo";
+
 export default {
     name: "ListFields",
     computed: {
+        // Generate an URL for the Field routes
         generateFieldUrl(id){
             return `/fields/${id}`;
         },
+        // Get the image for the field or use a placeholder
         getFieldImage(field){
-            console.log(field);
             return field.images.length > 0 ? field.images[0] : 'https://via.placeholder.com/500x500'; 
         }
     },
-    props: ['getAllFields'],
     mounted(){
-        this.getAllFields();
+        repo.fetchAllFields();
     },
     methods: {
+        // Prints the stars from the rating
         printRating(rate){
             console.log(rate);
             let str = "";

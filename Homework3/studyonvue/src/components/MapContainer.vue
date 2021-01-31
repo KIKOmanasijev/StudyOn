@@ -129,7 +129,6 @@ export default {
         }
     },
     created(){
-        console.log(this.markers);
     },
     props: ['markers'],
 }

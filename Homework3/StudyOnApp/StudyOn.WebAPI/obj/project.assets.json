@@ -4654,23 +4654,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Kate\\.nuget\\packages\\": {},
+    "C:\\Users\\Kiko\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Kate\\Desktop\\dians\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
+      "projectUniqueName": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
       "projectName": "StudyOn.WebAPI",
-      "projectPath": "C:\\Users\\Kate\\Desktop\\dians\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
-      "packagesPath": "C:\\Users\\Kate\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Kate\\Desktop\\dians\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\obj\\",
+      "projectPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\StudyOn.WebAPI.csproj",
+      "packagesPath": "C:\\Users\\Kiko\\.nuget\\packages\\",
+      "outputPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Kate\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Kiko\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4678,21 +4678,20 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {},
-        "https://tfs.mca.mk/DefaultCollection/_packaging/MCA/nuget/v3/index.json": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Kate\\Desktop\\dians\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj": {
-              "projectPath": "C:\\Users\\Kate\\Desktop\\dians\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj"
+            "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj": {
+              "projectPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Business\\StudyOn.Business.csproj"
             },
-            "C:\\Users\\Kate\\Desktop\\dians\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
-              "projectPath": "C:\\Users\\Kate\\Desktop\\dians\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
+            "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj": {
+              "projectPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.Contracts\\StudyOn.Contracts.csproj"
             },
-            "C:\\Users\\Kate\\Desktop\\dians\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj": {
-              "projectPath": "C:\\Users\\Kate\\Desktop\\dians\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj"
+            "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj": {
+              "projectPath": "D:\\Fakultet\\DIANS\\StudyOn\\StudyOn\\Homework3\\StudyOnApp\\StudyOn.LoggerService\\StudyOn.LoggerService.csproj"
             }
           }
         }
@@ -4740,7 +4739,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.102\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   },

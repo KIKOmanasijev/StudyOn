@@ -17,9 +17,6 @@ export default {
     Sidemenu,
     MapContainer,
     SingleFieldBox
-  },
-  mounted(){
-      console.log(this.$route.params);
   }
 }
 </script>
