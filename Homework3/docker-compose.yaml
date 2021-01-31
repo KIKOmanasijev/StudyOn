@@ -1,0 +1,61 @@
+version: "3"
+
+services:
+  postgres:
+    container_name: postgres
+    image: postgres:13-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: postgres
+      PGDATA: /var/lib/postgresql/data/pgdata
+    ports:
+      - "5432:5432"
+    volumes:
+ #     - .\:/docker-entrypoint-initdb.d/:rw
+      - postgres-data:/var/lib/postgresql/data
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    restart: always
+    environment:
+      PGADMIN_DEFAULT_EMAIL: postgres@linuxhint.com
+      PGADMIN_DEFAULT_PASSWORD: postgres
+      PGADMIN_LISTEN_PORT: 80
+    ports:
+      - "8080:80"
+    volumes:
+      - pgadmin-data:/var/lib/pgadmin
+    links:
+      - "postgres:pgsql-server"
+
+  studyon:
+    container_name: studyon
+    image: studyon:latest
+    restart: always
+    ports:
+      - "5001:5001"
+    depends_on:
+      - postgres
+
+  courts:
+    container_name: courts
+    image: courts:latest
+    restart: always
+    ports:
+      - "5000:5000"
+    depends_on:
+      - postgres
+
+  web:
+    container_name: web
+    image: web:latest
+    restart: always
+    ports:
+      - "8080:8080"
+
+volumes:
+  postgres-data:
+    driver: local
+  pgadmin-data:

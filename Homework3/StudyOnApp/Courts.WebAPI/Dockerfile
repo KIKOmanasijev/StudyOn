@@ -10,16 +10,16 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
 WORKDIR /src
-COPY ["Courts.WebAPI/Courts.WebAPI.csproj", "Courts.WebAPI/"]
-RUN dotnet restore "Courts.WebAPI/Courts.WebAPI.csproj"
+COPY ["Courts.WebAPI/Court.WebAPI.csproj", "Courts.WebAPI/"]
+RUN dotnet restore "Courts.WebAPI/Court.WebAPI.csproj"
 COPY . .
 WORKDIR "/src/Courts.WebAPI"
-RUN dotnet build "Courts.WebAPI.csproj" -c Release -o /app/build
+RUN dotnet build "Court.WebAPI.csproj" -c Release -o /app/build
 
 FROM build AS publish
-RUN dotnet publish "Courts.WebAPI.csproj" -c Release -o /app/publish
+RUN dotnet publish "Court.WebAPI.csproj" -c Release -o /app/publish
 
 FROM base AS final
 WORKDIR /app
 COPY --from=publish /app/publish .
-ENTRYPOINT ["dotnet", "Courts.WebAPI.dll"]
+ENTRYPOINT ["dotnet", "Court.WebAPI.dll"]

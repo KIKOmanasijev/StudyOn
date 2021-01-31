@@ -5,6 +5,21 @@
 
 FROM mcr.microsoft.com/dotnet/core/aspnet:3.1 AS base
 WORKDIR /app
-COPY ..
+EXPOSE 80
+EXPOSE 443
 
-CMD ASPNETCORE_URLS=http://*:$PORT dotnet UsersMicroservice.dll
+FROM mcr.microsoft.com/dotnet/core/sdk:3.1 AS build
+WORKDIR /src
+COPY ["StudyOn.WebAPI/StudyOn.WebAPI.csproj", "StudyOn.WebAPI/"]
+RUN dotnet restore "StudyOn.WebAPI/StudyOn.WebAPI.csproj"
+COPY . .
+WORKDIR "/src/StudyOn.WebAPI"
+RUN dotnet build "StudyOn.WebAPI.csproj" -c Release -o /app/build
+
+FROM build AS publish
+RUN dotnet publish "StudyOn.WebAPI.csproj" -c Release -o /app/publish
+
+FROM base AS final
+WORKDIR /app
+COPY --from=publish /app/publish .
+ENTRYPOINT ["dotnet", "StudyOn.WebAPI.dll"]

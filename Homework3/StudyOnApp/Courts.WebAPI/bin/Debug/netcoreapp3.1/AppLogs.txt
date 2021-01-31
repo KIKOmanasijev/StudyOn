@@ -1,0 +1,16 @@
+2021-01-31 20:15:25.1116 INFO request for search courts arrived
+2021-01-31 20:15:27.2390 INFO list of courts returned
+2021-01-31 20:15:35.8561 INFO request for search courts arrived
+2021-01-31 20:15:35.8817 INFO list of courts returned
+2021-01-31 20:15:35.9337 INFO request for search courts arrived
+2021-01-31 20:15:35.9630 INFO list of courts returned
+2021-01-31 20:15:36.5143 INFO request for search courts arrived
+2021-01-31 20:15:36.5479 INFO list of courts returned
+2021-01-31 20:15:44.1750 INFO request for search courts arrived
+2021-01-31 20:15:44.1895 INFO list of courts returned
+2021-01-31 20:15:44.2058 INFO request for search courts arrived
+2021-01-31 20:15:44.2177 INFO list of courts returned
+2021-01-31 20:15:48.2039 INFO request for search courts arrived
+2021-01-31 20:15:48.2431 INFO list of courts returned
+2021-01-31 20:16:38.7036 INFO request for search courts arrived
+2021-01-31 20:16:38.7719 INFO list of courts returned

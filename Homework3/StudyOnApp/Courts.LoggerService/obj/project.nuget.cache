@@ -1,12 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "Z0MG5zgmGXS0zwYCYqxHj1fZbt2tpgkRIm1s92+MBGqwUZ68PfFcVSreGbVpCID1i5mybgUSxzSFHDd1tEIUMQ==",
+  "dgSpecHash": "Xi1UJBbujKL4zHT/O4LAME3TR0wpcbgq6GBCrOXHRx6D1HgEbitr+jXx94J1jk1CDMUEuiNtFdXEf5ihBu0Izw==",
   "success": true,
-  "projectFilePath": "C:\\Projects\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj",
+  "projectFilePath": "C:\\Users\\Kate\\Desktop\\dians\\StudyOn\\Homework3\\StudyOnApp\\Courts.LoggerService\\Court.LoggerService.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
-    "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
-    "C:\\Users\\dimitar.anakiev\\.nuget\\packages\\nlog\\4.7.6\\nlog.4.7.6.nupkg.sha512"
+    "C:\\Users\\Kate\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Kate\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512",
+    "C:\\Users\\Kate\\.nuget\\packages\\nlog\\4.7.6\\nlog.4.7.6.nupkg.sha512"
   ],
   "logs": []
 }

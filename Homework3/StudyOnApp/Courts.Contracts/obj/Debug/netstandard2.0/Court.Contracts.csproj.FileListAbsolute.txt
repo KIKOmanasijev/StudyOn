@@ -24,3 +24,11 @@ C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Deb
 C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.csproj.CoreCompileInputs.cache
 C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.dll
 C:\Users\Kate\Desktop\dian\StudyOn\Homework3\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.pdb
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\Courts.Contracts\bin\Debug\netstandard2.0\Court.Contracts.deps.json
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\Courts.Contracts\bin\Debug\netstandard2.0\Court.Contracts.dll
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\Courts.Contracts\bin\Debug\netstandard2.0\Court.Contracts.pdb
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.AssemblyInfoInputs.cache
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.AssemblyInfo.cs
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.dll
+C:\Users\Kate\Desktop\dians\StudyOn\Homework3 & 4\StudyOnApp\Courts.Contracts\obj\Debug\netstandard2.0\Court.Contracts.pdb
